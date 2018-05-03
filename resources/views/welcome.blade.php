@@ -439,7 +439,7 @@
         <div class="col-md-12">
           <h3 class="section-title">Contáctenos</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p class="section-description">Para solicitar mayor información puede contactarnos</p>
         </div>
       </div>
 
@@ -448,12 +448,13 @@
           <div class="info">
             <div>
               <i class="fa fa-map-marker"></i>
-              <p>A108 Adam Street<br>New York, NY 535022</p>
+              <p>A108 Adam Street<br>Colombia, Cundinamarca, Girardot </p>
+              <p>Dirección<br>####</p>
             </div>
 
             <div>
               <i class="fa fa-envelope"></i>
-              <p>info@example.com</p>
+              <p>info@aysasesoriassas.com</p>
             </div>
 
             <div>
@@ -467,7 +468,7 @@
         <div class="col-md-5 col-md-push-2">
           <div class="form">
             
-            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="sendmessage">Su mensaje ha sido enviado. Gracias por contactarnos!</div>
             <div id="errormessage"></div>
             <form action="{{route('enviar')}}" method="POST" role="form" class="contactForm">
 
@@ -488,11 +489,8 @@
                 <div class="validation"></div>
               </div>
 
-
               <input type="hidden" name="_token" value="{{ csrf_token()}}">
               <div class="text-center"><input type="submit" ></div>
-
-              <div class="text-center"><button type="reset">Borrar todo</button></div>
             
             </form>
           </div>
