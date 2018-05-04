@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>A&S ASESORIAS CONSTRUC</title>
+  <title>A&S ASESORIAS S.A.S.</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -24,6 +24,8 @@
 
   <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
   <link href="favicon.ico" rel="shortcut icon">
+  
+    
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
@@ -37,6 +39,8 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  <link href="estilos.css" rel="styleshee1" />
+    <link href="estilos2.css" rel="styleshee2" />
 
   <!-- =======================================================
     Theme Name: A&s ASESORIAS
@@ -56,11 +60,12 @@
     <div class="hero-container">
       <div class="wow fadeIn">
         <div class="hero-logo">
-          <img class="" src="img/logo.png" alt="Imperial">
+          <img class="" src="" alt="Imperial" width="350" height="350">
         </div>
-
-        <h1>Welcome A&s ASESORIAS</h1>
-        <h2>We create <span class="rotating">beautiful graphics, functional websites, working mobile apps</span></h2>
+ <h1>BIENVENIDOS</h1>
+        <h1>A&S ASESORIAS S.A.S.</h1>
+        <h2><span class="rotating">DISEÑO-AVALUOS-CONSTRUCCION-ASESORIAS ADMINISTRATIVAS</span></h2>
+        <h2><span class="rotating">El apoyo profesional que usted requiere</span></h2>
         <div class="actions">
           <a href="#about" class="btn-get-started">Get Strated</a>
           <a href="#services" class="btn-services">Our Services</a>
@@ -76,7 +81,8 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <a href="#hero"><img src="img/logo.png" alt="" title="" /></img></a>
+        <h5><font face="Calibri" color="#05F0FF" size="4">A&S ASESORIAS S.A.S.</font></h5>
+    
         <!-- Uncomment below if you prefer to use a text image -->
         <!--<h1><a href="#hero">Header 1</a></h1>-->
       </div>
@@ -86,9 +92,8 @@
           <li class="menu-active"><a href="#hero">Home</a></li>
           <li><a href="#about">Quiénes Somos</a></li>
           <li><a href="#services">Servicios</a></li>
-          <li><a href="#portfolio">Proyectos</a></li>
-            
-          <li><a href="#testimonials">Clientes</a></li>
+          <li><a href="#portfolio">Clientes</a></li>            
+          <li><a href="#testimonials">Proyectos</a></li>
           <li><a href="#team">Equipo De Trabajo</a></li>
           <li class="menu-has-children"><a href="">Drop Down</a>
             <ul>
@@ -115,45 +120,35 @@
   </header>
   <!-- #header -->
 
-  <!--==========================
+<!--==========================
   Quienes Somos
   ============================-->
   <section id="about">
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="section-title">Misión</h3>
+          <h3 class="section-title">Quienes Somos</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
-
-
-           <div class="col-md-12">
-          <h3 class="section-title">Visión</h3>
-          <div class="section-title-divider"></div>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+          
         </div>
       </div>
     </div>
     <div class="container about-container wow fadeInUp">
       <div class="row">
         <div class="col-md-6 col-md-push-6 about-content">
-          <h2 class="about-title">We provide great services and ideass</h2>
+          <h2 class="about-title">Mision</h2>
           <p class="about-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-            in reprehenderit in voluptate
+            La empresa A&S ASESORIAS Y SOLUCIONES CONSTRUCTIVAS S.A.S., se traza como objetivo, el ofrecer a la empresa pública y privada el apoyo que sea requerido dentro del cumplimiento de su gestión, en el área de diseño y construcción de obras civiles y de arquitectura, complementado con la consultoría, realización de avalúos y asesorías
           </p>
+          <h2 class="about-title">Vision</h2>
           <p class="about-text">
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-            id est laborum
-          </p>
-          <p class="about-text">
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-            id est laborum
+            En el año 2020, la organización, contando con un gran equipo de trabajo, será una empresa líder en la región, ofreciendo a nuestros clientes unos excelentes productos y servicios en el campo de la asesoría sobre la legalización de títulos de propiedad, realización de avalúos urbanos y rurales, gestión ante entidades públicas y privadas y labores de arquitectura e ingeniería, en las áreas de elaboración de presupuestos, programaciones, diseños, interventoría - construcción y administración de obras civiles y arquitectónicas. 
           </p>
         </div>
       </div>
     </div>
   </section>
+  
 
   <!--==========================
   Services Section
@@ -164,70 +159,72 @@
         <div class="col-md-12">
           <h3 class="section-title">Nuestros Servicios</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-desktop"></i></div>
-          <h4 class="service-title"><a href="">Lorem Ipsum</a></h4>
-          <p class="service-description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          <h4 class="service-title"><a href="">Actividad Inmobiliaria</a></h4>
+          <p class="service-description">Dentro de éste campo se ofrece todo el soporte técnico y legal para adelantar procedimientos de compra y venta de inmuebles, arrendamiento de inmuebles, desenglobe de lotes en mayor extensión, englobe de lotes, elaboración de reglamentos de propiedad horizontal, estudio de títulos de bienes inmuebles y su correspondiente tradición</p>
         </div>
-        <div class="col-md-4 service-item">
-          <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
-          <h4 class="service-title"><a href="">Dolor Sitema</a></h4>
-          <p class="service-description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-        </div>
-        <div class="col-md-4 service-item">
-          <div class="service-icon"><i class="fa fa-paper-plane"></i></div>
-          <h4 class="service-title"><a href="">Sed ut perspiciatis</a></h4>
-          <p class="service-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-        </div>
+
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-photo"></i></div>
-          <h4 class="service-title"><a href="">Magni Dolores</a></h4>
-          <p class="service-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          <h4 class="service-title"><a href="">Gestión ante Entidades Públicas y Privadas</a></h4>
+          <p class="service-description">Gracias a la experiencia de la empresa, se ofrece el acompañamiento de nuestro cliente en diversos procesos de tramitación,  como los que se enumeran a continuación:  créditos financieros e hipotecarios, licencias de construcción, permisos de ventas, obtención de viabilidades para la prestación de servicios públicos, entre otros.</p>
+          </div>
+
+           <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-photo"></i></div>
+          <h4 class="service-title"><a href="">Elaboración de presupuestos y programaciones de Obra</a></h4>
+          <p class="service-description">Se ofrece todo el apoyo técnico y profesional en la elaboración de presupuestos y programaciones de obra, con el grado de detalle y desglose que sea requerida por el cliente; servicio que será aplicable a la magnitud de la obra o actividad que sea expuesta</p>
         </div>
+</div>
+       <div class="row">
         <div class="col-md-4 service-item">
-          <div class="service-icon"><i class="fa fa-road"></i></div>
-          <h4 class="service-title"><a href="">Nemo Enim</a></h4>
-          <p class="service-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+          <div class="service-icon"><i class="fa fa-paper-plane"></i></div>
+          <h4 class="service-title"><a href="">Interventoría - Construcción y Administración de Obras civiles y arquitectónicas</a></h4>
+          <p class="service-description">El grupo profesional y técnico de la organización, le ofrece al cliente su capacidad y experiencia para llevar a cabo labores de interventoría, construcción y administración de obras civiles y arquitectónicas, atendiendo a las exigencias que le sean planteadas.
+
+          <p class="service-description">Así mismo se encuentra en capacidad de conformar el grupo de trabajo que sea exigido por la envergadura de cada una de las obras a adelantar, seguros de brindar los más altos índices de calidad y cumplimiento.</p>
         </div>
-        <div class="col-md-4 service-item">
-          <div class="service-icon"><i class="fa fa-shopping-bag"></i></div>
-          <h4 class="service-title"><a href="">Eiusmod Tempor</a></h4>
-          <p class="service-description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+
+
+
+     <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-photo"></i></div>
+          <h4 class="service-title"><a href="">Realización Avalúos</a></h4>
+          
+          <p class="service-description">Con el apoyo de FEDELONJAS, la Lonja de Propiedad Raíz del Tolima y la Lonja de la Sociedad Colombiana de Arquitectos – Regional Tolima, contamos con la capacidad para ofrecer nuestros servicios en la ejecución Integral de Avalúos, en los campos Urbano y Rural.   Igualmente se cuenta con el Registro Nacional de Avaluadores otorgado por la Superintendencia de Industria y Comercio y el R.N.A. Nacional, otorgado por el Registro Nacional de Avaluadores certificado por la ONAC, siendo miembros de ANA, la primera ERA a nivel Nacional y que tendrá a su cargo el primer REGISTRO ABIERTO DE AVALUADORES - RAA.
+
+      </p>
         </div>
-      </div>
-    </div>
+
+
+            <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-photo"></i></div>
+          <h4 class="service-title"><a href="">Elaboración de Diseños</a></h4>
+          
+          <p class="service-description">La Organización se encuentra en capacidad de desarrollar el diseño arquitectónico o de ingeniería, que sea  requerido por el cliente para el desarrollo constructivo de las obras que desea adelantar.
+
+    <p class="service-description"> Estos diseños contarán con el soporte de las memorias y anexos necesarios.</p>
+
+
+      </p>
+        </div>
+
   </section>
 
-  <!--==========================
- Proyectos
-  ============================-->
-  <section id="subscribe">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-8">
-          <h3 class="subscribe-title">Nuestros Proyectos</h3>
-          <p class="subscribe-text">Join our 1000+ subscribers and get access to the latest tools, freebies, product announcements and much more!</p>
-        </div>
-        <div class="col-md-4 subscribe-btn-container">
-          <a class="subscribe-btn" href="#">Subscribe Now</a>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!--==========================
-  proyectos
+  Porfolio  CLIENTES
   ============================-->
   <section id="portfolio">
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="section-title">Nuestros Proyectos</h3>
+          <h3 class="section-title">Portfolio</h3>
           <div class="section-title-divider"></div>
           <p class="section-description">Si stante, hoc natura videlicet vult, salvam esse se, quod concedimus ses haec dicturum fuisse</p>
         </div>
@@ -311,15 +308,15 @@
   </section>
 
   <!--==========================
-  clientes
+  Testimonials Section
   ============================-->
   <section id="testimonials">
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="section-title">Clientes</h3>
+          <h3 class="section-title">Proyectos</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">Erdo lide, nora porodo filece, salvam esse se, quod concedimus ses haec dicturum fuisse</p>
+          <p class="section-description"></p>
         </div>
       </div>
 
@@ -327,13 +324,15 @@
         <div class="col-md-3">
           <div class="profile">
             <div class="pic"><img src="img/client-1.jpg" alt=""></div>
-            <h4>Saul Goodman</h4>
-            <span>Lawless Inc</span>
+            <h4>CERES</h4>
+            <span>Vereda Barzaloza</span>
+            
+            
           </div>
         </div>
         <div class="col-md-9">
           <div class="quote">
-            <b><img src="img/quote_sign_left.png" alt=""></b> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. <small><img src="img/quote_sign_right.png" alt=""></small>
+            <b><img src="img/quote_sign_left.png" alt=""></b> Diseño Arquitectónico y asesoría en la construcción del CENTRO DE REHABILITACION DEL NIÑO ESPECIAL “CERES”, en la Vereda Barzaloza de la Ciudad de Girardot <small><img src="img/quote_sign_right.png" alt=""></small>
           </div>
         </div>
       </div>
@@ -341,20 +340,258 @@
       <div class="row">
         <div class="col-md-9">
           <div class="quote">
-            <b><img src="img/quote_sign_left.png" alt=""></b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis architecto beatae. <small><img src="img/quote_sign_right.png" alt=""></small>
+            <b><img src="img/quote_sign_left.png" alt=""></b> Ejecución de obras civiles, redes de acueducto y alcantarillado y de adecuación para la Empresa de Aguas de Girardot, Ricaurte y la Región ACUAGYR S.A. E.S.P.
+ <small><img src="img/quote_sign_right.png" alt=""></small>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="profile">
+            <div class="pic"><img src="img/client-2.jpg" alt=""></div>
+            <h4>ACUAGYR S.A. E.S.P.</h4>
+            <span>Girardot, Ricaurte </span>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="profile">
+            <div class="pic"><img src="img/client-1.jpg" alt=""></div>
+            <h4>Condominio Campestre Hacienda El Paso</h4>
+            <span>Girardot</span>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="quote">
+            <b><img src="img/quote_sign_left.png" alt=""></b> Apoyo en ejecución de diseños, aprobación de nuevos proyectos e interventorías de obras en ejecución dentro del Condominio Campestre Hacienda El Paso – Girardot.
+    <small><img src="img/quote_sign_right.png" alt=""></small>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-9">
+          <div class="quote">
+            <b><img src="img/quote_sign_left.png" alt=""></b> Diseño y ejecución de obras de adecuación para la Facultad de Administración de Empresas de la Universidad del Tolima en la Ciudad de Ibagué.
+
+ <small><img src="img/quote_sign_right.png" alt=""></small>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="profile">
+            <div class="pic"><img src="img/client-2.jpg" alt=""></div>
+            <h4>Universidad del Tolima</h4>
+            <span>Ibagué</span>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="profile">
+            <div class="pic"><img src="img/client-1.jpg" alt=""></div>
+            <h4>Desarrollo obras de adecuación n</h4>
+            <span>Girardot</span>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="quote">
+            <b><img src="img/quote_sign_left.png" alt=""></b>Desarrollo obras de adecuación y reparación sobre inmuebles de particulares y Empresas Privadas.
+
+    <small><img src="img/quote_sign_right.png" alt=""></small>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-9">
+          <div class="quote">
+            <b><img src="img/quote_sign_left.png" alt=""></b> Presentación de charlas sobre la actual Política de Vivienda, en materia de Vivienda de Interés Social, acceso al beneficio del Subsidio Familiar de Vivienda y Cuentas de Ahorro para el Fomento de la Construcción. 
+
+ <small><img src="img/quote_sign_right.png" alt=""></small>
           </div>
         </div>
         <div class="col-md-3">
           <div class="profile">
             <div class="pic"><img src="img/client-2.jpg" alt=""></div>
             <h4>Sara Wilsson</h4>
-            <span>Odeo Inc</span>
+            <span>Girardot</span>
           </div>
         </div>
       </div>
 
+
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="profile">
+            <div class="pic"><img src="img/client-1.jpg" alt=""></div>
+            <h4>Diseño y construcción de proyectos arquitectónicose</h4>
+            <span>Girardot.</span>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="quote">
+            <b><img src="img/quote_sign_left.png" alt=""></b>Diseño y construcción de proyectos arquitectónicos, para Entidades Públicas y Privadas.  
+
+
+    <small><img src="img/quote_sign_right.png" alt=""></small>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-9">
+          <div class="quote">
+            <b><img src="img/quote_sign_left.png" alt=""></b> Proyección y ejecución de obras de reparación y adecuación de inmuebles pertenecientes a bodegas inmobiliarias de entidades financieras, como Bancolombia S.A. y Banco Granahorrar – hoy BBVA
+
+ <small><img src="img/quote_sign_right.png" alt=""></small>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="profile">
+            <div class="pic"><img src="img/client-2.jpg" alt=""></div>
+            <h4>BBVA</h4>
+            <span>Girardot</span>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="profile">
+            <div class="pic"><img src="img/client-1.jpg" alt=""></div>
+            <h4>Clínica San Sebastián</h4>
+            <span>Girardot</span>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="quote">
+            <b><img src="img/quote_sign_left.png" alt=""></b>Diseño y ejecución de obras de adecuación y ampliación para la Nueva Clínica San Sebastián de Girardot.
+
+
+
+    <small><img src="img/quote_sign_right.png" alt=""></small>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-9">
+          <div class="quote">
+            <b><img src="img/quote_sign_left.png" alt=""></b> Diseño de obras de adecuación y ampliación para la Corporación Club Puerto Peñalisa del Municipio de Ricaurte.
+ <small><img src="img/quote_sign_right.png" alt=""></small>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="profile">
+            <div class="pic"><img src="img/client-2.jpg" alt=""></div>
+            <h4>Corporación Club Puerto Peñalisa</h4>
+            <span>Ricaurte</span>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  <div class="row">
+        <div class="col-md-3">
+          <div class="profile">
+            <div class="pic"><img src="img/client-1.jpg" alt=""></div>
+            <h4>TOLIMOTOS S.A.S</h4>
+            <span>Girardot</span>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="quote">
+            <b><img src="img/quote_sign_left.png" alt=""></b>Diseño del nuevo local de TOLIMOTOS S.A.S. en la ciudad de Girardot y ejecución de las obras civiles correspondientes.
+
+
+
+
+    <small><img src="img/quote_sign_right.png" alt=""></small>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-9">
+          <div class="quote">
+            <b><img src="img/quote_sign_left.png" alt=""></b> Rediseño de planta física de la Cámara de Comercio de Girardot, y realización de obras civiles.
+
+ <small><img src="img/quote_sign_right.png" alt=""></small>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="profile">
+            <div class="pic"><img src="img/client-2.jpg" alt=""></div>
+            <h4>Cámara de Comercio</h4>
+            <span>Girardot</span>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+  <div class="row">
+        <div class="col-md-3">
+          <div class="profile">
+            <div class="pic"><img src="img/client-1.jpg" alt=""></div>
+            <h4>Condominio Campestre Hacienda El Paso</h4>
+            <span>Girardot</span>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="quote">
+            <b><img src="img/quote_sign_left.png" alt=""></b>Interventoría construcción Tercer Sector del Condominio Campestre Hacienda El Paso – Girardot.
+
+
+
+    <small><img src="img/quote_sign_right.png" alt=""></small>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-9">
+          <div class="quote">
+            <b><img src="img/quote_sign_left.png" alt=""></b> Residencia de Obra para la Construcción de Edificio Médico de Especialistas para MEDICOS ASOCIADOS S.A., diseño y construcción áreas de servicios de la Nueva Clínica San Sebastián.
+
+ <small><img src="img/quote_sign_right.png" alt=""></small>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="profile">
+            <div class="pic"><img src="img/client-2.jpg" alt=""></div>
+            <h4>Clínica San Sebastián</h4>
+            <span>Girardot</span>
+          </div>
+        </div>
+      </div>
+
+
     </div>
   </section>
+
+  
+  
 
   <!--==========================
   equipo
@@ -448,8 +685,12 @@
           <div class="info">
             <div>
               <i class="fa fa-map-marker"></i>
-              <p>A108 Adam Street<br>Colombia, Cundinamarca, Girardot </p>
-              <p>Dirección<br>####</p>
+              <p>A&S ASESORIAS Y SOLUCIONES CONSTRUCTIVAS S.A.S.
+              <br>Colombia, Cundinamarca,</p>
+              <p>Barrio Centro-Girardot </p>
+              <p>Dirección<br>Calle 18 Nº 9 – 86 Oficina D – 301 Edificio El Sol </p>
+            
+
             </div>
 
             <div>
@@ -458,8 +699,14 @@
             </div>
 
             <div>
+              
+              <i class=" fa fa-tty"></i>
+              <p>(031) 8330238</p>
               <i class="fa fa-phone"></i>
-              <p>+1 5589 55488 55s</p>
+                <p>315 3486646 – 300 7624478</p>
+              <i class="fa fa-phone"></i>
+               <p>315 3469398 – 300 7624479</p>
+
             </div>
 
           </div>
