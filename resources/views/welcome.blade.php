@@ -60,7 +60,7 @@
     <div class="hero-container">
       <div class="wow fadeIn">
         <div class="hero-logo">
-          <img class="" src="" alt="Imperial" width="350" height="350">
+          <img class="" src="img/logo empresa.png" alt="Imperial" width="450" height="300">
         </div>
  <h1>BIENVENIDOS</h1>
         <h1>A&S ASESORIAS S.A.S.</h1>
@@ -81,7 +81,7 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <h5><font face="Calibri" color="#05F0FF" size="4">A&S ASESORIAS S.A.S.</font></h5>
+         <img class="" src="img/A&SAsesorias sas.png" alt="Imperial" width="200" height="150">
     
         <!-- Uncomment below if you prefer to use a text image -->
         <!--<h1><a href="#hero">Header 1</a></h1>-->
@@ -224,7 +224,7 @@
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="section-title">Portfolio</h3>
+          <h3 class="section-title">Clientes</h3>
           <div class="section-title-divider"></div>
           <p class="section-description">Si stante, hoc natura videlicet vult, salvam esse se, quod concedimus ses haec dicturum fuisse</p>
         </div>
@@ -232,361 +232,106 @@
 
       <div class="row">
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-1.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-1.png);" href="img/portfolio-1.png">
             <div class="details">
-              <h4>Portfolio 1</h4>
-              <span>Alored dono par</span>
+              <h4>Alcaldia de tocaima</h4>
+              <span>A&SASESORIAS S.A.S</span>
             </div>
           </a>
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-2.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-2.png);" href="img/portfolio-2.png">
             <div class="details">
               <h4>Portfolio 2</h4>
-              <span>Alored dono par</span>
+              <span>A&SASESORIAS S.A.S</span>
             </div>
           </a>
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-3.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-3.png);" href="img/portfolio-3.png">
             <div class="details">
               <h4>Portfolio 3</h4>
-              <span>Alored dono par</span>
+              <span>A&SASESORIAS S.A.S</span>
             </div>
           </a>
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-4.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-4.png);" href="img/portfolio-4.png">
             <div class="details">
-              <h4>Portfolio 4</h4>
-              <span>Alored dono par</span>
+              <h4>BBVA</h4>
+              <span>A&SASESORIAS S.A.S</span>
             </div>
           </a>
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-5.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-18.png);" href="img/portfolio-18.png">
             <div class="details">
-              <h4>Portfolio 5</h4>
-              <span>Alored dono par</span>
+              <h4>Banco BBVA</h4>
+              <span>A&SASESORIAS S.A.S</span>
             </div>
           </a>
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-6.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-6.png);" href="img/portfolio-6.png">
             <div class="details">
-              <h4>Portfolio 6</h4>
-              <span>Alored dono par</span>
+              <h4>Cámara de Comercio</h4>
+              <span>A&SASESORIAS S.A.S</span>
             </div>
           </a>
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-7.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-7.png);" href="img/portfolio-7.png">
             <div class="details">
-              <h4>Portfolio 7</h4>
-              <span>Alored dono par</span>
+              <h4>Clínica San Sebastián</h4>
+              <span>A&SASESORIAS S.A.S</span>
             </div>
           </a>
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-8.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-8.png);" href="img/portfolio-8.png">
             <div class="details">
-              <h4>Portfolio 8</h4>
-              <span>Alored dono par</span>
+              <h4>Hotel Tocarema</h4>
+              <span>A&SASESORIAS S.A.S</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+          <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-9.png);" href="img/portfolio-9.png">
+            <div class="details">
+              <h4>Terminal de Transporte Girardot</h4>
+              <span>A&SASESORIAS S.A.S</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-10.png);" href="img/portfolio-10.png">
+            <div class="details">
+              <h4>Ser Ambiental</h4>
+              <span>A&SASESORIAS S.A.S</span>
+            </div>
+          </a>
+        </div>
+
+         <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-11.png);" href="img/portfolio-11.png">
+            <div class="details">
+              <h4>Universidad del Tolima</h4>
+              <span>A&SASESORIAS S.A.S</span>
             </div>
           </a>
         </div>
 
       </div>
-    </div>
-  </section>
-
-  <!--==========================
-  Testimonials Section
-  ============================-->
-  <section id="testimonials">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="section-title">Proyectos</h3>
-          <div class="section-title-divider"></div>
-          <p class="section-description"></p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-3">
-          <div class="profile">
-            <div class="pic"><img src="img/client-1.jpg" alt=""></div>
-            <h4>CERES</h4>
-            <span>Vereda Barzaloza</span>
-            
-            
-          </div>
-        </div>
-        <div class="col-md-9">
-          <div class="quote">
-            <b><img src="img/quote_sign_left.png" alt=""></b> Diseño Arquitectónico y asesoría en la construcción del CENTRO DE REHABILITACION DEL NIÑO ESPECIAL “CERES”, en la Vereda Barzaloza de la Ciudad de Girardot <small><img src="img/quote_sign_right.png" alt=""></small>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-9">
-          <div class="quote">
-            <b><img src="img/quote_sign_left.png" alt=""></b> Ejecución de obras civiles, redes de acueducto y alcantarillado y de adecuación para la Empresa de Aguas de Girardot, Ricaurte y la Región ACUAGYR S.A. E.S.P.
- <small><img src="img/quote_sign_right.png" alt=""></small>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="profile">
-            <div class="pic"><img src="img/client-2.jpg" alt=""></div>
-            <h4>ACUAGYR S.A. E.S.P.</h4>
-            <span>Girardot, Ricaurte </span>
-          </div>
-        </div>
-      </div>
-
-
-
-
-      <div class="row">
-        <div class="col-md-3">
-          <div class="profile">
-            <div class="pic"><img src="img/client-1.jpg" alt=""></div>
-            <h4>Condominio Campestre Hacienda El Paso</h4>
-            <span>Girardot</span>
-          </div>
-        </div>
-        <div class="col-md-9">
-          <div class="quote">
-            <b><img src="img/quote_sign_left.png" alt=""></b> Apoyo en ejecución de diseños, aprobación de nuevos proyectos e interventorías de obras en ejecución dentro del Condominio Campestre Hacienda El Paso – Girardot.
-    <small><img src="img/quote_sign_right.png" alt=""></small>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="row">
-        <div class="col-md-9">
-          <div class="quote">
-            <b><img src="img/quote_sign_left.png" alt=""></b> Diseño y ejecución de obras de adecuación para la Facultad de Administración de Empresas de la Universidad del Tolima en la Ciudad de Ibagué.
-
- <small><img src="img/quote_sign_right.png" alt=""></small>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="profile">
-            <div class="pic"><img src="img/client-2.jpg" alt=""></div>
-            <h4>Universidad del Tolima</h4>
-            <span>Ibagué</span>
-          </div>
-        </div>
-      </div>
-
-
-
-
-      <div class="row">
-        <div class="col-md-3">
-          <div class="profile">
-            <div class="pic"><img src="img/client-1.jpg" alt=""></div>
-            <h4>Desarrollo obras de adecuación n</h4>
-            <span>Girardot</span>
-          </div>
-        </div>
-        <div class="col-md-9">
-          <div class="quote">
-            <b><img src="img/quote_sign_left.png" alt=""></b>Desarrollo obras de adecuación y reparación sobre inmuebles de particulares y Empresas Privadas.
-
-    <small><img src="img/quote_sign_right.png" alt=""></small>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="row">
-        <div class="col-md-9">
-          <div class="quote">
-            <b><img src="img/quote_sign_left.png" alt=""></b> Presentación de charlas sobre la actual Política de Vivienda, en materia de Vivienda de Interés Social, acceso al beneficio del Subsidio Familiar de Vivienda y Cuentas de Ahorro para el Fomento de la Construcción. 
-
- <small><img src="img/quote_sign_right.png" alt=""></small>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="profile">
-            <div class="pic"><img src="img/client-2.jpg" alt=""></div>
-            <h4>Sara Wilsson</h4>
-            <span>Girardot</span>
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="row">
-        <div class="col-md-3">
-          <div class="profile">
-            <div class="pic"><img src="img/client-1.jpg" alt=""></div>
-            <h4>Diseño y construcción de proyectos arquitectónicose</h4>
-            <span>Girardot.</span>
-          </div>
-        </div>
-        <div class="col-md-9">
-          <div class="quote">
-            <b><img src="img/quote_sign_left.png" alt=""></b>Diseño y construcción de proyectos arquitectónicos, para Entidades Públicas y Privadas.  
-
-
-    <small><img src="img/quote_sign_right.png" alt=""></small>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="row">
-        <div class="col-md-9">
-          <div class="quote">
-            <b><img src="img/quote_sign_left.png" alt=""></b> Proyección y ejecución de obras de reparación y adecuación de inmuebles pertenecientes a bodegas inmobiliarias de entidades financieras, como Bancolombia S.A. y Banco Granahorrar – hoy BBVA
-
- <small><img src="img/quote_sign_right.png" alt=""></small>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="profile">
-            <div class="pic"><img src="img/client-2.jpg" alt=""></div>
-            <h4>BBVA</h4>
-            <span>Girardot</span>
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="row">
-        <div class="col-md-3">
-          <div class="profile">
-            <div class="pic"><img src="img/client-1.jpg" alt=""></div>
-            <h4>Clínica San Sebastián</h4>
-            <span>Girardot</span>
-          </div>
-        </div>
-        <div class="col-md-9">
-          <div class="quote">
-            <b><img src="img/quote_sign_left.png" alt=""></b>Diseño y ejecución de obras de adecuación y ampliación para la Nueva Clínica San Sebastián de Girardot.
-
-
-
-    <small><img src="img/quote_sign_right.png" alt=""></small>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="row">
-        <div class="col-md-9">
-          <div class="quote">
-            <b><img src="img/quote_sign_left.png" alt=""></b> Diseño de obras de adecuación y ampliación para la Corporación Club Puerto Peñalisa del Municipio de Ricaurte.
- <small><img src="img/quote_sign_right.png" alt=""></small>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="profile">
-            <div class="pic"><img src="img/client-2.jpg" alt=""></div>
-            <h4>Corporación Club Puerto Peñalisa</h4>
-            <span>Ricaurte</span>
-          </div>
-        </div>
-      </div>
-
-
-
-
-  <div class="row">
-        <div class="col-md-3">
-          <div class="profile">
-            <div class="pic"><img src="img/client-1.jpg" alt=""></div>
-            <h4>TOLIMOTOS S.A.S</h4>
-            <span>Girardot</span>
-          </div>
-        </div>
-        <div class="col-md-9">
-          <div class="quote">
-            <b><img src="img/quote_sign_left.png" alt=""></b>Diseño del nuevo local de TOLIMOTOS S.A.S. en la ciudad de Girardot y ejecución de las obras civiles correspondientes.
-
-
-
-
-    <small><img src="img/quote_sign_right.png" alt=""></small>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="row">
-        <div class="col-md-9">
-          <div class="quote">
-            <b><img src="img/quote_sign_left.png" alt=""></b> Rediseño de planta física de la Cámara de Comercio de Girardot, y realización de obras civiles.
-
- <small><img src="img/quote_sign_right.png" alt=""></small>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="profile">
-            <div class="pic"><img src="img/client-2.jpg" alt=""></div>
-            <h4>Cámara de Comercio</h4>
-            <span>Girardot</span>
-          </div>
-        </div>
-      </div>
-
-
-
-
-
-  <div class="row">
-        <div class="col-md-3">
-          <div class="profile">
-            <div class="pic"><img src="img/client-1.jpg" alt=""></div>
-            <h4>Condominio Campestre Hacienda El Paso</h4>
-            <span>Girardot</span>
-          </div>
-        </div>
-        <div class="col-md-9">
-          <div class="quote">
-            <b><img src="img/quote_sign_left.png" alt=""></b>Interventoría construcción Tercer Sector del Condominio Campestre Hacienda El Paso – Girardot.
-
-
-
-    <small><img src="img/quote_sign_right.png" alt=""></small>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="row">
-        <div class="col-md-9">
-          <div class="quote">
-            <b><img src="img/quote_sign_left.png" alt=""></b> Residencia de Obra para la Construcción de Edificio Médico de Especialistas para MEDICOS ASOCIADOS S.A., diseño y construcción áreas de servicios de la Nueva Clínica San Sebastián.
-
- <small><img src="img/quote_sign_right.png" alt=""></small>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="profile">
-            <div class="pic"><img src="img/client-2.jpg" alt=""></div>
-            <h4>Clínica San Sebastián</h4>
-            <span>Girardot</span>
-          </div>
-        </div>
-      </div>
-
-
     </div>
   </section>
 
