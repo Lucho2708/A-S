@@ -243,7 +243,7 @@
         <div class="col-md-3">
           <a class="portfolio-item" style="background-image: url(img/portfolio-2.png);" href="img/portfolio-2.png">
             <div class="details">
-              <h4>Portfolio 2</h4>
+              <h4>Puerto Peñalisa</h4>
               <span>A&SASESORIAS S.A.S</span>
             </div>
           </a>
@@ -252,7 +252,7 @@
         <div class="col-md-3">
           <a class="portfolio-item" style="background-image: url(img/portfolio-3.png);" href="img/portfolio-3.png">
             <div class="details">
-              <h4>Portfolio 3</h4>
+              <h4>Bancolombia</h4>
               <span>A&SASESORIAS S.A.S</span>
             </div>
           </a>
@@ -261,7 +261,7 @@
         <div class="col-md-3">
           <a class="portfolio-item" style="background-image: url(img/portfolio-4.png);" href="img/portfolio-4.png">
             <div class="details">
-              <h4>BBVA</h4>
+              <h4>Funación Ceres</h4>
               <span>A&SASESORIAS S.A.S</span>
             </div>
           </a>
