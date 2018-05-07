@@ -60,10 +60,9 @@
     <div class="hero-container">
       <div class="wow fadeIn">
         <div class="hero-logo">
-          <img class="" src="img/logo empresa.png" alt="Imperial" width="450" height="300">
+         <img class="" src="img/A&SAsesorias sas.png" alt="Imperial" width="50%">
         </div>
- <h1>BIENVENIDOS</h1>
-        <h1>A&S ASESORIAS S.A.S.</h1>
+
         <h2><span class="rotating">DISEÑO-AVALUOS-CONSTRUCCION-ASESORIAS ADMINISTRATIVAS</span></h2>
         <h2><span class="rotating">El apoyo profesional que usted requiere</span></h2>
         <div class="actions">
@@ -81,7 +80,7 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-         <img class="" src="img/A&SAsesorias sas.png" alt="Imperial" width="200" height="150">
+         <img class="" src="img/A&SAsesorias sas.png" alt="Imperial" width="250" height="150">
     
         <!-- Uncomment below if you prefer to use a text image -->
         <!--<h1><a href="#hero">Header 1</a></h1>-->
@@ -304,6 +303,8 @@
         </div>
       </div>
 
+          
+
           <div class="col-md-3">
           <a class="portfolio-item" style="background-image: url(img/portfolio-9.png);" href="img/portfolio-9.png">
             <div class="details">
@@ -347,19 +348,19 @@
         </div>
       </div>
 
+      <div class="horizontal-scroll-wrapper">
       <div class="row">
         <div class="col-md-3">
           <div class="profile">
             <div class="pic"><img src="img/client-1.jpg" alt=""></div>
             <h4>CERES</h4>
-            <span>Vereda Barzaloza</span>
-            
-            
+            <span>Vereda Barzaloza</span>       
           </div>
         </div>
         <div class="col-md-9">
           <div class="quote">
-            <b><img src="img/quote_sign_left.png" alt=""></b> Diseño Arquitectónico y asesoría en la construcción del CENTRO DE REHABILITACION DEL NIÑO ESPECIAL “CERES”, en la Vereda Barzaloza de la Ciudad de Girardot <small><img src="img/quote_sign_right.png" alt=""></small>
+            <b><img src="img/quote_sign_left.png" alt=""></b> Diseño Arquitectónico y asesoría en la construcción del CENTRO DE REHABILITACION DEL NIÑO ESPECIAL “CERES”, en la Vereda Barzaloza de la Ciudad de Girardot 
+            <small><img src="img/quote_sign_right.png" alt=""></small>
           </div>
         </div>
       </div>
@@ -368,7 +369,7 @@
         <div class="col-md-9">
           <div class="quote">
             <b><img src="img/quote_sign_left.png" alt=""></b> Ejecución de obras civiles, redes de acueducto y alcantarillado y de adecuación para la Empresa de Aguas de Girardot, Ricaurte y la Región ACUAGYR S.A. E.S.P.
- <small><img src="img/quote_sign_right.png" alt=""></small>
+            <small><img src="img/quote_sign_right.png" alt=""></small>
           </div>
         </div>
         <div class="col-md-3">
@@ -380,8 +381,8 @@
         </div>
       </div>
 
-
-
+      </div>
+      <div class="horizontal-scroll-wrapper">
 
       <div class="row">
         <div class="col-md-3">
@@ -394,7 +395,7 @@
         <div class="col-md-9">
           <div class="quote">
             <b><img src="img/quote_sign_left.png" alt=""></b> Apoyo en ejecución de diseños, aprobación de nuevos proyectos e interventorías de obras en ejecución dentro del Condominio Campestre Hacienda El Paso – Girardot.
-    <small><img src="img/quote_sign_right.png" alt=""></small>
+            <small><img src="img/quote_sign_right.png" alt=""></small>
           </div>
         </div>
       </div>
@@ -403,9 +404,8 @@
       <div class="row">
         <div class="col-md-9">
           <div class="quote">
-            <b><img src="img/quote_sign_left.png" alt=""></b> Diseño y ejecución de obras de adecuación para la Facultad de Administración de Empresas de la Universidad del Tolima en la Ciudad de Ibagué.
-
- <small><img src="img/quote_sign_right.png" alt=""></small>
+            <b><img src="img/quote_sign_left.png" alt=""></b> Diseño y ejecución de obras de adecuación para la Facultad de Administración de Empresas de la Universidad del Tolima en la Ciudad de Ibagué. 
+            <small><img src="img/quote_sign_right.png" alt=""></small>
           </div>
         </div>
         <div class="col-md-3">
@@ -416,7 +416,7 @@
           </div>
         </div>
       </div>
-
+      </div>
 
 
 
