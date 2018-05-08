@@ -730,10 +730,11 @@
             
             <div id="sendmessage">Su mensaje ha sido enviado. Gracias por contactarnos!</div>
             <div id="errormessage"></div>
-            <form action="{{route('enviar')}}" method="POST" role="form" class="contactForm">
+            <form action="/enviar" method="POST" >
+              {{csrf_field()}}
 
               <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <input type="text" name="nome" class="form-control" id="name" placeholder="Your name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                 <div class="validation"></div>
               </div>
               <div class="form-group">

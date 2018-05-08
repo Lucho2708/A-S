@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+/*
 class HomeController extends Controller
 {
     /**
@@ -11,6 +11,8 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+   
+/*
     public function index()
     {
         return view('welcome');
@@ -21,7 +23,7 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+  /*  public function create()
     {
         //
     }
@@ -31,7 +33,10 @@ class HomeController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
+   
      */
+   
+/*
     public function store(Request $request)
     {
         //
@@ -43,6 +48,10 @@ class HomeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+
+
+    /* SEPARAE
     public function show($id)
     {
         //
@@ -54,6 +63,7 @@ class HomeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    /*
     public function edit($id)
     {
         //
@@ -66,6 +76,7 @@ class HomeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    /*
     public function update(Request $request, $id)
     {
         //
@@ -77,6 +88,8 @@ class HomeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    
+/*
     public function destroy($id)
     {
         //
