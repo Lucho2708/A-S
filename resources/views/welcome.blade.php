@@ -21,7 +21,7 @@
   <meta name="twitter:title" content="">
   <meta name="twitter:description" content="">
   <meta name="twitter:image" content="">
-
+<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1, maximun-scale=1, minimun-scale=1">
   <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
   <link href="favicon.ico" rel="shortcut icon">
   
@@ -158,7 +158,7 @@
   <section id="services">
     <div class="container wow fadeInUp">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12" >
           <h3 class="section-title">Nuestros Servicios</h3>
           <div class="section-title-divider"></div>
         </div>
@@ -168,6 +168,7 @@
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-desktop"></i></div>
           <h4 class="service-title"><a href="">Actividad Inmobiliaria</a></h4>
+          <br>
           <p class="service-description">Dentro de éste campo se ofrece todo el soporte técnico y legal para adelantar procedimientos de compra y venta de inmuebles, arrendamiento de inmuebles, desenglobe de lotes en mayor extensión, englobe de lotes, elaboración de reglamentos de propiedad horizontal, estudio de títulos de bienes inmuebles y su correspondiente tradición</p>
         </div>
 
@@ -353,6 +354,7 @@
 
     <div class="slideshow">
       <ul class="slider">
+
         <li>
           <div class="row">
             <div class="col-md-3">
@@ -362,6 +364,7 @@
                 <span>Vereda Barzaloza</span>       
               </div>
             </div>
+
             <div class="col-md-9">
               <div class="quote">
                 <b><img src="img/quote_sign_left.png" alt=""></b> Diseño Arquitectónico y asesoría en la construcción del CENTRO DE REHABILITACION DEL NIÑO ESPECIAL “CERES”, en la Vereda Barzaloza de la Ciudad de Girardot 
@@ -369,6 +372,7 @@
               </div>
             </div>
           </div>
+
           <div class="row">
             <div class="col-md-9">
               <div class="quote">
