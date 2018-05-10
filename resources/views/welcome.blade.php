@@ -66,7 +66,7 @@
          <img class="" src="img/A&SAsesorias sas.png" alt="Imperial" width="50%">
         </div>
 
-        <h2><span class="rotating">DISEÑO-AVALUOS-CONSTRUCCION-ASESORIAS ADMINISTRATIVAS</span></h2>
+        <h2><span class="rotating">DISEÑO- AVALÚOS- CONSTRUCCIÓN- ASESORÍAS ADMINISTRATIVAS </span></h2>
         <h2><span class="rotating">El apoyo profesional que usted requiere</span></h2>
         <div class="actions">
           <a href="#about" class="btn-get-started">Get Strated</a>
@@ -97,9 +97,13 @@
           <li><a href="#portfolio">Clientes</a></li>            
           <li><a href="#testimonials">Proyectos</a></li>
           <li><a href="#team">Equipo De Trabajo</a></li>
-          <li class="menu-has-children"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
+        
+           
+             <!--==========================
+Otros menus 
+  <li class="menu-has-children"><a href="">Drop Down</a>
+  <ul>
+     <li><a href="#">Drop Down 1</a></li>
               <li class="menu-has-children"><a href="#">Drop Down 2</a>
                 <ul>
                   <li><a href="#">Deep Drop Down 1</a></li>
@@ -114,6 +118,9 @@
               <li><a href="#">Drop Down 5</a></li>
             </ul>
           </li>
+
+  ============================-->
+             
           <li><a href="#contact">Contáctenos</a></li>
         </ul>
       </nav>
@@ -138,11 +145,11 @@
     <div class="container about-container wow fadeInUp">
       <div class="row">
         <div class="col-md-6 col-md-push-6 about-content">
-          <h2 class="about-title">Mision</h2>
+          <h2 class="about-title">Misión</h2>
           <p class="about-text">
             La empresa A&S ASESORIAS Y SOLUCIONES CONSTRUCTIVAS S.A.S., se traza como objetivo, el ofrecer a la empresa pública y privada el apoyo que sea requerido dentro del cumplimiento de su gestión, en el área de diseño y construcción de obras civiles y de arquitectura, complementado con la consultoría, realización de avalúos y asesorías
           </p>
-          <h2 class="about-title">Vision</h2>
+          <h2 class="about-title">Visión</h2>
           <p class="about-text">
             En el año 2020, la organización, contando con un gran equipo de trabajo, será una empresa líder en la región, ofreciendo a nuestros clientes unos excelentes productos y servicios en el campo de la asesoría sobre la legalización de títulos de propiedad, realización de avalúos urbanos y rurales, gestión ante entidades públicas y privadas y labores de arquitectura e ingeniería, en las áreas de elaboración de presupuestos, programaciones, diseños, interventoría - construcción y administración de obras civiles y arquitectónicas. 
           </p>
@@ -229,7 +236,11 @@
         <div class="col-md-12">
           <h3 class="section-title">Clientes</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">Si stante, hoc natura videlicet vult, salvam esse se, quod concedimus ses haec dicturum fuisse</p>
+
+           <!--==========================
+            <p class="section-description">Si stante, hoc natura videlicet vult, salvam esse se, quod concedimus ses haec dicturum fuisse</p>
+  ============================-->
+          
         </div>
       </div>
 
@@ -318,6 +329,15 @@
           </a>
         </div>
 
+           <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-17.png);" href="img/portfolio-17.png">
+            <div class="details">
+              <h4>Funerales La Paz Servicios Exequiales S.A.S.</h4>
+              <span>A&SASESORIAS S.A.S</span>
+            </div>
+          </a>
+        </div>
+
         <div class="col-md-3">
           <a class="portfolio-item" style="background-image: url(img/portfolio-10.png);" href="img/portfolio-10.png">
             <div class="details">
@@ -331,6 +351,53 @@
           <a class="portfolio-item" style="background-image: url(img/portfolio-11.png);" href="img/portfolio-11.png">
             <div class="details">
               <h4>Universidad del Tolima</h4>
+              <span>A&SASESORIAS S.A.S</span>
+            </div>
+          </a>
+        </div>
+
+          <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-13.png);" href="img/portfolio-13.png">
+            <div class="details">
+              <h4>Hotel Boutique El León </h4>
+              <span>A&SASESORIAS S.A.S</span>
+            </div>
+          </a>
+        </div>
+
+
+          <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-14.png);" href="img/portfolio-14.png">
+            <div class="details">
+              <h4>Concesionario Automotores Rio Grande.</h4>
+              <span>A&SASESORIAS S.A.S</span>
+            </div>
+          </a>
+        </div>
+
+
+          <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-15.png);" href="img/portfolio-15.png">
+            <div class="details">
+              <h4>ACUAGYR S.A E.S.P</h4>
+              <span>A&SASESORIAS S.A.S</span>
+            </div>
+          </a>
+        </div>
+      
+          <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-16.png);" href="img/portfolio-16.png">
+            <div class="details">
+              <h4>FH Constructores S.A.S</h4>
+              <span>A&SASESORIAS S.A.S</span>
+            </div>
+          </a>
+        </div>
+
+            <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/portfolio-19.png);" href="img/portfolio-19.png">
+            <div class="details">
+              <h4>Consorcio Edificar</h4>
               <span>A&SASESORIAS S.A.S</span>
             </div>
           </a>
