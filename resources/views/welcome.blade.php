@@ -144,7 +144,11 @@ Otros menus
     </div>
     <div class="container about-container wow fadeInUp">
       <div class="row">
-        <div class="col-md-6 col-md-push-6 about-content">
+ 
+     <a href="/img/equipo2.jpg"><div class="col-md-6 col-md-push-6 about-content"></a>
+
+        
+        
           <h2 class="about-title">Misión</h2>
           <p class="about-text">
             La empresa A&S ASESORIAS Y SOLUCIONES CONSTRUCTIVAS S.A.S., se traza como objetivo, el ofrecer a la empresa pública y privada el apoyo que sea requerido dentro del cumplimiento de su gestión, en el área de diseño y construcción de obras civiles y de arquitectura, complementado con la consultoría, realización de avalúos y asesorías
@@ -452,18 +456,18 @@ Otros menus
       <ul class="slider">
 
         <li>
-          <div class="row">
+            <div class="row">
             <div class="col-md-3">
               <div class="profile">
-                <div class="pic"><img src="img/client-1.jpg" alt=""></div>
-                <h4>CERES</h4>
-                <span>Vereda Barzaloza</span>       
+               <div class="pic"><a href="imgproyectos/client-5.jpg" alt="clic para visualizar la imagen"><img src="img/client-4.jpg" ></div></a>
+                <h4>UNICENTRO - PEDRO GOMEZ Y CIA S.A</h4>
+                <span>Girardot</span>       
               </div>
             </div>
 
             <div class="col-md-9">
               <div class="quote">
-                <b><img src="img/quote_sign_left.png" alt=""></b> Diseño Arquitectónico y asesoría en la construcción del CENTRO DE REHABILITACION DEL NIÑO ESPECIAL “CERES”, en la Vereda Barzaloza de la Ciudad de Girardot 
+                <b><img src="img/quote_sign_left.png" alt=""></b> UNICENTRO - PEDRO GOMEZ Y CIA S.A
                 <small><img src="img/quote_sign_right.png" alt=""></small>
               </div>
             </div>
@@ -472,22 +476,146 @@ Otros menus
           <div class="row">
             <div class="col-md-9">
               <div class="quote">
-                <b><img src="img/quote_sign_left.png" alt=""></b> Ejecución de obras civiles, redes de acueducto y alcantarillado y de adecuación para la Empresa de Aguas de Girardot, Ricaurte y la Región ACUAGYR S.A. E.S.P.
+                <b><img src="img/quote_sign_left.png" alt=""></b> HOTEL UNIÓN
                 <small><img src="img/quote_sign_right.png" alt=""></small>
               </div>
             </div>
             <div class="col-md-3">
               <div class="profile">
-                <div class="pic"><img src="img/client-2.jpg" alt=""></div>
-                <h4>ACUAGYR S.A. E.S.P.</h4>
+                <div class="pic"><a href="imgproyectos/client-6.jpg" alt="" ><img src="img/client-3.jpg" ></div></a>
+                <h4>HOTEL UNIÓN</h4>
                 <span>Girardot, Ricaurte </span>
               </div>
             </div>
           </div>
         </li>
+          
+          
 
+        <li>
+            <div class="row">
+            <div class="col-md-3">
+              <div class="profile">
+               <div class="pic"><a href="imgproyectos/client-7.jpg" alt="clic para visualizar la imagen"><img src="img/client-5.jpg" ></div></a>
+                <h4>Hotel Los Refugios</h4>
+                <span>Girardot</span>       
+              </div>
+            </div>
+
+            <div class="col-md-9">
+              <div class="quote">
+                <b><img src="img/quote_sign_left.png" alt=""></b>HOTEL LOS REFUGIOS
+                <small><img src="img/quote_sign_right.png" alt=""></small>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-9">
+              <div class="quote">
+                <b><img src="img/quote_sign_left.png" alt=""></b> HOTEL BOUTIQUE EL LEÓN - GIRARDOT
+                <small><img src="img/quote_sign_right.png" alt=""></small>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="profile">
+            <div class="pic"><a href="imgproyectos/client-8.jpg" alt="clic para visualizar la imagen"><img src="img/client-6.jpg" ></div></a>
+
+                <h4>HOTEL BOUTIQUE EL LEÓN - GIRARDOT</h4>
+                <span>Girardot</span>
+              </div>
+            </div>
+          </div>
+        </li>
+     
+  <!--==========================
+   3 división
+  ============================-->
+
+            <li>
+            <div class="row">
+            <div class="col-md-3">
+              <div class="profile">
+               <div class="pic"><a href="imgproyectos/client-9.jpg" alt="clic para visualizar la imagen"><img src="img/client-7.jpg" ></div></a>
+                <h4>Hotel Los Refugios</h4>
+                <span>Girardot</span>       
+              </div>
+            </div>
+
+            <div class="col-md-9">
+              <div class="quote">
+                <b><img src="img/quote_sign_left.png" alt=""></b>HOTEL LOS REFUGIOS
+                <small><img src="img/quote_sign_right.png" alt=""></small>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-9">
+              <div class="quote">
+                <b><img src="img/quote_sign_left.png" alt=""></b> HOTEL BOUTIQUE EL LEÓN - GIRARDOT
+                <small><img src="img/quote_sign_right.png" alt=""></small>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="profile">
+            <div class="pic"><a href="imgproyectos/client-8.jpg" alt="clic para visualizar la imagen"><img src="img/client-6.jpg" ></div></a>
+
+                <h4>HOTEL BOUTIQUE EL LEÓN - GIRARDOT</h4>
+                <span>Girardot</span>
+              </div>
+            </div>
+          </div>
+        </li>
           
+
+        <li>
+            <div class="row">
+            <div class="col-md-3">
+              <div class="profile">
+               <div class="pic"><a href="imgproyectos/client-8.jpg" alt="clic para visualizar la imagen"><img src="img/client-7.jpg" ></div></a>
+                <h4>HOTEL </h4>
+                <span>Girardot</span>       
+              </div>
+            </div>
+
+            <div class="col-md-9">
+              <div class="quote">
+                <b><img src="img/quote_sign_left.png" alt=""></b>HOTEL BOUTIQUE EL LEÓN - GIRARDOT
+                <small><img src="img/quote_sign_right.png" alt=""></small>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-9">
+              <div class="quote">
+                <b><img src="img/quote_sign_left.png" alt=""></b> HOTEL UNIÓN
+                <small><img src="img/quote_sign_right.png" alt=""></small>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="profile">
+                <div class="pic"><a href="imgproyectos/client-6.jpg" alt="" ><img src="img/client-3.jpg" ></div></a>
+                <h4>HOTEL UNIÓN</h4>
+                <span>Girardot, Ricaurte </span>
+              </div>
+            </div>
+          </div>
+        </li>
           
+
+
+
+
+
+
+
+
+
+
+
+
         <li>
           <div class="row">
             <div class="col-md-3">
@@ -715,69 +843,21 @@ Otros menus
         <div class="col-md-12">
           <h3 class="section-title">Nuestro equipo de trabajo</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-md-3">
-          <div class="member">
-            <div class="pic"><img src="img/team-1.jpg" alt=""></div>
-            <h4>Walter White</h4>
-            <span>Chief Executive Officer</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
+      
+            
+      <center>
+         <a href="img/client-7.jpg"><img src="img/equipo.jpg" alt="" width="850" height="600"></a></p>
+         </center>
         </div>
-
-        <div class="col-md-3">
-          <div class="member">
-            <div class="pic"><img src="img/team-2.jpg" alt=""></div>
-            <h4>Sarah Jhinson</h4>
-            <span>Product Manager</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="member">
-            <div class="pic"><img src="img/team-3.jpg" alt=""></div>
-            <h4>William Anderson</h4>
-            <span>CTO</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="member">
-            <div class="pic"><img src="img/team-4.jpg" alt=""></div>
-            <h4>Amanda Jepson</h4>
-            <span>Accountant</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
+  </div>
+
+
+
   </section>
 
   <!--==========================
