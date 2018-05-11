@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 
 <head>
   <meta charset="utf-8">
@@ -44,6 +44,15 @@
 
   <script src="js/jquery-3.1.0.min.js"></script>
   <script src="js/main.js"></script>
+
+
+  <!-- para hacer el efecto imagen -->
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../js/fresco/fresco.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/fresco/fresco.css" />
 
   <!-- =======================================================
     Theme Name: A&s ASESORIAS
@@ -144,7 +153,9 @@ Otros menus
     </div>
     <div class="container about-container wow fadeInUp">
       <div class="row">
- 
+
+
+
      <a href="/img/equipo2.jpg"><div class="col-md-6 col-md-push-6 about-content"></a>
 
         
@@ -244,9 +255,12 @@ Otros menus
            <!--==========================
             <p class="section-description">Si stante, hoc natura videlicet vult, salvam esse se, quod concedimus ses haec dicturum fuisse</p>
   ============================-->
-          
-        </div>
-      </div>
+
+
+    </div>
+
+  </div>
+
 
       <div class="row">
         <div class="col-md-3">
@@ -459,9 +473,18 @@ Otros menus
             <div class="row">
             <div class="col-md-3">
               <div class="profile">
-               <div class="pic"><a href="imgproyectos/client-5.jpg" alt="clic para visualizar la imagen"><img src="img/client-4.jpg" ></div></a>
+
+                <div class='demonstrations pic'>
+
+        <a href='imgproyectos/client-5.jpg'
+         class='fresco'
+         data-fresco-group='example'
+         data-fresco-caption="Frans Hals, Banquet of the Officers of the St George Civic Guard, 1627">
+        <img src='img/client-4.jpg' alt=''/>
+      </a></div>
+              
                 <h4>UNICENTRO - PEDRO GOMEZ Y CIA S.A</h4>
-                <span>Girardot</span>       
+                <span>GIRARDOT</span>       
               </div>
             </div>
 
@@ -482,9 +505,17 @@ Otros menus
             </div>
             <div class="col-md-3">
               <div class="profile">
-                <div class="pic"><a href="imgproyectos/client-6.jpg" alt="" ><img src="img/client-3.jpg" ></div></a>
+
+          <div class='demonstrations pic'>
+        <a href='imgproyectos/client-6.jpg'
+         class='fresco'
+         data-fresco-group='example'
+         data-fresco-caption="Frans Hals, Banquet of the Officers of the St George Civic Guard, 1627">
+        <img src='img/client-3.jpg' alt=''/>
+      </a></div>
+              
                 <h4>HOTEL UNIÓN</h4>
-                <span>Girardot, Ricaurte </span>
+                <span>GIRARDOT, RICAURTE </span>
               </div>
             </div>
           </div>
@@ -496,15 +527,25 @@ Otros menus
             <div class="row">
             <div class="col-md-3">
               <div class="profile">
-               <div class="pic"><a href="imgproyectos/client-7.jpg" alt="clic para visualizar la imagen"><img src="img/client-5.jpg" ></div></a>
-                <h4>Hotel Los Refugios</h4>
-                <span>Girardot</span>       
+
+          <div class='demonstrations pic'>
+        <a href='imgproyectos/client-7.jpg'
+         class='fresco'
+         data-fresco-group='example'
+         data-fresco-caption="MOTEL LOS REFUGIOS">
+        <img src='img/client-5.jpg' alt=''/>
+      </a></div>
+               
+                <h4>MOTEL LOS REFUGIOS</h4>
+                <span>GIRARDOT</span>       
               </div>
             </div>
 
+
+
             <div class="col-md-9">
               <div class="quote">
-                <b><img src="img/quote_sign_left.png" alt=""></b>HOTEL LOS REFUGIOS
+                <b><img src="img/quote_sign_left.png" alt=""></b>MOTEL LOS REFUGIOS
                 <small><img src="img/quote_sign_right.png" alt=""></small>
               </div>
             </div>
@@ -519,10 +560,17 @@ Otros menus
             </div>
             <div class="col-md-3">
               <div class="profile">
-            <div class="pic"><a href="imgproyectos/client-8.jpg" alt="clic para visualizar la imagen"><img src="img/client-6.jpg" ></div></a>
+
+      <div class='demonstrations pic'>
+        <a href='imgproyectos/client-8.jpg'
+         class='fresco'
+         data-fresco-group='example'
+         data-fresco-caption="HOTEL BOUTIQUE EL LEÓN - GIRARDOT">
+        <img src='img/client-6.jpg' alt=''/>
+      </a></div>
 
                 <h4>HOTEL BOUTIQUE EL LEÓN - GIRARDOT</h4>
-                <span>Girardot</span>
+                <span>GIRARDOT</span>
               </div>
             </div>
           </div>
@@ -532,56 +580,30 @@ Otros menus
    3 división
   ============================-->
 
-            <li>
-            <div class="row">
-            <div class="col-md-3">
-              <div class="profile">
-               <div class="pic"><a href="imgproyectos/client-9.jpg" alt="clic para visualizar la imagen"><img src="img/client-7.jpg" ></div></a>
-                <h4>Hotel Los Refugios</h4>
-                <span>Girardot</span>       
-              </div>
-            </div>
-
-            <div class="col-md-9">
-              <div class="quote">
-                <b><img src="img/quote_sign_left.png" alt=""></b>HOTEL LOS REFUGIOS
-                <small><img src="img/quote_sign_right.png" alt=""></small>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-9">
-              <div class="quote">
-                <b><img src="img/quote_sign_left.png" alt=""></b> HOTEL BOUTIQUE EL LEÓN - GIRARDOT
-                <small><img src="img/quote_sign_right.png" alt=""></small>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="profile">
-            <div class="pic"><a href="imgproyectos/client-8.jpg" alt="clic para visualizar la imagen"><img src="img/client-6.jpg" ></div></a>
-
-                <h4>HOTEL BOUTIQUE EL LEÓN - GIRARDOT</h4>
-                <span>Girardot</span>
-              </div>
-            </div>
-          </div>
-        </li>
-          
 
         <li>
             <div class="row">
             <div class="col-md-3">
               <div class="profile">
-               <div class="pic"><a href="imgproyectos/client-8.jpg" alt="clic para visualizar la imagen"><img src="img/client-7.jpg" ></div></a>
-                <h4>HOTEL </h4>
-                <span>Girardot</span>       
+
+          <div class='demonstrations pic'>
+        <a href='imgproyectos/client-10.jpg'
+         class='fresco'
+         data-fresco-group='example'
+         data-fresco-caption="RED CONDUCCIÓN TUBERÍA GRP">
+        <img src='imgproyectos/client-9.jpg' alt=''/>
+      </a></div>
+               
+                <h4>RED CONDUCCIÓN TUBERÍA GRP</h4>
+                <span>GIRARDOT</span>       
               </div>
             </div>
 
+
+
             <div class="col-md-9">
               <div class="quote">
-                <b><img src="img/quote_sign_left.png" alt=""></b>HOTEL BOUTIQUE EL LEÓN - GIRARDOT
+                <b><img src="img/quote_sign_left.png" alt=""></b>RED CONDUCCIÓN TUBERÍA GRP
                 <small><img src="img/quote_sign_right.png" alt=""></small>
               </div>
             </div>
@@ -590,232 +612,195 @@ Otros menus
           <div class="row">
             <div class="col-md-9">
               <div class="quote">
-                <b><img src="img/quote_sign_left.png" alt=""></b> HOTEL UNIÓN
+                <b><img src="img/quote_sign_left.png" alt=""></b> CONSTRUCCIÓN RED IMPULSIÓN TUBERÍA CCP 24
                 <small><img src="img/quote_sign_right.png" alt=""></small>
               </div>
             </div>
             <div class="col-md-3">
               <div class="profile">
-                <div class="pic"><a href="imgproyectos/client-6.jpg" alt="" ><img src="img/client-3.jpg" ></div></a>
-                <h4>HOTEL UNIÓN</h4>
-                <span>Girardot, Ricaurte </span>
-              </div>
-            </div>
-          </div>
-        </li>
-          
 
+      <div class='demonstrations pic'>
+        <a href='imgproyectos/client-11.jpg'
+         class='fresco'
+         data-fresco-group='example'
+         data-fresco-caption="CONSTRUCCIÓN RED IMPULSIÓN TUBERÍA CCP 24">
+        <img src='imgproyectos/client-13.jpg' alt=''/>
+      </a></div>
 
-
-
-
-
-
-
-
-
-
-
-        <li>
-          <div class="row">
-            <div class="col-md-3">
-              <div class="profile">
-                <div class="pic"><img src="img/client-1.jpg" alt=""></div>
-                <h4>Condominio Campestre Hacienda El Paso</h4>
-                <span>Girardot</span>
-              </div>
-            </div>
-            <div class="col-md-9">
-              <div class="quote">
-                <b><img src="img/quote_sign_left.png" alt=""></b> Apoyo en ejecución de diseños, aprobación de nuevos proyectos e interventorías de obras en ejecución dentro del Condominio Campestre Hacienda El Paso – Girardot.
-                <small><img src="img/quote_sign_right.png" alt=""></small>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="row">
-            <div class="col-md-9">
-              <div class="quote">
-                <b><img src="img/quote_sign_left.png" alt=""></b> Diseño y ejecución de obras de adecuación para la Facultad de Administración de Empresas de la Universidad del Tolima en la Ciudad de Ibagué. 
-                <small><img src="img/quote_sign_right.png" alt=""></small>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="profile">
-                <div class="pic"><img src="img/client-2.jpg" alt=""></div>
-                <h4>Universidad del Tolima</h4>
-                <span>Ibagué</span>
+                <h4>CONSTRUCCIÓN RED IMPULSIÓN TUBERÍA CCP 24</h4>
+                <span>GIRARDOT</span>
               </div>
             </div>
           </div>
         </li>
 
 
-        <li>
-          <div class="row">
-            <div class="col-md-3">
-              <div class="profile">
-                <div class="pic"><img src="img/client-1.jpg" alt=""></div>
-                <h4>Desarrollo obras de adecuación n</h4>
-                <span>Girardot</span>
-              </div>
-            </div>
-            <div class="col-md-9">
-              <div class="quote">
-                <b><img src="img/quote_sign_left.png" alt=""></b>Desarrollo obras de adecuación y reparación sobre inmuebles de particulares y Empresas Privadas.<small><img src="img/quote_sign_right.png" alt=""></small>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="row">
-            <div class="col-md-9">
-              <div class="quote">
-                <b><img src="img/quote_sign_left.png" alt=""></b> Presentación de charlas sobre la actual Política de Vivienda, en materia de Vivienda de Interés Social, acceso al beneficio del Subsidio Familiar de Vivienda y Cuentas de Ahorro para el Fomento de la Construcción. <small><img src="img/quote_sign_right.png" alt=""></small>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="profile">
-                <div class="pic"><img src="img/client-2.jpg" alt=""></div>
-                <h4>Sara Wilsson</h4>
-                <span>Girardot</span>
-              </div>
-            </div>
-          </div>
-        </li>
 
         <li>
-          <div class="row">
-            <div class="col-md-3">
-              <div class="profile">
-                <div class="pic"><img src="img/client-1.jpg" alt=""></div>
-                <h4>Diseño y construcción de proyectos arquitectónicose</h4>
-                <span>Girardot.</span>
-              </div>
-            </div>
-            <div class="col-md-9">
-              <div class="quote">
-                <b><img src="img/quote_sign_left.png" alt=""></b>Diseño y construcción de proyectos arquitectónicos, para Entidades Públicas y Privadas.<small><img src="img/quote_sign_right.png" alt=""></small>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="row">
-            <div class="col-md-9">
-              <div class="quote">
-                <b><img src="img/quote_sign_left.png" alt=""></b> Proyección y ejecución de obras de reparación y adecuación de inmuebles pertenecientes a bodegas inmobiliarias de entidades financieras, como Bancolombia S.A. y Banco Granahorrar – hoy BBVA<small><img src="img/quote_sign_right.png" alt=""></small>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="profile">
-                <div class="pic"><img src="img/client-2.jpg" alt=""></div>
-                <h4>BBVA</h4>
-                <span>Girardot</span>
-              </div>
-            </div>
-          </div>
-        </li>
-
-        <li>
-          <div class="row">
-            <div class="col-md-3">
-              <div class="profile">
-                <div class="pic"><img src="img/client-1.jpg" alt=""></div>
-                <h4>Clínica San Sebastián</h4>
-                <span>Girardot</span>
-              </div>
-            </div>
-            <div class="col-md-9">
-              <div class="quote">
-                <b><img src="img/quote_sign_left.png" alt=""></b>Diseño y ejecución de obras de adecuación y ampliación para la Nueva Clínica San Sebastián de Girardot.<small><img src="img/quote_sign_right.png" alt=""></small>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="row">
-            <div class="col-md-9">
-              <div class="quote">
-                <b><img src="img/quote_sign_left.png" alt=""></b> Diseño de obras de adecuación y ampliación para la Corporación Club Puerto Peñalisa del Municipio de Ricaurte.<small><img src="img/quote_sign_right.png" alt=""></small>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="profile">
-                <div class="pic"><img src="img/client-2.jpg" alt=""></div>
-                <h4>Corporación Club Puerto Peñalisa</h4>
-                <span>Ricaurte</span>
-              </div>
-            </div>
-          </div>
-        </li>
-
-        <li>
-          <div class="row">
-              <div class="col-md-3">
-                <div class="profile">
-                  <div class="pic"><img src="img/client-1.jpg" alt=""></div>
-                  <h4>TOLIMOTOS S.A.S</h4>
-                  <span>Girardot</span>
-                </div>
-              </div>
-              <div class="col-md-9">
-                <div class="quote">
-                  <b><img src="img/quote_sign_left.png" alt=""></b>Diseño del nuevo local de TOLIMOTOS S.A.S. en la ciudad de Girardot y ejecución de las obras civiles correspondientes.<small><img src="img/quote_sign_right.png" alt=""></small>
-                </div>
-              </div>
-            </div>
-
-
             <div class="row">
-              <div class="col-md-9">
-                <div class="quote">
-                  <b><img src="img/quote_sign_left.png" alt=""></b> Rediseño de planta física de la Cámara de Comercio de Girardot, y realización de obras civiles.<small><img src="img/quote_sign_right.png" alt=""></small>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="profile">
-                  <div class="pic"><img src="img/client-2.jpg" alt=""></div>
-                  <h4>Cámara de Comercio</h4>
-                  <span>Girardot</span>
-                </div>
+            <div class="col-md-3">
+              <div class="profile">
+
+          <div class='demonstrations pic'>
+        <a href='imgproyectos/client-14.jpg'
+         class='fresco'
+         data-fresco-group='example'
+         data-fresco-caption="RENOVACIÓN REDES ALCANTARILLADO EN TUBERÍA CORRUGADA">
+        <img src='imgproyectos/client-12.jpg' alt=''/>
+      </a></div>
+               
+                <h4>RENOVACIÓN REDES ALCANTARILLADO EN TUBERÍA CORRUGADA</h4>
+                <span>GIRARDOT</span>       
               </div>
             </div>
+
+
+
+            <div class="col-md-9">
+              <div class="quote">
+                <b><img src="img/quote_sign_left.png" alt=""></b>RENOVACIÓN REDES ALCANTARILLADO EN TUBERÍA CORRUGADA
+                <small><img src="img/quote_sign_right.png" alt=""></small>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-9">
+              <div class="quote">
+                <b><img src="img/quote_sign_left.png" alt=""></b> REPOSICIÓN DE PAVIMENTOS EN LA CIUDAD DE GIRARDOT Y RICAURTE
+                <small><img src="img/quote_sign_right.png" alt=""></small>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="profile">
+
+      <div class='demonstrations pic'>
+        <a href='imgproyectos/client-16.jpg'
+         class='fresco'
+         data-fresco-group='example'
+         data-fresco-caption="REPOSICIÓN DE PAVIMENTOS EN LA CIUDAD DE GIRARDOT Y RICAURTE">
+        <img src='imgproyectos/client-15.jpg' alt=''/>
+      </a></div>
+
+                <h4>REPOSICIÓN DE PAVIMENTOS EN LA CIUDAD DE GIRARDOT Y RICAURTE</h4>
+                <span>GIRARDOT-RICAURTE</span>
+              </div>
+            </div>
+          </div>
         </li>
+     
+
+     
 
         <li>
-          <div class="row">
+            <div class="row">
             <div class="col-md-3">
               <div class="profile">
-                <div class="pic"><img src="img/client-1.jpg" alt=""></div>
-                <h4>Condominio Campestre Hacienda El Paso</h4>
-                <span>Girardot</span>
+
+          <div class='demonstrations pic'>
+        <a href='imgproyectos/client-18.jpg'
+         class='fresco'
+         data-fresco-group='example'
+         data-fresco-caption="EDIFICIO MÉDICO DE ESPECIALISTAS - MEDICOS ASOCIADOS S.A">
+        <img src='imgproyectos/client-17.jpg' alt=''/>
+      </a></div>
+               
+                <h4>EDIFICIO MÉDICO DE ESPECIALISTAS - MEDICOS ASOCIADOS S.A</h4>
+                <span>GIRARDOT</span>       
               </div>
             </div>
+
+
+
             <div class="col-md-9">
               <div class="quote">
-                <b><img src="img/quote_sign_left.png" alt=""></b>Interventoría construcción Tercer Sector del Condominio Campestre Hacienda El Paso – Girardot.<small><img src="img/quote_sign_right.png" alt=""></small>
+                <b><img src="img/quote_sign_left.png" alt=""></b>RENOVACIÓN REDES ALCANTARILLADO EN TUBERÍA CORRUGADA
+                <small><img src="img/quote_sign_right.png" alt=""></small>
               </div>
             </div>
           </div>
 
-
           <div class="row">
             <div class="col-md-9">
               <div class="quote">
-                <b><img src="img/quote_sign_left.png" alt=""></b> Residencia de Obra para la Construcción de Edificio Médico de Especialistas para MEDICOS ASOCIADOS S.A., diseño y construcción áreas de servicios de la Nueva Clínica San Sebastián.<small><img src="img/quote_sign_right.png" alt=""></small>
+                <b><img src="img/quote_sign_left.png" alt=""></b> CONSTRUCCIÓN REDES DE IMPULSIÓN EN TUBERÍA DE HIERRO DUCTIL
+                <small><img src="img/quote_sign_right.png" alt=""></small>
               </div>
             </div>
             <div class="col-md-3">
               <div class="profile">
-                <div class="pic"><img src="img/client-2.jpg" alt=""></div>
-                <h4>Clínica San Sebastián</h4>
-                <span>Girardot</span>
+
+      <div class='demonstrations pic'>
+        <a href='imgproyectos/client-20.jpg'
+         class='fresco'
+         data-fresco-group='example'
+         data-fresco-caption="CONSTRUCCIÓN REDES DE IMPULSIÓN EN TUBERÍA DE HIERRO DUCTIL">
+        <img src='imgproyectos/client-19.jpg' alt=''/>
+      </a></div>
+
+                <h4>CONSTRUCCIÓN REDES DE IMPULSIÓN EN TUBERÍA DE HIERRO DUCTIL</h4>
+                <span>GIRARDOT-RICAURTE</span>
               </div>
             </div>
           </div>
-         </li>
+        </li>
+     
+
+     
+          <li>
+            <div class="row">
+            <div class="col-md-3">
+              <div class="profile">
+
+          <div class='demonstrations pic'>
+        <a href='imgproyectos/client-22.jpg'
+         class='fresco'
+         data-fresco-group='example'
+         data-fresco-caption="DISEÑO Y CONSTRUCCIÓN APTO 101 TR 1 CRISTALES I">
+        <img src='imgproyectos/client-21.jpg' alt=''/>
+      </a></div>
+               
+                <h4>DISEÑO Y CONSTRUCCIÓN APTO 101 TR 1 CRISTALES I</h4>
+                <span>GIRARDOT</span>       
+              </div>
+            </div>
+
+
+
+            <div class="col-md-9">
+              <div class="quote">
+                <b><img src="img/quote_sign_left.png" alt=""></b>DISEÑO Y CONSTRUCCIÓN APTO 101 TR 1 CRISTALES I
+                <small><img src="img/quote_sign_right.png" alt=""></small>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-9">
+              <div class="quote">
+                <b><img src="img/quote_sign_left.png" alt=""></b>CONSTRUCCIÓN REDES DE ACUEDUCTO PVC RDE 9 - 21
+                <small><img src="img/quote_sign_right.png" alt=""></small>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="profile">
+
+      <div class='demonstrations pic'>
+        <a href='imgproyectos/client-24.jpg'
+         class='fresco'
+         data-fresco-group='example'
+         data-fresco-caption="CONSTRUCCIÓN REDES DE ACUEDUCTO PVC RDE 9 - 21">
+        <img src='imgproyectos/client-23.jpg' alt=''/>
+      </a></div>
+
+                <h4>CONSTRUCCIÓN REDES DE ACUEDUCTO PVC RDE 9 - 21</h4>
+                <span>GIRARDOT</span>
+              </div>
+            </div>
+          </div>
+        </li>
+     
+
      </ul>
      <ol class="pagination">
       
@@ -827,9 +812,9 @@ Otros menus
 
     <div class="right">
       <span class="fa fa-chevron-right"></span>
-    </div>
-    </div>
 
+    </div>
+  
   </section>
   
   
@@ -846,11 +831,19 @@ Otros menus
           
         </div>
       </div>
-      
-            
       <center>
-         <a href="img/client-7.jpg"><img src="img/equipo.jpg" alt="" width="850" height="600"></a></p>
-         </center>
+           
+            <div class='demonstrations pic'>
+        <a href='img/client-7.jpg'
+         class='fresco'
+         data-fresco-group='example'
+         data-fresco-caption="Equipo de trabajo">
+        <img src='img/client-7.jpg' alt='' width="850" height="600">
+      </a></div>
+
+  </center>
+
+    
         </div>
       </div>
     </div>
@@ -982,7 +975,22 @@ Otros menus
   <script src="js/custom.js"></script>
 
   <script src="contactform/contactform.js"></script>
+  <script>
 
+      $(document).ready(function(){
+
+      //Al hacer clic en cualquier img ejecutamos la acción
+      $('.contenido img').click(function() {
+        //Capturamos el src de la img
+        var postimg= $(this).attr('src');
+        //Agregamos el src a una href simbólico
+        $('#verimagenes').attr('href',postimg);
+        //Hacemos clic en el enlace para activar el visor
+        $('#verimagenes').click();
+      });
+
+      });
+  </script>
 
 </body>
 

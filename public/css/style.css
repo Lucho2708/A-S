@@ -930,7 +930,7 @@ body{
 
   text-align: center;
   color: #fff;
-  z-index: 60;
+  z-index: 120;
 }
 
 .slider .caption h1{
@@ -972,7 +972,7 @@ body{
   color: #03C4EB;
   font-size: 35px;
   cursor: pointer;
-  z-index: 2;
+  z-index: 90;
 }
 
 .left{
