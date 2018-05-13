@@ -898,6 +898,10 @@ body{
   font-family: Open sans;
 }
 
+/*--------------------------------------------------------------
+para slider de proyecto
+--------------------------------------------------------------*/
+
 .slideshow{
   width: 100%;
   position: relative;
@@ -913,6 +917,7 @@ body{
 
 .slider li img{
   width: 100%;
+
 }
 
 .slider .caption{
@@ -973,6 +978,7 @@ body{
   font-size: 35px;
   cursor: pointer;
   z-index: 2;
+
 }
 
 .left{
@@ -1014,9 +1020,6 @@ position: absolute;
   }
 
 
-   
-
-
   .slider li img{
     width: 100px;
   }
@@ -1027,3 +1030,7 @@ position: absolute;
      
   }
 }
+
+/*--------------------------------------------------------------
+# efecto light box
+--------------------------------------------------------------*/
