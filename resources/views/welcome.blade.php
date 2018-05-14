@@ -160,10 +160,10 @@ Otros menus
         </div>
       </div>
     </div>
-    <div class="container about-container wow fadeInUp">
+    <div class="container about-container wow fadeInUp ">
       <div class="row">
  
-     <a href="/img/equipo2.jpg"><div class="col-md-6 col-md-push-6 about-content"></a>
+    <div class="fresco"><div class="col-md-6 col-md-push-6 about-content">
 
         
         
@@ -178,6 +178,7 @@ Otros menus
         </div>
       </div>
     </div>
+  </div>
   </section>
   
 
@@ -267,9 +268,11 @@ Otros menus
       </div>
 
 
-      <div class="row">
-       <div class="col-md-3">
-       <a class="portfolio-item" style="background-image: url(img/portfolio-1.png);" href="img/portfolio-1.png">
+ <div class="row">
+     <div class="col-md-3">
+
+       <a class="portfolio-item fresco" style="background-image: url(img/portfolio-1.png);" href="img/portfolio-1.png"
+       data-fresco-caption="Alcaldia de tocaima">
             <div class="details">
               <h4>Alcaldia de tocaima</h4>
               <span>A&SASESORIAS S.A.S</span>
@@ -278,7 +281,8 @@ Otros menus
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-2.png);" href="img/portfolio-2.png">
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-2.png);" href="img/portfolio-2.png"
+          data-fresco-caption="Puerto Peñalisa">
             <div class="details">
               <h4>Puerto Peñalisa</h4>
               <span>A&SASESORIAS S.A.S</span>
@@ -287,7 +291,9 @@ Otros menus
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-3.png);" href="img/portfolio-3.png">
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-3.png);" href="img/portfolio-3.png"
+    data-fresco-caption="Bancolombia">
+          >
             <div class="details">
               <h4>Bancolombia</h4>
               <span>A&SASESORIAS S.A.S</span>
@@ -296,16 +302,18 @@ Otros menus
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-4.png);" href="img/portfolio-4.png">
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-4.png);" href="img/portfolio-4.png"
+          data-fresco-caption="Fundación Ceres">
             <div class="details">
-              <h4>Funación Ceres</h4>
+              <h4>Fundación Ceres</h4>
               <span>A&SASESORIAS S.A.S</span>
             </div>
           </a>
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-18.png);" href="img/portfolio-18.png">
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-18.png);" href="img/portfolio-18.png"
+          data-fresco-caption="Banco BBVA.">
             <div class="details">
               <h4>Banco BBVA</h4>
               <span>A&SASESORIAS S.A.S</span>
@@ -314,7 +322,8 @@ Otros menus
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-6.png);" href="img/portfolio-6.png">
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-6.png);" href="img/portfolio-6.png"
+          data-fresco-caption="Cámara de Comercio.">
             <div class="details">
               <h4>Cámara de Comercio</h4>
               <span>A&SASESORIAS S.A.S</span>
@@ -323,7 +332,8 @@ Otros menus
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-7.png);" href="img/portfolio-7.png">
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-7.png);" href="img/portfolio-7.png"
+           data-fresco-caption="Clínica San Sebastián">
             <div class="details">
               <h4>Clínica San Sebastián</h4>
               <span>A&SASESORIAS S.A.S</span>
@@ -332,7 +342,8 @@ Otros menus
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-8.png);" href="img/portfolio-8.png">
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-8.png);" href="img/portfolio-8.png"
+           data-fresco-caption="Hotel Tocarema">
             <div class="details">
               <h4>Hotel Tocarema</h4>
               <span>A&SASESORIAS S.A.S</span>
@@ -344,7 +355,8 @@ Otros menus
           
 
           <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-9.png);" href="img/portfolio-9.png">
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-9.png);" href="img/portfolio-9.png"
+          data-fresco-caption="Terminal de Transporte Girardot">
             <div class="details">
               <h4>Terminal de Transporte Girardot</h4>
               <span>A&SASESORIAS S.A.S</span>
@@ -353,7 +365,8 @@ Otros menus
         </div>
 
            <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-17.png);" href="img/portfolio-17.png">
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-17.png);" href="img/portfolio-17.png"
+         data-fresco-caption="Funerales La Paz Servicios Exequiales S.A.S.">
             <div class="details">
               <h4>Funerales La Paz Servicios Exequiales S.A.S.</h4>
               <span>A&SASESORIAS S.A.S</span>
@@ -362,7 +375,8 @@ Otros menus
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-10.png);" href="img/portfolio-10.png">
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-10.png);" href="img/portfolio-10.png"
+          data-fresco-caption="Ser Ambiental">
             <div class="details">
               <h4>Ser Ambiental</h4>
               <span>A&SASESORIAS S.A.S</span>
@@ -371,7 +385,8 @@ Otros menus
         </div>
 
          <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-11.png);" href="img/portfolio-11.png">
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-11.png);" href="img/portfolio-11.png"
+          data-fresco-caption="Universidad del Tolima">
             <div class="details">
               <h4>Universidad del Tolima</h4>
               <span>A&SASESORIAS S.A.S</span>
@@ -380,7 +395,8 @@ Otros menus
         </div>
 
           <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-13.png);" href="img/portfolio-13.png">
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-13.png);" href="img/portfolio-13.png"
+          data-fresco-caption="Hotel Boutique El León ">
             <div class="details">
               <h4>Hotel Boutique El León </h4>
               <span>A&SASESORIAS S.A.S</span>
@@ -390,7 +406,8 @@ Otros menus
 
 
           <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-14.png);" href="img/portfolio-14.png">
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-14.png);" href="img/portfolio-14.png".
+          data-fresco-caption="Concesionario Automotores Rio Grande">
             <div class="details">
               <h4>Concesionario Automotores Rio Grande.</h4>
               <span>A&SASESORIAS S.A.S</span>
@@ -400,7 +417,8 @@ Otros menus
 
 
           <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-15.png);" href="img/portfolio-15.png">
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-15.png);" href="img/portfolio-15.png"
+           data-fresco-caption="ACUAGYR S.A E.S.P">
             <div class="details">
               <h4>ACUAGYR S.A E.S.P</h4>
               <span>A&SASESORIAS S.A.S</span>
@@ -409,7 +427,8 @@ Otros menus
         </div>
       
           <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-16.png);" href="img/portfolio-16.png">
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-16.png);" href="img/portfolio-16.png"
+           data-fresco-caption="FH Constructores S.A.S">
             <div class="details">
               <h4>FH Constructores S.A.S</h4>
               <span>A&SASESORIAS S.A.S</span>
@@ -418,7 +437,8 @@ Otros menus
         </div>
 
             <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-19.png);" href="img/portfolio-19.png">
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-19.png);" href="img/portfolio-19.png"
+          data-fresco-caption="Consorcio Edificar">
             <div class="details">
               <h4>Consorcio Edificar</h4>
               <span>A&SASESORIAS S.A.S</span>
@@ -427,7 +447,8 @@ Otros menus
         </div>
 
            <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-20.png);" href="img/portfolio-20.png">
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-20.png);" href="img/portfolio-20.png"
+           data-fresco-caption="Banco Caja Social">
             <div class="details">
               <h4>Banco Caja Social</h4>
               <span>A&SASESORIAS S.A.S</span>
@@ -436,7 +457,8 @@ Otros menus
         </div>
 
           <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-21.png);" href="img/portfolio-21.png">
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-21.png);" href="img/portfolio-21.png"
+           data-fresco-caption="Condominio Campestre Hacienda El Paso.">
             <div class="details">
               <h4>Condominio Campestre Hacienda El Paso.</h4>
               <span>A&SASESORIAS S.A.S</span>
@@ -445,7 +467,8 @@ Otros menus
         </div>
 
          <div class="col-md-3">
-          <a class="portfolio-item" style="background-image: url(img/portfolio-22.png);" href="img/portfolio-22.png">
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-22.png);" href="img/portfolio-22.png"
+          data-fresco-caption="Pedro Gomez y CIA S.A.">
             <div class="details">
               <h4>Pedro Gomez y CIA S.A. </h4>
               <span>A&SASESORIAS S.A.S</span>
