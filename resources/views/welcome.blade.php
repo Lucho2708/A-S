@@ -106,7 +106,7 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#hero">Home</a></li>
+          <li class="menu-active"><a href="#hero">Inicio</a></li>
           <li><a href="#about">Quiénes Somos</a></li>
           <li><a href="#services">Servicios</a></li>
           <li><a href="#portfolio">Clientes</a></li>            
@@ -151,7 +151,7 @@ Otros menus
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="section-title">Quienes Somos</h3>
+          <h3 class="section-title">Quiénes Somos</h3>
           <div class="section-title-divider"></div>
           
         </div>
@@ -269,9 +269,9 @@ Otros menus
      <div class="col-md-3">
 
        <a class="portfolio-item fresco" style="background-image: url(img/portfolio-1.png);" href="img/portfolio-1.png"
-       data-fresco-caption="Alcaldia de tocaima">
+       data-fresco-caption="Alcaldia de Tocaima">
             <div class="details">
-              <h4>Alcaldia de tocaima</h4>
+              <h4>Alcaldia de Tocaima</h4>
               <span>A&SASESORIAS S.A.S</span>
             </div>
           </a>
@@ -404,9 +404,9 @@ Otros menus
 
           <div class="col-md-3">
           <a class="portfolio-item fresco" style="background-image: url(img/portfolio-14.png);" href="img/portfolio-14.png".
-          data-fresco-caption="Concesionario Automotores Rio Grande">
+          data-fresco-caption="Concesionario Automotores Río Grande">
             <div class="details">
-              <h4>Concesionario Automotores Rio Grande.</h4>
+              <h4>Automotores Río Grande.</h4>
               <span>A&SASESORIAS S.A.S</span>
             </div>
           </a>
@@ -465,9 +465,9 @@ Otros menus
 
          <div class="col-md-3">
           <a class="portfolio-item fresco" style="background-image: url(img/portfolio-22.png);" href="img/portfolio-22.png"
-          data-fresco-caption="Pedro Gomez y CIA S.A.">
+          data-fresco-caption="Pedro Gómez y CIA S.A.">
             <div class="details">
-              <h4>Pedro Gomez y CIA S.A. </h4>
+              <h4>Pedro Gómez y CIA S.A. </h4>
               <span>A&SASESORIAS S.A.S</span>
             </div>
           </a>
@@ -504,18 +504,18 @@ Otros menus
         <a href='imgproyectos/client-5.jpg'
          class='fresco'
          data-fresco-group='example'
-         data-fresco-caption="UNICENTRO - PEDRO GOMEZ Y CIA S.A">
+         data-fresco-caption="UNICENTRO - PEDRO GÓMEZ Y CIA S.A">
         <img src='img/client-4.jpg' alt=''/>
       </a></div>
               
-                <h4>UNICENTRO - PEDRO GOMEZ Y CIA S.A</h4>
+                <h4>UNICENTRO - PEDRO GÓMEZ Y CIA S.A</h4>
                 <span>GIRARDOT</span>       
               </div>
             </div>
 
             <div class="col-md-9">
               <div class="quote">
-                <b><img src="img/quote_sign_left.png" alt=""></b> UNICENTRO - PEDRO GOMEZ Y CIA S.A
+                <b><img src="img/quote_sign_left.png" alt=""></b> UNICENTRO - PEDRO GÓMEZ Y CIA S.A
                 <small><img src="img/quote_sign_right.png" alt=""></small>
               </div>
             </div>
@@ -935,19 +935,19 @@ Otros menus
               {{csrf_field()}}
 
               <div class="form-group">
-                <input type="text" name="nome" class="form-control" id="name" placeholder="Your name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <input type="text" name="nome" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <input type="email" class="form-control" name="email" id="email" placeholder="Correo" data-rule="email" data-msg="Please enter a valid email" />
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mensaje"></textarea>
                 <div class="validation"></div>
               </div>
 
