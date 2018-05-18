@@ -17,10 +17,10 @@ $(document).ready(function(){
 	$('.right span').click(nextSlider);
 	$('.left span').click(prevSlider);
 
-
+//-------cambiar el rango de tiempo slider-----------------
 	setInterval(function(){
 		nextSlider();
-	}, 4000);
+	}, 10000);
 
 	// FUNCIONES =========================================================
 

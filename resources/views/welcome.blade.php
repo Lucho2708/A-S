@@ -23,7 +23,7 @@
   <meta name="twitter:image" content="">
 <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1, maximun-scale=1, minimun-scale=1">
   <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
-  <link href="favicon.ico" rel="shortcut icon">
+  <link href="img/favicon6-96x96.png" rel="shortcut icon">
   
     
 
@@ -47,10 +47,7 @@
   <script src="js/jquery-3.1.0.min.js"></script>
   <script src="js/main.js"></script>
 
-  <link rel="stylesheet" href="estilos.css">
 
-  <script type="text/javascript" src="jquery.min.js"></script>
-  <script type="text/javascript" src="jquery.elevatezoom.min.js"></script>
 
 
   <!-- para hacer el efecto imagen -->
@@ -87,8 +84,8 @@
         <h2><span class="rotating">DISEÑO- AVALÚOS- CONSTRUCCIÓN- ASESORÍAS ADMINISTRATIVAS </span></h2>
         <h2><span class="rotating">El apoyo profesional que usted requiere</span></h2>
         <div class="actions">
-          <a href="#about" class="btn-get-started">Get Strated</a>
-          <a href="#services" class="btn-services">Our Services</a>
+          <a href="#about" class="btn-get-started">Inicio</a>
+          <a href="#services" class="btn-services">Servicios</a>
         </div>
       </div>
     </div>
@@ -293,7 +290,7 @@ Otros menus
         <div class="col-md-3">
           <a class="portfolio-item fresco" style="background-image: url(img/portfolio-3.png);" href="img/portfolio-3.png"
     data-fresco-caption="Bancolombia">
-          >
+      
             <div class="details">
               <h4>Bancolombia</h4>
               <span>A&SASESORIAS S.A.S</span>
@@ -507,7 +504,7 @@ Otros menus
         <a href='imgproyectos/client-5.jpg'
          class='fresco'
          data-fresco-group='example'
-         data-fresco-caption="Frans Hals, Banquet of the Officers of the St George Civic Guard, 1627">
+         data-fresco-caption="UNICENTRO - PEDRO GOMEZ Y CIA S.A">
         <img src='img/client-4.jpg' alt=''/>
       </a></div>
               
@@ -538,7 +535,7 @@ Otros menus
         <a href='imgproyectos/client-6.jpg'
          class='fresco'
          data-fresco-group='example'
-         data-fresco-caption="Frans Hals, Banquet of the Officers of the St George Civic Guard, 1627">
+         data-fresco-caption="HOTEL UNIÓN">
         <img src='img/client-3.jpg' alt=''/>
       </a></div>
               
