@@ -970,7 +970,7 @@ Otros menus
       <div class="row">
         <div class="col-md-12">
           <div class="copyright">
-            &copy; Copyright <strong>Imperial Theme</strong>. All Rights Reserved
+            &copy; Copyright <strong>A&SASESORIAS S.A.S</strong>. All Rights Reserved
           </div>
           <div class="credits">
             <!--
@@ -979,7 +979,7 @@ Otros menus
               Licensing information: https://bootstrapmade.com/license/
               Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Imperial
             -->
-            Bootstrap Templates by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+           
           </div>
         </div>
       </div>
