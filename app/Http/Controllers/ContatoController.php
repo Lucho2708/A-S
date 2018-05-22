@@ -10,16 +10,8 @@ class ContatoController extends Controller
 {
     public function enviaContato(Request $request){
 
-    		
+    	Mail::to('info@aysasesoriassas.com')->send(new ContatoEmail($request));
 
-    		
-    			
-    		Mail::to('info@aysasesoriassas.com')->send(new ContatoEmail($request));
-
-    		
-
-
-
-    		return redirect('/');
+    	return redirect('/');
     }
 }

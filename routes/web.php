@@ -11,20 +11,9 @@
 |
 */
 
-
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/ejemplo', function () {
-    return view('ejemplo');
-});
-
 
 Route::post('/enviar','ContatoController@enviaContato');
-/*
-Route::get('/', 'HomeController@index')->name('/');	
-
-Route::post('enviar', 'HomeController@enviar')->name('enviar');
-
-Route::post('/enviar','ContratoController@enviarContato');

@@ -927,15 +927,20 @@ Otros menus
         </div>
 
         <div class="col-md-5 col-md-push-2">
-          <div class="form">
-            
-            <div id="sendmessage">Su mensaje ha sido enviado. Gracias por contactarnos!</div>
-            <div id="errormessage"></div>
-            <form action="/enviar" method="POST" >
-              {{csrf_field()}}
 
-              <div class="form-group">
-                <input type="text" name="nome" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+          <div class="form">
+     
+
+   <div class="form">
+   <form action="enviar" method="POST">
+              {{csrf_field()}}
+       <div id="sendmessage">Su mensaje ha sido enviado. Gracias por contactarnos!</div>
+            <div id="errormessage"></div>
+             <!--==========================
+  el role es la parte de validacion  role="form" class="contactForm"
+  ============================-->
+        
+                <input type="text" name="nome" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" /><BR>
                 <div class="validation"></div>
               </div>
               <div class="form-group">
@@ -951,9 +956,9 @@ Otros menus
                 <div class="validation"></div>
               </div>
 
-              <input type="hidden" name="_token" value="{{ csrf_token()}}">
-              <div class="text-center"><input type="submit" ></div>
-            
+              <div class="text-center">
+                <button type="submit">Send Message</button>
+              </div>
             </form>
           </div>
         </div>
