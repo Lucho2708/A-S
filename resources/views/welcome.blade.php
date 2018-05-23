@@ -69,6 +69,7 @@
 </head>
 
 <body>
+  @include('sweet::alert')
   <div id="preloader"></div>
 
   <!--==========================
@@ -102,7 +103,7 @@
     
         <!-- Uncomment below if you prefer to use a text image -->
         <!--<h1><a href="#hero">Header 1</a></h1>-->
-        @include('sweet::alert')
+
 
       </div>
 
