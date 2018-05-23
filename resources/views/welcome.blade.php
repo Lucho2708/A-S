@@ -102,6 +102,8 @@
     
         <!-- Uncomment below if you prefer to use a text image -->
         <!--<h1><a href="#hero">Header 1</a></h1>-->
+        @include('sweet::alert')
+
       </div>
 
       <nav id="nav-menu-container">
@@ -932,38 +934,29 @@ Otros menus
      
 
    <div class="form">
-   <form action="enviar" method="POST">
-              {{csrf_field()}}
-       <div id="sendmessage">Su mensaje ha sido enviado. Gracias por contactarnos!</div>
-            <div id="errormessage"></div>
-             <!--==========================
-  el role es la parte de validacion  role="form" class="contactForm"
-  ============================-->
-        
-                <input type="text" name="nome" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" /><BR>
-                <div class="validation"></div>
+      {!! Form::open(['url'=> 'enviar', 'method'=>'POST']) !!}
+        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+            
+              <input type="text" name="nome" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required><BR>
+                
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Correo" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Correo" data-rule="email" data-msg="Please enter a valid email" required>
+
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validation"></div>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required>
+                
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mensaje"></textarea>
-                <div class="validation"></div>
+                <textarea class="form-control" name="message" rows="5" data-msg="Please write something for us" placeholder="Mensaje" required></textarea>
+               
               </div>
 
               <div class="text-center">
                 <button type="submit">Send Message</button>
               </div>
-            </form>
-          </div>
-        </div>
-
-      </div>
+            {!! Form::close() !!}      
     </div>
   </section>
 

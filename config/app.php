@@ -160,6 +160,18 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        // Laravel Colletive
+        Collective\Html\HtmlServiceProvider::class,
+        /*
+        *Sweet Alert
+        */
+        UxWeb\SweetAlert\SweetAlertServiceProvider::class,
+        /*
+        *Intervention Image
+        */
+        Intervention\Image\ImageServiceProvider::class,
+
+
     ],
 
     /*
@@ -208,6 +220,21 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        /*
+        Laravel Collective
+        */
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
+        // ...
+        /*
+        *Sweet Alert
+        */
+        'Alert'=> UxWeb\SweetAlert\SweetAlert::class,
+        /*
+        *Intervention Image
+        */
+        'Image' => Intervention\Image\Facades\Image::class,
+
 
     ],
 
