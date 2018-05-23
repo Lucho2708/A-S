@@ -69,7 +69,6 @@
 </head>
 
 <body>
-  @include('sweet::alert')
   <div id="preloader"></div>
 
   <!--==========================
@@ -162,8 +161,12 @@ Otros menus
     </div>
     <div class="container about-container wow fadeInUp ">
       <div class="row">
+
+
+ <a href="imgproyectos/client-7.jpg"></a>
+
  
-    <div class="fresco"><div class="col-md-6 col-md-push-6 about-content">
+    <div class="fresco"><div class=" col-md-6 col-md-push-6 about-content">
 
         
         
