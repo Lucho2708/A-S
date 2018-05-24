@@ -159,16 +159,20 @@ Otros menus
         </div>
       </div>
     </div>
-    <div class="container about-container wow fadeInUp ">
+    <div class="container wow fadeInUp ">
       <div class="row">
-
-
- <a href="imgproyectos/client-7.jpg"></a>
-
+ <div class=" col-md-6">
+    <a href='img/equipo2.jpg'
+         class='fresco'
+         data-fresco-group='example'
+         data-fresco-caption="Equipo de trabajo">
+        <img src='img/fachadaexterior.jpg' alt='' width="110%"></a>
+</div>
  
-    <div class="fresco"><div class=" col-md-6 col-md-push-6 about-content">
+    <div><div class=" col-md-6">
 
         
+
         
           <h2 class="about-title">Misión</h2>
           <p class="about-text">
@@ -274,7 +278,7 @@ Otros menus
  <div class="row">
      <div class="col-md-3">
 
-       <a class="portfolio-item fresco" style="background-image: url(img/portfolio-1.png);" href="img/portfolio-1.png"
+       <a class="portfolio-item fresco" style="background-image: url(img/portfolio-1.png);" href="img/portfolio-1.jpg"
        data-fresco-caption="Alcaldia de Tocaima">
             <div class="details">
               <h4>Alcaldia de Tocaima</h4>
@@ -284,7 +288,7 @@ Otros menus
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-2.png);" href="img/portfolio-2.png"
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-2.png);" href="img/portfolio-2.jpg"
           data-fresco-caption="Puerto Peñalisa">
             <div class="details">
               <h4>Puerto Peñalisa</h4>
@@ -294,7 +298,7 @@ Otros menus
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-3.png);" href="img/portfolio-3.png"
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-3.png);" href="img/portfolio-3.jpg"
     data-fresco-caption="Bancolombia">
       
             <div class="details">
@@ -305,7 +309,7 @@ Otros menus
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-4.png);" href="img/portfolio-4.png"
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-4.png);" href="img/portfolio-4.jpg"
           data-fresco-caption="Fundación Ceres">
             <div class="details">
               <h4>Fundación Ceres</h4>
@@ -315,7 +319,7 @@ Otros menus
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-18.png);" href="img/portfolio-18.png"
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-18.png);" href="img/portfolio-18.jpg"
           data-fresco-caption="Banco BBVA.">
             <div class="details">
               <h4>Banco BBVA</h4>
@@ -325,7 +329,7 @@ Otros menus
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-6.png);" href="img/portfolio-6.png"
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-6.png);" href="img/portfolio-6.jpg"
           data-fresco-caption="Cámara de Comercio.">
             <div class="details">
               <h4>Cámara de Comercio</h4>
@@ -335,7 +339,7 @@ Otros menus
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-7.png);" href="img/portfolio-7.png"
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-7.png);" href="img/portfolio-7.jpg"
            data-fresco-caption="Clínica San Sebastián">
             <div class="details">
               <h4>Clínica San Sebastián</h4>
@@ -345,7 +349,7 @@ Otros menus
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-8.png);" href="img/portfolio-8.png"
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-8.png);" href="img/portfolio-8.jpg"
            data-fresco-caption="Hotel Tocarema">
             <div class="details">
               <h4>Hotel Tocarema</h4>
@@ -358,7 +362,7 @@ Otros menus
           
 
           <div class="col-md-3">
-          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-9.png);" href="img/portfolio-9.png"
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-9.png);" href="img/portfolio-9.jpg"
           data-fresco-caption="Terminal de Transporte Girardot">
             <div class="details">
               <h4>Terminal de Transporte Girardot</h4>
@@ -368,7 +372,7 @@ Otros menus
         </div>
 
            <div class="col-md-3">
-          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-17.png);" href="img/portfolio-17.png"
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-17.png);" href="img/portfolio-17.jpg"
          data-fresco-caption="Funerales La Paz Servicios Exequiales S.A.S.">
             <div class="details">
               <h4>Funerales La Paz Servicios Exequiales S.A.S.</h4>
@@ -378,7 +382,7 @@ Otros menus
         </div>
 
         <div class="col-md-3">
-          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-10.png);" href="img/portfolio-10.png"
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-10.png);" href="img/portfolio-10.jpg"
           data-fresco-caption="Ser Ambiental">
             <div class="details">
               <h4>Ser Ambiental</h4>
@@ -388,7 +392,7 @@ Otros menus
         </div>
 
          <div class="col-md-3">
-          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-11.png);" href="img/portfolio-11.png"
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-11.png);" href="img/portfolio-11.jpg"
           data-fresco-caption="Universidad del Tolima">
             <div class="details">
               <h4>Universidad del Tolima</h4>
@@ -398,7 +402,7 @@ Otros menus
         </div>
 
           <div class="col-md-3">
-          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-13.png);" href="img/portfolio-13.png"
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-13.png);" href="img/portfolio-13.jpg"
           data-fresco-caption="Hotel Boutique El León ">
             <div class="details">
               <h4>Hotel Boutique El León </h4>
@@ -409,7 +413,7 @@ Otros menus
 
 
           <div class="col-md-3">
-          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-14.png);" href="img/portfolio-14.png".
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-14.png);" href="img/portfolio-14.jpg".
           data-fresco-caption="Concesionario Automotores Río Grande">
             <div class="details">
               <h4>Automotores Río Grande.</h4>
@@ -420,7 +424,7 @@ Otros menus
 
 
           <div class="col-md-3">
-          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-15.png);" href="img/portfolio-15.png"
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-15.png);" href="img/portfolio-15.jpg"
            data-fresco-caption="ACUAGYR S.A E.S.P">
             <div class="details">
               <h4>ACUAGYR S.A E.S.P</h4>
@@ -430,7 +434,7 @@ Otros menus
         </div>
       
           <div class="col-md-3">
-          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-16.png);" href="img/portfolio-16.png"
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-16.png);" href="img/portfolio-16.jpg"
            data-fresco-caption="FH Constructores S.A.S">
             <div class="details">
               <h4>FH Constructores S.A.S</h4>
@@ -440,7 +444,7 @@ Otros menus
         </div>
 
             <div class="col-md-3">
-          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-19.png);" href="img/portfolio-19.png"
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-19.png);" href="img/portfolio-19.jpg"
           data-fresco-caption="Consorcio Edificar">
             <div class="details">
               <h4>Consorcio Edificar</h4>
@@ -450,7 +454,7 @@ Otros menus
         </div>
 
            <div class="col-md-3">
-          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-20.png);" href="img/portfolio-20.png"
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-20.png);" href="img/portfolio-20.jpg"
            data-fresco-caption="Banco Caja Social">
             <div class="details">
               <h4>Banco Caja Social</h4>
@@ -460,7 +464,7 @@ Otros menus
         </div>
 
           <div class="col-md-3">
-          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-21.png);" href="img/portfolio-21.png"
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-21.png);" href="img/portfolio-21.jpg"
            data-fresco-caption="Condominio Campestre Hacienda El Paso.">
             <div class="details">
               <h4>Condominio Campestre Hacienda El Paso.</h4>
@@ -470,7 +474,7 @@ Otros menus
         </div>
 
          <div class="col-md-3">
-          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-22.png);" href="img/portfolio-22.png"
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-22.png);" href="img/portfolio-22.jpg"
           data-fresco-caption="Pedro Gómez y CIA S.A.">
             <div class="details">
               <h4>Pedro Gómez y CIA S.A. </h4>
@@ -871,7 +875,7 @@ Otros menus
          class='fresco'
          data-fresco-group='example'
          data-fresco-caption="Equipo de trabajo">
-        <img src='img/client-7.jpg' alt='' width="850" height="600">
+        <img src='img/client-7.jpg' alt='' width="100%">
       </a></div>
 
   </center>
