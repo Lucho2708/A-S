@@ -170,6 +170,10 @@ return [
         *Intervention Image
         */
         Intervention\Image\ImageServiceProvider::class,
+        /*
+         * Acacha AdminLTE template provider
+         */
+        Acacha\AdminLTETemplateLaravel\Providers\AdminLTETemplateServiceProvider::class,
 
 
     ],
@@ -234,11 +238,10 @@ return [
         *Intervention Image
         */
         'Image' => Intervention\Image\Facades\Image::class,
-
-     
-
-
-
+        /*
+         * Acacha AdminLTE template alias
+         */
+        'AdminLTE' => Acacha\AdminLTETemplateLaravel\Facades\AdminLTE::class,
 
     ],
 
