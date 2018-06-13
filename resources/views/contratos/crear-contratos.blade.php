@@ -32,12 +32,12 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form role="form">
+              {!! Form::open(['route' => 'contratos.store', 'method' => 'POST']) !!}
                 <div class="card-body">
                 <div class="row">
                   
                   <div class="col-6">
-                    <label class="h5">Nombre Empresa</label>
+                    <label >Nombre Empresa</label>
                     <input type="text" name="nom_empresa" class="form-control" placeholder="Nombre empresa" required="" data-error="Completa este campo">
                   </div>
                   <div class="col-6">
@@ -80,7 +80,7 @@
                   <div class="col-6">
                     <label class="h5">Estado Contratato</label>
                     <select class="form-control" name="estado_contrato" required="" data-error="Completa este campo">
-                      <option>None</option>
+                      <option>---</option>
                       <option>Inicio</option>
                       <option>Progreso</option>
                       <option>Cerrado</option>
@@ -111,73 +111,73 @@
                     <label class="h5">Notas</label>
                     <textarea class="form-control" name="notas" rows="8" placeholder="Anotaciones ..."required="" data-error="Completa este campo"></textarea><br>
 
-                     <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right  disabled" style="pointer-events: all; cursor: pointer;">Submit</button>
+                     {!! Form::submit('Crear', ['class' =>'btn btn-primary']) !!}
                   </div>
                 </div>
               </div>
-<script language="javascript" type="text/javascript">
-    
-    function Solo_Numerico(variable){
-        Numer=parseInt(variable);
-        if (isNaN(Numer)){
-            return "";
-        }
-        return Numer;
-    }
-    function ValNumero(Control){
-        Control.value=Solo_Numerico(Control.value);
-    }
-</script>
+                <script language="javascript" type="text/javascript">
+                    
+                    function Solo_Numerico(variable){
+                        Numer=parseInt(variable);
+                        if (isNaN(Numer)){
+                            return "";
+                        }
+                        return Numer;
+                    }
+                    function ValNumero(Control){
+                        Control.value=Solo_Numerico(Control.value);
+                    }
+                </script>
 
 
-<script>
-String.prototype.reverse=function(){return this.split('').reverse().join('');};
- 
-function numberblog(e){
-function f(){
-this.value=this.value.reverse().replace(/[^0-9.$]/g,'').replace(/\.(?=\d*[.] [.]\d*)/g,'').reverse();
- 
-}
-e.onkeyup=f
-e.onkeydown=f
-e.onkeypress=f
-e.onmousedown=f
-e.onmouseup=f
-e.onclick=f
-e.onchange=f
-e.onblur=f
-}
-</script>
+                <script>
+                String.prototype.reverse=function(){return this.split('').reverse().join('');};
+                 
+                function numberblog(e){
+                function f(){
+                this.value=this.value.reverse().replace(/[^0-9.$]/g,'').replace(/\.(?=\d*[.] [.]\d*)/g,'').reverse();
+                 
+                }
+                e.onkeyup=f
+                e.onkeydown=f
+                e.onkeypress=f
+                e.onmousedown=f
+                e.onmouseup=f
+                e.onclick=f
+                e.onchange=f
+                e.onblur=f
+                }
+                </script>
 
-<script type="text/javascript"> 
-numberblog(document.getElementById("v"))
-</script>
+                <script type="text/javascript"> 
+                numberblog(document.getElementById("v"))
+                </script>
 
- <!-- /.Para colocar lo de numero de cuenta-->
+                 <!-- /.Para colocar lo de numero de cuenta-->
 
-<script>
-String.prototype.reverse=function(){return this.split('').reverse().join('');};
- 
-function numberblog(e){
-function f(){
-this.value=this.value.reverse().replace(/[^0-9-]/g,'').replace(/\.(?=\d*[.] [.]\d*)/g,'').reverse();
- 
-}
-e.onkeyup=f
-e.onkeydown=f
-e.onkeypress=f
-e.onmousedown=f
-e.onmouseup=f
-e.onclick=f
-e.onchange=f
-e.onblur=f
-}
-</script>
+                <script>
+                String.prototype.reverse=function(){return this.split('').reverse().join('');};
+                 
+                function numberblog(e){
+                function f(){
+                this.value=this.value.reverse().replace(/[^0-9-]/g,'').replace(/\.(?=\d*[.] [.]\d*)/g,'').reverse();
+                 
+                }
+                e.onkeyup=f
+                e.onkeydown=f
+                e.onkeypress=f
+                e.onmousedown=f
+                e.onmouseup=f
+                e.onclick=f
+                e.onchange=f
+                e.onblur=f
+                }
+                </script>
 
-<script type="text/javascript"> 
-numberblog(document.getElementById("c"))
-</script>
-              </form>
+                <script type="text/javascript"> 
+                numberblog(document.getElementById("c"))
+                </script>
+              {!! Form::close() !!}
                 <!-- /.card-body --><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
