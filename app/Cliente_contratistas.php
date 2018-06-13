@@ -11,6 +11,16 @@ class Cliente_contratistas extends Model
     public $timestamps= false;
 
     protected $fillable = [
-    	
+    	'nombres',
+    	'apellidos',
+    	'tip_identidad',
+    	'num_identidad',
+    	'telefono',
+    	'email',
+    	'departamento',
+    	'ciudad',
+    	'tip_persona',
+    	'profesion'
+
     ];
 }

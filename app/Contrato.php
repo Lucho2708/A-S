@@ -11,6 +11,20 @@ class Contrato extends Model
     public $timestamps= false;
 
     protected $fillable = [
-    	
+    	'nom_empresa',
+    	'nit_empresa',
+    	'departamento',
+    	'ciudad',
+    	'direccion',
+    	'email',
+    	'tip_contrato',
+    	'fecha_inicio',
+    	'fecha_final',
+    	'estado_contrato',
+    	'num_cuenta',
+    	'valor_contrato',
+    	'acuerdo_pago',
+    	'notas'
+
     ];
 }
