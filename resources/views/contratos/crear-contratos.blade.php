@@ -58,7 +58,7 @@
                   </div>
                   <div class="col-6">
                     <label class="h5">Email address</label>
-                    <input type="email" class="form-control" name="email" placeholder="Enter email" required="" data-error="Completa este campo"><br>
+                    <input type="email" class="form-control" name="email" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="Enter email" required="" data-error="Completa este campo"><br>
                   </div>
                     <div class="col-6">
                     <label class="h5">Tipo de Contrato</label>
@@ -98,13 +98,15 @@
 
                   </div>
 
-                  <div class="col-6">
-                    <label class="h5">Numero de Cuenta</label>
+                   <div class="col-6">
+                  <label class="h5">Numero de Cuenta</label>
                     <input id="c" type="text" class="form-control" name="num_cuenta" placeholder="Numero de cuenta"required="" data-error="Completa este campo"onkeyUp="return ValNumero(this);" maxlength="80"(event)><br>
                   </div>
+
                   <div class="col-6">
                     <label class="h5">Valor Contrato</label>
-                    <input id="v" type="text" class="form-control" name="valor_contrato" placeholder="Valor contrato"required="" data-error="Completa este campo"onkeyUp="return ValNumero(this);" maxlength="80"(event)"><br>
+                      <input  type="text" class="form-control" name="valor_contrato" onchange="concatenar(this);" onkeyup="format(this)" onchange="format(this) placeholder="Valor contrato"required="" data-error="Completa este campo""><br>
+                     
                      
  
                   <div class="col-12">
@@ -115,6 +117,36 @@
                   </div>
                 </div>
               </div>
+            
+
+
+                      <script type="text/javascript">
+                        
+                      function concatenar(input){
+                        inputNum = input.value;
+                        input.value = '$' + inputNum;
+                       
+                      }
+                     function format(input)
+                        {
+                        var num = input.value.replace(/\./g,'');
+                        if(!isNaN(num)){
+                        num = num.toString().split('').reverse().join('').replace(/(?=\d*\.?)(\d{3})/g,'$1.');
+                        num = num.split('').reverse().join('').replace(/^[\.]/,'');
+                        input.value = num;
+                        }
+                          
+                        else{ alert('Solo se permiten numeros');
+                        input.value = input.value.replace(/[^\d\.]*/g,'');
+                        }
+                        }
+                      </script>
+
+
+
+                 <!-- /.Para colocar lo de numero de cuenta-->
+
+                               
                 <script language="javascript" type="text/javascript">
                     
                     function Solo_Numerico(variable){
@@ -129,13 +161,12 @@
                     }
                 </script>
 
-
                 <script>
                 String.prototype.reverse=function(){return this.split('').reverse().join('');};
                  
                 function numberblog(e){
                 function f(){
-                this.value=this.value.reverse().replace(/[^0-9.$]/g,'').replace(/\.(?=\d*[.] [.]\d*)/g,'').reverse();
+                this.value=this.value.reverse().replace('^(([0-9]{1})*[- .(]*([0-9]{3})[- .)]*[0-9]{3}[- .]*[0-9]{4})+$').replace('^(([0-9]{1})*[- .(]*([0-9]{3})[- .)]*[0-9]{3}[- .]*[0-9]{4})+$').reverse();
                  
                 }
                 e.onkeyup=f
@@ -147,31 +178,7 @@
                 e.onchange=f
                 e.onblur=f
                 }
-                </script>
-
-                <script type="text/javascript"> 
-                numberblog(document.getElementById("v"))
-                </script>
-
-                 <!-- /.Para colocar lo de numero de cuenta-->
-
-                <script>
-                String.prototype.reverse=function(){return this.split('').reverse().join('');};
-                 
-                function numberblog(e){
-                function f(){
-                this.value=this.value.reverse().replace(/[^0-9-]/g,'').replace(/\.(?=\d*[.] [.]\d*)/g,'').reverse();
-                 
-                }
-                e.onkeyup=f
-                e.onkeydown=f
-                e.onkeypress=f
-                e.onmousedown=f
-                e.onmouseup=f
-                e.onclick=f
-                e.onchange=f
-                e.onblur=f
-                }
+            
                 </script>
 
                 <script type="text/javascript"> 
