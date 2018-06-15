@@ -3,7 +3,6 @@
 @section('menu')
   @include('adminlte.menu')
 @endsection
-
 @section('contenido')
     <!-- Content Header (Page header) -->
     <section class="content-header">
@@ -32,7 +31,7 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              {!! Form::open(['route' => 'contratos.store', 'method' => 'POST']) !!}
+              {!! Form::open(['route' => 'contratos.store', 'method' => 'POST',$departamentos,$ciudad]) !!}
                 <div class="card-body">
                 <div class="row">
                   
@@ -41,27 +40,39 @@
                     <input type="text" name="nom_empresa" class="form-control" placeholder="Nombre empresa" required="" data-error="Completa este campo">
                   </div>
                   <div class="col-6">
-                    <label class="h5">Nit Empresa</label>
+                    <label>Nit Empresa</label>
                     <input type="text" class="form-control" name="nit_empresa" placeholder="Nit empresa" required="" data-error="Completa este campo"><br>
                   </div>
                   <div class="col-6">
-                    <label class="h5">Departamento</label>
-                    <input type="text" class="form-control" name="departamento" placeholder="Departamento" required="" data-error="Completa este campo">
+                    <label>Departamento</label>
+                    <select class="form-control" name="departamento" >
+                      <option>Selecciona Ubicación</option>
+                      @foreach ($departamentos as $departamentos)
+                      <option value="">{{$departamentos->departamento}}</option>
+                      @endforeach
+                    </select>
                   </div>
                   <div class="col-6">
-                    <label class="h5">Ciudad</label>
-                    <input type="text" class="form-control" name="ciudad" placeholder="Ciudad" required="" data-error="Completa este campo"><br>
+                    <label>Ciudad</label>
+                    <select class="form-control" name="ciudad">
+                      <option>Selecciona Ubicación</option>
+                      @foreach ($ciudad as $ciudad)
+                      <option value="">{{$ciudad->ciudad}}</option>
+
+                      @endforeach
+                    </select>
                   </div>
+           
                   <div class="col-6">
-                    <label class="h5">Dirección</label>
+                    <label>Dirección</label>
                     <input type="text" class="form-control" name="direccion" placeholder="Direccion" required="" data-error="Completa este campo">
                   </div>
                   <div class="col-6">
-                    <label class="h5">Email address</label>
+                    <label>Email address</label>
                     <input type="email" class="form-control" name="email" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="Enter email" required="" data-error="Completa este campo"><br>
                   </div>
                     <div class="col-6">
-                    <label class="h5">Tipo de Contrato</label>
+                    <label>Tipo de Contrato</label>
                     <select class="form-control" name="tip_contrato" required="" data-error="Completa este campo">
                       <option>None</option>
                       <option>Cliente</option>
@@ -69,12 +80,12 @@
                       <option>Contratista</option>
                     </select><br>
                   </div>
-                    <div class="col-6">
-                    <label class="h5">Fecha Inicio</label>
+                    <div>
+                    <label>Fecha Inicio</label>
                     <input type="date" class="form-control" name="fecha_inicio" placeholder="Fecha inicio"required="" data-error="Completa este campo">
                   </div>
                     <div class="col-6">
-                    <label class="h5">Fecha Terminacion</label>
+                    <label>Fecha Terminacion</label>
                     <input type="date" class="form-control" name="fecha_final" placeholder="Fecha final"required="" data-error="Completa este campo"><br>
                   </div>
                   <div class="col-6">
@@ -103,6 +114,7 @@
                     <input id="c" type="text" class="form-control" name="num_cuenta" placeholder="Numero de cuenta"required="" data-error="Completa este campo"onkeyUp="return ValNumero(this);" maxlength="80"(event)><br>
                   </div>
 
+
                   <div class="col-6">
                     <label class="h5">Valor Contrato</label>
                       <input  type="text" class="form-control" name="valor_contrato" onchange="concatenar(this);" onkeyup="format(this)" onchange="format(this) placeholder="Valor contrato"required="" data-error="Completa este campo""><br>
@@ -117,9 +129,6 @@
                   </div>
                 </div>
               </div>
-            
-
-
                       <script type="text/javascript">
                         
                       function concatenar(input){
@@ -150,11 +159,11 @@
                 <script language="javascript" type="text/javascript">
                     
                     function Solo_Numerico(variable){
-                        Numer=parseInt(variable);
-                        if (isNaN(Numer)){
+                        Numero=parseInt(variable);
+                        if (isNaN(Numero)){
                             return "";
                         }
-                        return Numer;
+                        return Numero;
                     }
                     function ValNumero(Control){
                         Control.value=Solo_Numerico(Control.value);

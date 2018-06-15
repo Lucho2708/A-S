@@ -1,8 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
+use App\Departamentos;
+use App\Ciudad;
+use App\Contrato;
+
+
 
 class ContratosController extends Controller
 {
@@ -23,7 +27,10 @@ class ContratosController extends Controller
      */
     public function create()
     {
-        return view('contratos.crear-contratos');
+
+        $departamentos =Departamentos::all();
+        $ciudad= Ciudad::all();
+        return view('contratos.crear-contratos',compact('pais','departamentos','ciudad'));
     }
 
     /**
