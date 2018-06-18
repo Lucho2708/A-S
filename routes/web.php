@@ -29,4 +29,15 @@ Route::group([],function(){
 	Route::resource('contratos','ContratosController');
 });
 
+Route::group([],function(){
+	Route::resource('cliente','ClienteController');
+});
 
+
+Route::group([],function(){
+	Route::resource('proveedor','ProveedorController');
+});
+
+Route::group([],function(){
+	Route::resource('garantias','GarantiasController');
+});

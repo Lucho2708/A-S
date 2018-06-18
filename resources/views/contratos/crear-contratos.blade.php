@@ -27,7 +27,7 @@
         <!-- SELECT2 EXAMPLE -->
         <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">Quick Example</h3>
+                <h3 class="card-title">Contratos</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
@@ -45,7 +45,7 @@
                   </div>
                   <div class="col-6">
                     <label>Departamento</label>
-                    <select class="form-control" name="departamento" >
+                    <select class="form-control" name="departamento" id="departamento">
                       <option>Selecciona Ubicación</option>
                       @foreach ($departamentos as $departamentos)
                       <option value="">{{$departamentos->departamento}}</option>
@@ -60,7 +60,7 @@
                       <option value="">{{$ciudad->ciudad}}</option>
 
                       @endforeach
-                    </select>
+                    </select><br>
                   </div>
            
                   <div class="col-6">
@@ -74,13 +74,13 @@
                     <div class="col-6">
                     <label>Tipo de Contrato</label>
                     <select class="form-control" name="tip_contrato" required="" data-error="Completa este campo">
-                      <option>None</option>
+                      <option>Seleccione</option>
                       <option>Cliente</option>
                       <option>Proveedor</option>
                       <option>Contratista</option>
                     </select><br>
                   </div>
-                    <div>
+                    <div class="col-6">
                     <label>Fecha Inicio</label>
                     <input type="date" class="form-control" name="fecha_inicio" placeholder="Fecha inicio"required="" data-error="Completa este campo">
                   </div>
@@ -89,9 +89,9 @@
                     <input type="date" class="form-control" name="fecha_final" placeholder="Fecha final"required="" data-error="Completa este campo"><br>
                   </div>
                   <div class="col-6">
-                    <label class="h5">Estado Contratato</label>
+                    <label >Estado Contratato</label>
                     <select class="form-control" name="estado_contrato" required="" data-error="Completa este campo">
-                      <option>---</option>
+                      <option>Seleccione</option>
                       <option>Inicio</option>
                       <option>Progreso</option>
                       <option>Cerrado</option>
@@ -101,22 +101,22 @@
                   <div class="col-6">
                     <label class="h5">Acuerdo Pago</label>
                      <select class="form-control" name="acuerdo_pago" required="" data-error="Completa este campo">
-                      <option>None</option>
-                      <option>Tarjeta debido</option>
-                      <option>Tarjeta Credito</option>
-                      <option>Contado</option>
+                      <option>Seleccione</option>
+                      <option value="td">Tarjeta debido</option>
+                      <option value="tc">Tarjeta Credito</option>
+                      <option value="c">Contado</option>
                     </select><br>
 
                   </div>
 
                    <div class="col-6">
-                  <label class="h5">Numero de Cuenta</label>
-                    <input id="c" type="text" class="form-control" name="num_cuenta" placeholder="Numero de cuenta"required="" data-error="Completa este campo"onkeyUp="return ValNumero(this);" maxlength="80"(event)><br>
+                  <label>Numero de Cuenta</label>
+                    <input type="text" class="form-control" name="num_cuenta" placeholder="Numero de cuenta"required="" data-error="Completa este campo" maxlength="80"(event)><br>
                   </div>
 
 
                   <div class="col-6">
-                    <label class="h5">Valor Contrato</label>
+                    <label>Valor Contrato</label>
                       <input  type="text" class="form-control" name="valor_contrato" onchange="concatenar(this);" onkeyup="format(this)" onchange="format(this) placeholder="Valor contrato"required="" data-error="Completa este campo""><br>
                      
                      
@@ -151,48 +151,9 @@
                         }
                       </script>
 
-
-
-                 <!-- /.Para colocar lo de numero de cuenta-->
-
-                               
-                <script language="javascript" type="text/javascript">
-                    
-                    function Solo_Numerico(variable){
-                        Numero=parseInt(variable);
-                        if (isNaN(Numero)){
-                            return "";
-                        }
-                        return Numero;
-                    }
-                    function ValNumero(Control){
-                        Control.value=Solo_Numerico(Control.value);
-                    }
-                </script>
-
-                <script>
-                String.prototype.reverse=function(){return this.split('').reverse().join('');};
                  
-                function numberblog(e){
-                function f(){
-                this.value=this.value.reverse().replace('^(([0-9]{1})*[- .(]*([0-9]{3})[- .)]*[0-9]{3}[- .]*[0-9]{4})+$').replace('^(([0-9]{1})*[- .(]*([0-9]{3})[- .)]*[0-9]{3}[- .]*[0-9]{4})+$').reverse();
-                 
-                }
-                e.onkeyup=f
-                e.onkeydown=f
-                e.onkeypress=f
-                e.onmousedown=f
-                e.onmouseup=f
-                e.onclick=f
-                e.onchange=f
-                e.onblur=f
-                }
-            
-                </script>
 
-                <script type="text/javascript"> 
-                numberblog(document.getElementById("c"))
-                </script>
+               
               {!! Form::close() !!}
                 <!-- /.card-body --><!-- /.container-fluid -->
     </section>
