@@ -45,8 +45,8 @@
                   </div>
                   <div class="col-6">
                     <label>Tipo de Identidad</label>
-                    <select class="form-control" name="tip_identidad" id="identidad">
-                      <option>Selecciona Identidad</option>
+                    <select class="form-control" name="tip_identidad" id="identidad" required>
+                      <option value="">Selecciona Identidad</option>
                         <option value="cc.">Cedula Ciudadania</option>
                         <option value="ti">Tarjeta Identidad</option>
                         <option value="ce.">Cedula Extranjera</option>
@@ -56,33 +56,40 @@
 
                   <div class="col-6">
                     <label >Numero Identificación</label>
-                    <input type="text" id="textValidReg" name="num_identidad" class="form-control" placeholder="Escriba sus Numero Identificación" required="" data-error="Completa este campo"><br>
+                    <input type="text" name="num_identidad" class="form-control" pattern="\s*[\d\.]*" placeholder="Escriba sus Numero Identificación x.xxx.xxx.xxx" required="" data-error="Completa este campo"><br>
             
                   </div>
 
 
-                  <div class="col-6">
-                    <label >Teléfono</label>
-                    <input type="number" name="telefono" class="form-control" placeholder="Escriba su teléfono" required="" data-error="Completa este campo" "><br>
+                  <div class="col-6 form-line">
+                    <label >Teléfono 1 con indicativo</label>
+                    <input type="text" name="telefono" class="form-control" pattern="^\+?\d{1,3}?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d\d\d\d$" placeholder="Ex: xxx-xxx-xxxx o +57(xxx)-xxx-xxxx"  required="" data-error="Completa este campo" "><br>
+                  </div>
+
+                  <div class="col-6 form-line">
+                    <label >Teléfono 2 sin indicativo</label>
+                    <input type="text" name="telefono1" class="form-control" pattern="[(]?\d{3}[)]?\s?-?\s?\d{3}\s?-?\s?\d{4}" placeholder="Ex: xxx-xxx-xxxx o (xxx)-xxx-xxxx"  required="" data-error="Completa este campo" "><br>
                   </div>
 
                   <div class="col-6">
                     <label>Email address</label>
-                    <input type="email" class="form-control" name="email" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="Enter email" required="" data-error="Completa este campo"><br>
+                    <input type="email" class="form-control" name="email" pattern="[a-zA-Z0-9.+_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z0-9.-]+" placeholder="Enter email" required="" data-error="Completa este campo"><br>
                   </div>
 
 
                   <div class="col-6">
                     <label>Departamento</label>
-                    <select class="form-control" name="departamento" id="departamento">
-                      <option>Selecciona Ubicación</option>
+                    <select class="form-control" name="departamento" id="departamento" required="">
+                      <option value="">Selecciona Ubicación</option>
+                      <option>Bogota prueba</option>
                       
                     </select>
                   </div>
                   <div class="col-6">
                     <label>Ciudad</label>
-                    <select class="form-control" name="ciudad">
-                      <option>Selecciona Ubicación</option>
+                    <select class="form-control" name="ciudad" required="">
+                      <option value="">Selecciona Ubicación</option>
+                      <option>bogota</option>
                     </select><br>
                   </div>
                  
@@ -94,54 +101,23 @@
                   
                     <div class="col-6">
                     <label>Tipo de Persona</label>
-                    <select class="form-control" name="tip_contrato" required="" data-error="Completa este campo">
-                      <option>None</option>
-                      <option>--</option>
-                      <option>--</option>
-                      <option>--</option>
+                    <select class="form-control" name="tip_contrato" required>
+                      <option value="">Seleccione</option>
+                      <option value="contratista">Contratista</option>
+                      <option value="proveedor">Proveedor</option>
+                      <option value="clientes">Cliente</option>
                     </select><br>
                   </div>
 
                   <div class="col-6">
                     <label >Profesion</label>
-                    <input type="text" class="form-control" name="profesion" placeholder="Escriba su profesion" required="" data-error="Completa este campo">
+                    <input type="text" class="form-control" name="profesion" placeholder="Escriba su profesion" required="" data-error="Completa este campo"> <br>
+                  </div>          
                   </div>
-                 
-                     {!! Form::submit('Crear', ['class' =>'btn btn-primary']) !!}
-                  
-                  </div>
+                   {!! Form::submit('Crear', ['class' =>'btn btn-primary']) !!}
+
                 </div>
               </div>
-
-                <!-- /.Para colocar lo de Valor de dinero
-
-
-                      <script type="text/javascript">
-                        
-                      function concatenar(input){
-                        inputNum = input.value;
-                        input.value = '$' + inputNum;
-                       
-                      }
-                     function format(input)
-                        {
-                        var num = input.value.replace(/\./g,'');
-                        if(!isNaN(num)){
-                        num = num.toString().split('').reverse().join('').replace(/(?=\d*\.?)(\d{3})/g,'$1.');
-                        num = num.split('').reverse().join('').replace(/^[\.]/,'');
-                        input.value = num;
-                        }
-                          
-                        else{ alert('Solo se permiten numeros');
-                        input.value = input.value.replace(/[^\d\.]*/g,'');
-                        }
-                        }
-                      </script>
-
-
-<- /.Para colocar lo de numero de cuenta-->
-
-                     
 
               {!! Form::close() !!}
                 <!-- /.card-body --><!-- /.container-fluid -->

@@ -23,6 +23,7 @@ class ClienteController extends Controller
      */
     public function create()
     {
+        
         return view ('cliente.crear');
     }
 

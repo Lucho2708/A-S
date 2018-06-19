@@ -31,7 +31,7 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              {!! Form::open(['route' => 'contratos.store', 'method' => 'POST',$departamentos,$ciudad]) !!}
+              {!! Form::open(['route' =>  'contratos.store', 'method' => 'POST',$departamentos,$ciudad]) !!}
                 <div class="card-body">
                 <div class="row">
                   
@@ -41,21 +41,21 @@
                   </div>
                   <div class="col-6">
                     <label>Nit Empresa</label>
-                    <input type="text" class="form-control" name="nit_empresa" placeholder="Nit empresa" required="" data-error="Completa este campo"><br>
+                    <input type="text" class="form-control" pattern="\s*[\d\-]*" name="nit_empresa" placeholder="Nit empresa" required="" data-error="Completa este campo"><br>
                   </div>
                   <div class="col-6">
                     <label>Departamento</label>
-                    <select class="form-control" name="departamento" id="departamento">
-                      <option>Selecciona Ubicación</option>
+                    <select class="form-control" name="departamento" id="departamento" required>
+                      <option value="">Selecciona Ubicación</option>
                       @foreach ($departamentos as $departamentos)
-                      <option value="">{{$departamentos->departamento}}</option>
+                      <option value="" >{{$departamentos->departamento}}</option>
                       @endforeach
                     </select>
                   </div>
                   <div class="col-6">
                     <label>Ciudad</label>
-                    <select class="form-control" name="ciudad">
-                      <option>Selecciona Ubicación</option>
+                    <select class="form-control" name="ciudad" required>
+                      <option value="">Selecciona Ubicación</option>
                       @foreach ($ciudad as $ciudad)
                       <option value="">{{$ciudad->ciudad}}</option>
 
@@ -69,15 +69,15 @@
                   </div>
                   <div class="col-6">
                     <label>Email address</label>
-                    <input type="email" class="form-control" name="email" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="Enter email" required="" data-error="Completa este campo"><br>
+                    <input type="email" class="form-control" name="email" pattern="[a-zA-Z0-9.+_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z0-9.-]+" placeholder="Enter email" required="" data-error="Completa este campo"><br>
                   </div>
                     <div class="col-6">
                     <label>Tipo de Contrato</label>
-                    <select class="form-control" name="tip_contrato" required="" data-error="Completa este campo">
-                      <option>Seleccione</option>
-                      <option>Cliente</option>
-                      <option>Proveedor</option>
-                      <option>Contratista</option>
+                    <select id="tip_contrato" class="form-control" name="tip_contrato" required>
+                      <option value>Seleccione</option>
+                      <option value="cliente">Cliente</option>
+                      <option value="proveedor">Proveedor</option>
+                      <option value="contratista">Contratista</option>
                     </select><br>
                   </div>
                     <div class="col-6">
@@ -90,18 +90,18 @@
                   </div>
                   <div class="col-6">
                     <label >Estado Contratato</label>
-                    <select class="form-control" name="estado_contrato" required="" data-error="Completa este campo">
-                      <option>Seleccione</option>
-                      <option>Inicio</option>
-                      <option>Progreso</option>
-                      <option>Cerrado</option>
+                    <select class="form-control" name="estado_contrato" required>
+                      <option value>Seleccione</option>
+                      <option value="inicio">Inicio</option>
+                      <option value="progreso">Progreso</option>
+                      <option value="cerrado">Cerrado</option>
                     </select>
                   </div>
 
                   <div class="col-6">
                     <label class="h5">Acuerdo Pago</label>
-                     <select class="form-control" name="acuerdo_pago" required="" data-error="Completa este campo">
-                      <option>Seleccione</option>
+                     <select class="form-control" name="acuerdo_pago" required>
+                      <option value>Seleccione</option>
                       <option value="td">Tarjeta debido</option>
                       <option value="tc">Tarjeta Credito</option>
                       <option value="c">Contado</option>
@@ -111,13 +111,14 @@
 
                    <div class="col-6">
                   <label>Numero de Cuenta</label>
-                    <input type="text" class="form-control" name="num_cuenta" placeholder="Numero de cuenta"required="" data-error="Completa este campo" maxlength="80"(event)><br>
+                    <input  type="text" class="form-control" name="num_cuenta" placeholder="Escriba su numero de cuenta" 
+                     pattern="\s*[\d\-]*" required="" data-error="Completa este campo" required=""><br>
+                    
                   </div>
-
 
                   <div class="col-6">
                     <label>Valor Contrato</label>
-                      <input  type="text" class="form-control" name="valor_contrato" onchange="concatenar(this);" onkeyup="format(this)" onchange="format(this) placeholder="Valor contrato"required="" data-error="Completa este campo""><br>
+                      <input  type="text" class="form-control" name="valor_contrato" onchange="concatenar(this);" onkeyup="format(this)" onchange="format(this)" placeholder="Valor contrato Ej 700000"required="" data-error="Completa este campo""><br>
                      
                      
  
@@ -150,8 +151,6 @@
                         }
                         }
                       </script>
-
-                 
 
                
               {!! Form::close() !!}
