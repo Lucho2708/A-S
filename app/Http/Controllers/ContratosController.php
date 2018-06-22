@@ -13,7 +13,7 @@ use Illuminate\Database\QueryException;
 
 class ContratosController extends Controller
 {
-    /** 
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -45,11 +45,11 @@ class ContratosController extends Controller
     public function store (Request $request)
     {
 
-     Contrato::create($request->all());
+        Contrato::create($request->all());
         alert()->success('El registro fue creado exitosamente.','En hora buena')->autoclose(6000);
         return redirect('contrato');
-    
-      
+
+
     }
 
     /**

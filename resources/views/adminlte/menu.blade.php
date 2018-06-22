@@ -4,9 +4,12 @@
           <img src="{{asset("dist/img/user2-160x160.jpg")}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
-        </div>
+          <a href="#" class="d-block">{{ Auth::user()->nombres}}</a>
+
       </div>
+    </div><div class="info">
+      <a href="{{ route('logout') }}" class="d-block">Salir</a>
+    </div>
 <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
@@ -44,8 +47,8 @@
               </li>
             </ul>
           </li>
-          
-          
+
+
 
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link active">
@@ -68,9 +71,9 @@
                   <p>crear clientes</p>
                 </a>
               </li>
-              
+
             </ul>
-          </li>    
+          </li>
 
           <li class="nav-item has-treeview menu-open">
             <a href="#" class="nav-link active">
@@ -94,7 +97,7 @@
                 </a>
               </li>
             </ul>
-          </li>     
+          </li>
 
            <li class="nav-item has-treeview">
             <a href="#" class="nav-link active">
@@ -117,9 +120,9 @@
                   <p>crear garantias</p>
                 </a>
               </li>
-              
+
             </ul>
-          </li> 
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
