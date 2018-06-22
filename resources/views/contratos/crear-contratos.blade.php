@@ -31,48 +31,51 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              {!! Form::open(['route' =>  'contratos.store', 'method' => 'POST',$departamentos,$ciudad]) !!}
+              {!! Form::open(['route' =>  'contratos.store', 'method' => 'POST',$departamentos,$ciudad])!!} 
+
+              {{csrf_field()}}
                 <div class="card-body">
                 <div class="row">
                   
+                
                   <div class="col-6">
-                    <label >Nombre Empresa</label>
+                    <label for="nom_empresa" >Nombre Empresa</label>
                     <input type="text" name="nom_empresa" class="form-control" placeholder="Nombre empresa" required="" data-error="Completa este campo">
                   </div>
                   <div class="col-6">
-                    <label>Nit Empresa</label>
-                    <input type="text" class="form-control" pattern="\s*[\d\-]*" name="nit_empresa" placeholder="Nit empresa" required="" data-error="Completa este campo"><br>
+                    <label for="nit_empresa">Nit Empresa</label>
+                    <input type="text" class="form-control" pattern="\s*[\d\-]*" name="nit_empresa" placeholder="xxxxx-xxxx-xx--xx-" required="" data-error="Completa este campo"><br>
                   </div>
                   <div class="col-6">
-                    <label>Departamento</label>
+                    <label for="departamento">Departamento</label>
                     <select class="form-control" name="departamento" id="departamento" required>
                       <option value="">Selecciona Ubicación</option>
                       @foreach ($departamentos as $departamentos)
-                      <option value="" >{{$departamentos->departamento}}</option>
+                      <option>{{$departamentos->departamento}}</option>
                       @endforeach
                     </select>
                   </div>
                   <div class="col-6">
-                    <label>Ciudad</label>
-                    <select class="form-control" name="ciudad" required>
+                    <label for="ciudad">Ciudad</label>
+                    <select class="form-control" name="ciudad" id="ciudad" required>
                       <option value="">Selecciona Ubicación</option>
                       @foreach ($ciudad as $ciudad)
-                      <option value="">{{$ciudad->ciudad}}</option>
+                      <option>{{$ciudad->ciudad}}</option>
 
                       @endforeach
                     </select><br>
                   </div>
            
                   <div class="col-6">
-                    <label>Dirección</label>
+                    <label for="direccion">Dirección</label>
                     <input type="text" class="form-control" name="direccion" placeholder="Direccion" required="" data-error="Completa este campo">
                   </div>
                   <div class="col-6">
-                    <label>Email address</label>
+                    <label for="email">Email address</label>
                     <input type="email" class="form-control" name="email" pattern="[a-zA-Z0-9.+_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z0-9.-]+" placeholder="Enter email" required="" data-error="Completa este campo"><br>
                   </div>
                     <div class="col-6">
-                    <label>Tipo de Contrato</label>
+                    <label for="tip_contrato">Tipo de Contrato</label>
                     <select id="tip_contrato" class="form-control" name="tip_contrato" required>
                       <option value>Seleccione</option>
                       <option value="cliente">Cliente</option>
@@ -81,15 +84,15 @@
                     </select><br>
                   </div>
                     <div class="col-6">
-                    <label>Fecha Inicio</label>
+                    <label for="fecha_inicio">Fecha Inicio</label>
                     <input type="date" class="form-control" name="fecha_inicio" placeholder="Fecha inicio"required="" data-error="Completa este campo">
                   </div>
                     <div class="col-6">
-                    <label>Fecha Terminacion</label>
+                    <label for="fecha_final">Fecha Terminacion</label>
                     <input type="date" class="form-control" name="fecha_final" placeholder="Fecha final"required="" data-error="Completa este campo"><br>
                   </div>
                   <div class="col-6">
-                    <label >Estado Contratato</label>
+                    <label for="estado_contrato" >Estado Contratato</label>
                     <select class="form-control" name="estado_contrato" required>
                       <option value>Seleccione</option>
                       <option value="inicio">Inicio</option>
@@ -99,31 +102,31 @@
                   </div>
 
                   <div class="col-6">
-                    <label class="h5">Acuerdo Pago</label>
+                    <label for="acuerdo_pago">Acuerdo Pago</label>
                      <select class="form-control" name="acuerdo_pago" required>
                       <option value>Seleccione</option>
-                      <option value="td">Tarjeta debido</option>
-                      <option value="tc">Tarjeta Credito</option>
+                      <option value="tarjeta debito">Tarjeta debito</option>
+                      <option value="tarjeta credito">Tarjeta Credito</option>
                       <option value="c">Contado</option>
                     </select><br>
 
                   </div>
 
                    <div class="col-6">
-                  <label>Numero de Cuenta</label>
+                  <label for="num_cuenta">Numero de Cuenta</label>
                     <input  type="text" class="form-control" name="num_cuenta" placeholder="Escriba su numero de cuenta" 
                      pattern="\s*[\d\-]*" required="" data-error="Completa este campo" required=""><br>
                     
                   </div>
 
                   <div class="col-6">
-                    <label>Valor Contrato</label>
+                    <label for="valor_contrato">Valor Contrato</label>
                       <input  type="text" class="form-control" name="valor_contrato" onchange="concatenar(this);" onkeyup="format(this)" onchange="format(this)" placeholder="Valor contrato Ej 700000"required="" data-error="Completa este campo""><br>
                      
                      
  
                   <div class="col-12">
-                    <label class="h5">Notas</label>
+                    <label for="notas">Notas</label>
                     <textarea class="form-control" name="notas" rows="8" placeholder="Anotaciones ..."required="" data-error="Completa este campo"></textarea><br>
 
                      {!! Form::submit('Crear', ['class' =>'btn btn-primary']) !!}
@@ -152,7 +155,8 @@
                         }
                       </script>
 
-               
+             
+         
               {!! Form::close() !!}
                 <!-- /.card-body --><!-- /.container-fluid -->
     </section>

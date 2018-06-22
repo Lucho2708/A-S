@@ -23,7 +23,7 @@
           </li>
           <li class="nav-item has-treeview menu-open">
             <a href="#" class="nav-link active">
-              <i class="nav-icon fa fa-dashboard"></i>
+              <i class="fa fa-safari"></i>
               <p>
                 Contratos
                 <i class="right fa fa-angle-left"></i>
@@ -31,49 +31,95 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="./index.html" class="nav-link active">
+                <a href="{{route('contratos.index')}}" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Ver contratos</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./index2.html" class="nav-link">
-                  <i class="fa fa-circle-o nav-icon"></i>
+                <a href="{{route('contratos.create')}}" class="nav-link">
+                  <i class="fa fa-wpforms"></i>
                   <p>Crear Contratos</p>
                 </a>
               </li>
             </ul>
           </li>
           
+          
+
           <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fa fa-pie-chart"></i>
+            <a href="#" class="nav-link active">
+              <i class="fa fa-safari"></i>
               <p>
-                Charts
+                Clientes
                 <i class="right fa fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="{{route('cliente.index')}}" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
-                  <p>ChartJS</p>
+                  <p>ver clientes</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/flot.html" class="nav-link">
+                <a href="{{route('cliente.create')}}" class="nav-link">
+                  <i class="fa fa-wpforms"></i>
+                  <p>crear clientes</p>
+                </a>
+              </li>
+              
+            </ul>
+          </li>    
+
+          <li class="nav-item has-treeview menu-open">
+            <a href="#" class="nav-link active">
+              <i class="fa fa-safari"></i>
+              <p>
+                Proveedores
+                <i class="right fa fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{route('proveedor.index')}}" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Flot</p>
+                  <p>Ver Proveedor</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/inline.html" class="nav-link">
-                  <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Inline</p>
+                <a href="{{route('proveedor.create')}}" class="nav-link">
+                  <i class="fa fa-wpforms"></i>
+                  <p>crear Proveedor</p>
                 </a>
               </li>
             </ul>
-          </li>         
+          </li>     
+
+           <li class="nav-item has-treeview">
+            <a href="#" class="nav-link active">
+              <i class="fa fa-safari"></i>
+              <p>
+                Garantias
+                <i class="right fa fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{route('garantias.index')}}" class="nav-link">
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>ver Garantias</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{route('garantias.create')}}" class="nav-link">
+                  <i class="fa fa-wpforms"></i>
+                  <p>crear garantias</p>
+                </a>
+              </li>
+              
+            </ul>
+          </li> 
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

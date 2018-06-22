@@ -24,7 +24,7 @@ class ClienteController extends Controller
     public function create()
     {
         
-        return view ('cliente.crear');
+        return view('cliente.crear');
     }
 
     /**
@@ -35,7 +35,11 @@ class ClienteController extends Controller
      */
     public function store(Request $request)
     {
-        //
+/*
+    Cliente_contratistas::create($request->all());
+        alert()->success('El registro fue creado exitosamente.','En hora buena')->autoclose(6000);
+        return redirect('cliente_contratistas');
+        */
     }
 
     /**

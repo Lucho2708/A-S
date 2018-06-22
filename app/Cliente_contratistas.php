@@ -16,9 +16,11 @@ class Cliente_contratistas extends Model
     	'tip_identidad',
     	'num_identidad',
     	'telefono',
+        'telefono1',
     	'email',
     	'departamento',
     	'ciudad',
+        'direccion',
     	'tip_persona',
     	'profesion'
 

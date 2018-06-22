@@ -1,16 +1,19 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
 use App\Departamentos;
 use App\Ciudad;
 use App\Contrato;
+use Illuminate\Database\QueryException;
+
 
 
 
 class ContratosController extends Controller
 {
-    /**
+    /** 
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -21,7 +24,7 @@ class ContratosController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show the form for creating a new  resource.
      *
      * @return \Illuminate\Http\Response
      */
@@ -39,9 +42,14 @@ class ContratosController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store (Request $request)
     {
-        dd($request);
+
+     Contrato::create($request->all());
+        alert()->success('El registro fue creado exitosamente.','En hora buena')->autoclose(6000);
+        return redirect('contrato');
+    
+      
     }
 
     /**

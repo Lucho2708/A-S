@@ -32,12 +32,13 @@
               <!-- /.card-header -->
               <!-- form start -->
               {!! Form::open(['route' => 'cliente.store', 'method' => 'POST']) !!}
+                {{csrf_field()}}
                 <div class="card-body">
                 <div class="row">
                   
                   <div class="col-6">
                     <label >Nombres</label>
-                    <input type="text" name="nombres" class="form-control" placeholder="Escriba sus nombres" required="" data-error="Completa este campo">
+                    <input type="text" name="nombres" class="form-control" placeholder="Escriba sus nombres"required="" data-error="Completa este campo">
                   </div>
                   <div class="col-6">
                     <label >Apellidos</label>
@@ -47,10 +48,10 @@
                     <label>Tipo de Identidad</label>
                     <select class="form-control" name="tip_identidad" id="identidad" required>
                       <option value="">Selecciona Identidad</option>
-                        <option value="cc.">Cedula Ciudadania</option>
-                        <option value="ti">Tarjeta Identidad</option>
-                        <option value="ce.">Cedula Extranjera</option>
-                        <option value="oasaporte">Pasaporte</option>
+                        <option value="Cedula Ciudadania.">Cedula Ciudadania</option>
+                        <option value="Tarjeta Identidad">Tarjeta Identidad</option>
+                        <option value="Cedula Extranjera.">Cedula Extranjera</option>
+                        <option value="Pasaporte">Pasaporte</option>
                       </select>
                   </div>
 
@@ -62,13 +63,13 @@
 
 
                   <div class="col-6 form-line">
-                    <label >Teléfono 1 con indicativo</label>
-                    <input type="text" name="telefono" class="form-control" pattern="^\+?\d{1,3}?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d\d\d\d$" placeholder="Ex: xxx-xxx-xxxx o +57(xxx)-xxx-xxxx"  required="" data-error="Completa este campo" "><br>
+                    <label >Teléfono celular o fijo </label>
+                    <input type="text" name="telefono" class="form-control" pattern="^\+?\d{1,3}?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d$" placeholder="Ex: xxxxxxx o xxxxxxxxxx"  required="" data-error="Completa este campo" "><br>
                   </div>
 
                   <div class="col-6 form-line">
-                    <label >Teléfono 2 sin indicativo</label>
-                    <input type="text" name="telefono1" class="form-control" pattern="[(]?\d{3}[)]?\s?-?\s?\d{3}\s?-?\s?\d{4}" placeholder="Ex: xxx-xxx-xxxx o (xxx)-xxx-xxxx"  required="" data-error="Completa este campo" "><br>
+                    <label >Teléfono celular con indicativo</label>
+                    <input type="text" name="telefono1" class="form-control" pattern="^\+?\d{1,3}?[- .]?\(?(?:\d\d{2,3})\)?[- .]?\d\d\d[- .]?\d\d\d\d$" placeholder="Ex: +57(xxx)-xxx-xxxx"  required="" data-error="Completa este campo" "><br>
                   </div>
 
                   <div class="col-6">
