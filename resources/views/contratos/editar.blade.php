@@ -1,11 +1,11 @@
-@extends('home')
+@extends('layouts.app')
 
 @section('menu')
-  @include('adminlte.menu')
+  @include('menu')
 @endsection
 
 @section('contenido')
 
-
+Editar Contratos
 
 @endsection

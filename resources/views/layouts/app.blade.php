@@ -1,79 +1,129 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 3 | Dashboard</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{{asset("plugins/font-awesome/css/font-awesome.min.css")}}">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="{{asset("https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")}}">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="{{asset("dist/css/adminlte.min.css")}}">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="{{asset("plugins/iCheck/flat/blue.css")}}">
+  <!-- Morris chart -->
+  <link rel="stylesheet" href="{{asset("plugins/morris/morris.css")}}">
+  <!-- jvectormap -->
+  <link rel="stylesheet" href="{{asset("plugins/jvectormap/jquery-jvectormap-1.2.2.css")}}">
+  <!-- Date Picker -->
+  <link rel="stylesheet" href="{{asset("plugins/datepicker/datepicker3.css")}}">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="{{asset("plugins/daterangepicker/daterangepicker-bs3.css")}}">
+  <!-- bootstrap wysihtml5 - text editor -->
+  <link rel="stylesheet" href="{{asset("plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css")}}">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="{{asset("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700")}}" rel="stylesheet">
 </head>
-<body>
-    <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index3.html" class="nav-link">Home</a>
+      </li>
+    </ul>
 
-                    </ul>
 
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                            </li>
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->nombres }} <span class="caret"></span>
-                                </a>
+  
+  </nav>
+  <!-- /.navbar -->
 
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+      <img src="{{asset("dist/img/AdminLTELogo.png")}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+           style="opacity: .8">
+      <span class="brand-text font-weight-light">A&S</span>
+    </a>
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <main class="py-4">
-            @yield('content')
-        </main>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      
+      @yield('menu')
+      
     </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    
+    @yield('contenido')
+
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2014-2018 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.0.0-alpha
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="{{asset("plugins/jquery/jquery.min.js")}}"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="{{asset("https://code.jquery.com/ui/1.12.1/jquery-ui.min.js")}}"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="{{asset("plugins/bootstrap/js/bootstrap.bundle.min.js")}}"></script>
+<!-- Morris.js charts -->
+<script src="{{asset("https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js")}}"></script>
+<script src="{{asset("plugins/morris/morris.min.js")}}"></script>
+<!-- Sparkline -->
+<script src="{{asset("plugins/sparkline/jquery.sparkline.min.js")}}"></script>
+<!-- jvectormap -->
+<script src="{{asset("plugins/jvectormap/jquery-jvectormap-1.2.2.min.js")}}"></script>
+<script src="{{asset("plugins/jvectormap/jquery-jvectormap-world-mill-en.js")}}"></script>
+<!-- jQuery Knob Chart -->
+<script src="{{asset("plugins/knob/jquery.knob.js")}}"></script>
+<!-- daterangepicker -->
+<script src="{{asset("https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js")}}"></script>
+<script src="{{asset("plugins/daterangepicker/daterangepicker.js")}}"></script>
+<!-- datepicker -->
+<script src="{{asset("plugins/datepicker/bootstrap-datepicker.js")}}"></script>
+<!-- Bootstrap WYSIHTML5 -->
+<script src="{{asset("plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js")}}"></script>
+<!-- Slimscroll -->
+<script src="{{asset("plugins/slimScroll/jquery.slimscroll.min.js")}}"></script>
+<!-- FastClick -->
+<script src="{{asset("plugins/fastclick/fastclick.js")}}"></script>
+<!-- AdminLTE App -->
+<script src="{{asset("dist/js/adminlte.js")}}"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="{{asset("dist/js/pages/dashboard.js")}}"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="{{asset("dist/js/demo.js")}}"></script>
 </body>
 </html>

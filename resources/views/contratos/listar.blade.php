@@ -6,6 +6,6 @@
 
 @section('contenido')
 
-Editar Clientes
+Ver contratos
 
 @endsection

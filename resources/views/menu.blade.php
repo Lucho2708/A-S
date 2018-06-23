@@ -5,18 +5,18 @@
         </div>
         <div class="info">
           <a href="#" class="d-block">{{ Auth::user()->nombres}}</a>
-
+        </div>
       </div>
-    </div><div class="info">
-      <a href="{{ route('logout') }}" class="d-block">Salir</a>
-    </div>
+      <div class="info">
+        <a href="{{ route('logout') }}" class="d-block">Salir</a>
+      </div>
 <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
+            <a href="{{route('home')}}" class="nav-link">
               <i class="nav-icon fa fa-th"></i>
               <p>
                 Inicio

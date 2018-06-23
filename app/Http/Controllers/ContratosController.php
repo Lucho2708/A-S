@@ -20,7 +20,7 @@ class ContratosController extends Controller
      */
     public function index()
     {
-        return view('contratos.listar-contratos');
+        return view('contratos.listar');
     }
 
     /**
@@ -33,7 +33,7 @@ class ContratosController extends Controller
 
         $departamentos =Departamentos::all();
         $ciudad= Ciudad::all();
-        return view('contratos.crear-contratos',compact('pais','departamentos','ciudad'));
+        return view('contratos.crear',compact('pais','departamentos','ciudad'));
     }
 
     /**

@@ -1,8 +1,9 @@
-@extends('home')
+@extends('layouts.app')
 
 @section('menu')
-  @include('adminlte.menu')
+  @include('menu')
 @endsection
+
 @section('contenido')
     <!-- Content Header (Page header) -->
     <section class="content-header">
