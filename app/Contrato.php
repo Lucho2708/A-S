@@ -26,10 +26,8 @@ class Contrato extends Model
         'num_cuenta',
         'valor_contrato',
         'acuerdo_pago',
-        'notas',
-        'users_id',
-        'garantia_id',
-        'cliente_contratistas_id'
+        'notas'
+       
 
     ];
     

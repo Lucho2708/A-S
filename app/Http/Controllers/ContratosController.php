@@ -7,6 +7,7 @@ use App\Departamentos;
 use App\Ciudad;
 use App\Contrato;
 use Illuminate\Database\QueryException;
+use Session;
 
 
 
@@ -33,7 +34,7 @@ class ContratosController extends Controller
 
         $departamentos =Departamentos::all();
         $ciudad= Ciudad::all();
-        return view('contratos.crear',compact('pais','departamentos','ciudad'));
+        return view('contratos.crear',compact('departamentos','ciudad'));
     }
 
     /**
@@ -47,7 +48,7 @@ class ContratosController extends Controller
 
         Contrato::create($request->all());
         alert()->success('El registro fue creado exitosamente.','En hora buena')->autoclose(6000);
-        return redirect('contrato');
+        return view('contrato.crear');
 
 
     }

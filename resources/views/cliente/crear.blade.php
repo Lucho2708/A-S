@@ -32,8 +32,10 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              {!! Form::open(['route' => 'cliente.store', 'method' => 'POST']) !!}
-                {{csrf_field()}}
+            
+              {!! Form::open(['route' =>  'cliente.store', 'method' => 'POST',$departamentos,$ciudad])!!} 
+
+              {{csrf_field()}}
                 <div class="card-body">
                 <div class="row">
                   
@@ -49,9 +51,9 @@
                     <label>Tipo de Identidad</label>
                     <select class="form-control" name="tip_identidad" id="identidad" required>
                       <option value="">Selecciona Identidad</option>
-                        <option value="Cedula Ciudadania.">Cedula Ciudadania</option>
-                        <option value="Tarjeta Identidad">Tarjeta Identidad</option>
-                        <option value="Cedula Extranjera.">Cedula Extranjera</option>
+                        <option value="C.C">Cedula Ciudadania</option>
+                        <option value="T.I">Tarjeta Identidad</option>
+                        <option value="C.E.">Cedula Extranjera</option>
                         <option value="Pasaporte">Pasaporte</option>
                       </select>
                   </div>
@@ -69,8 +71,8 @@
                   </div>
 
                   <div class="col-6 form-line">
-                    <label >Teléfono celular con indicativo</label>
-                    <input type="text" name="telefono1" class="form-control" pattern="^\+?\d{1,3}?[- .]?\(?(?:\d\d{2,3})\)?[- .]?\d\d\d[- .]?\d\d\d\d$" placeholder="Ex: +57(xxx)-xxx-xxxx"  required="" data-error="Completa este campo" "><br>
+                    <label >Teléfono celular </label>
+                    <input type="text" name="telefono1" class="form-control" pattern="^\+?\d{1,3}?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d$" placeholder="Ex: +57(xxx)-xxx-xxxx"  required="" data-error="Completa este campo" "><br>
                   </div>
 
                   <div class="col-6">
@@ -78,23 +80,25 @@
                     <input type="email" class="form-control" name="email" pattern="[a-zA-Z0-9.+_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z0-9.-]+" placeholder="Enter email" required="" data-error="Completa este campo"><br>
                   </div>
 
-
-                  <div class="col-6">
-                    <label>Departamento</label>
-                    <select class="form-control" name="departamento" id="departamento" required="">
+                    <div class="col-6">
+                    <label for="departamento">Departamento</label>
+                    <select class="form-control" name="departamento" id="departamento" required>
                       <option value="">Selecciona Ubicación</option>
-                      <option>Bogota prueba</option>
-                      
+                      @foreach ($departamentos as $departamentos)
+                      <option>{{$departamentos->departamento}}</option>
+                      @endforeach
                     </select>
                   </div>
                   <div class="col-6">
-                    <label>Ciudad</label>
-                    <select class="form-control" name="ciudad" required="">
+                    <label for="ciudad">Ciudad</label>
+                    <select class="form-control" name="ciudad" id="ciudad" required>
                       <option value="">Selecciona Ubicación</option>
-                      <option>bogota</option>
+                      @foreach ($ciudad as $ciudad)
+                      <option>{{$ciudad->ciudad}}</option>
+
+                      @endforeach
                     </select><br>
                   </div>
-                 
            
                   <div class="col-6">
                     <label>Dirección</label>
@@ -103,7 +107,7 @@
                   
                     <div class="col-6">
                     <label>Tipo de Persona</label>
-                    <select class="form-control" name="tip_contrato" required>
+                    <select class="form-control" name="tip_persona" required>
                       <option value="">Seleccione</option>
                       <option value="contratista">Contratista</option>
                       <option value="proveedor">Proveedor</option>

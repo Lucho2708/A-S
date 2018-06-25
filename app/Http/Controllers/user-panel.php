@@ -1,13 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Cliente_contratistas;
-use Illuminate\Http\Request;
-use Session;
-use App\Departamentos;
-use App\Ciudad;
 
-class ClienteController extends Controller
+use Illuminate\Http\Request;
+
+class PerfilusuarioController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +13,8 @@ class ClienteController extends Controller
      */
     public function index()
     {
+          return view('perfil.listar');
 
-        return view('cliente.listar');
     }
 
     /**
@@ -27,11 +24,7 @@ class ClienteController extends Controller
      */
     public function create()
     {
-
-        $departamentos =Departamentos::all();
-        $ciudad= Ciudad::all();
-        return view('cliente.crear',compact('departamentos','ciudad'));
-      
+         return view('perfil.crear');
     }
 
     /**
@@ -42,11 +35,7 @@ class ClienteController extends Controller
      */
     public function store(Request $request)
     {
-
-        Cliente_contratistas::create($request->all());
-        alert()->success('El registro fue creado exitosamente.','En hora buena')->autoclose(6000);
-        return view('cliente.crear');
-        
+        //
     }
 
     /**

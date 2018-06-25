@@ -1,15 +1,42 @@
 <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="{{asset("dist/img/user2-160x160.jpg")}}" class="img-circle elevation-2" alt="User Image">
-        </div>
-        <div class="info">
-          <a href="#" class="d-block">{{ Auth::user()->nombres}}</a>
-        </div>
-      </div>
-      <div class="info">
-        <a href="{{ route('logout') }}" class="d-block">Salir</a>
-      </div>
+
+      <div class="">
+    
+        <div class="info"><br>
+            <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span style="color: white;" class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ Auth::user()->nombres}} {{ Auth::user()->apellidos}}</span>
+            </a>
+            <ul class="dropdown-menu" style="background: white;color: black;"class="dropdown-menu" role="menu" x-placement="bottom-start">
+              <!-- User image -->
+              <li class="user-header" >
+                <!-- para la imagen Menu --
+                <img src="../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                 Sidebar Menu -->
+
+                <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{ Auth::user()->nombres}} {{ Auth::user()->apellidos}}<br>
+                  <small>{{ Auth::user()->email}}</small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+             
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a  style="background: black;color: white;"href="{{ route('perfil.create') }}" class="btn btn-default btn-flat">Perfil</a>
+                </div>
+                <div  class="pull-right">
+                  <a style="background: black;color: white;"href="{{ route('logout') }}" class="btn btn-default btn-flat">Salir</a>
+                </div>
+              </li>
+            </ul>
+        <br> <br> <br>
+
+
+
+      
 <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
@@ -24,6 +51,34 @@
               </p>
             </a>
           </li>
+
+    
+
+          <li class="nav-item has-treeview menu-open">
+            <a href="#" class="nav-link active">
+              <i class="fa fa-safari"></i>
+              <p>
+                Mi Perfil
+                <i class="right fa fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{route('perfil.index')}}" class="nav-link">
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>Ver mi perfil</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{route('perfil.create')}}" class="nav-link">
+                  <i class="fa fa-wpforms"></i>
+                  <p>Actualizar Perfil</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+
           <li class="nav-item has-treeview menu-open">
             <a href="#" class="nav-link active">
               <i class="fa fa-safari"></i>
@@ -47,7 +102,6 @@
               </li>
             </ul>
           </li>
-
 
 
           <li class="nav-item has-treeview">
