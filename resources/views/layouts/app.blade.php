@@ -31,14 +31,14 @@
 <div class="wrapper">
 
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
+  <nav  class="main-header navbar navbar-expand bg-primary elevation-2 navbar-light border-bottom  ">
     <!-- Left navbar links -->
-    <ul class="navbar-nav">
-      <li class="nav-item">
+    <ul  class="navbar-nav">
+      <li  class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
       </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="index3.html" class="nav-link">Home</a>
+      <li style="border-radius: 8px;" class="nav-item d-none d-sm-inline-block bg-black elevation-2">
+        <a  href="{{route('home')}}" class="nav-link">Home</a>
       </li>
     </ul>
 
@@ -47,14 +47,13 @@
   </nav>
   <!-- /.navbar -->
 
-  <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <!-- Main Sidebar Container para cambiar el color a la barra nav delm menu -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4 bg-black elevation-2 ">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
-      <img src="{{asset("dist/img/AdminLTELogo.png")}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-           style="opacity: .8">
-      <span class="brand-text font-weight-light">A&S</span>
-    </a>
+    <a href="index3.html" class="brand-link bg-primary elevation-2">
+      <img src="{{asset("dist/img/AdminLTELogo.png")}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3">
+    <font color="white">A&S</font></a>
+    
 
     <!-- Sidebar -->
     <div class="sidebar">
@@ -72,8 +71,8 @@
 
   </div>
   <!-- /.content-wrapper -->
-  <footer class="main-footer">
-    <strong>Copyright &copy; 2014-2018 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
+  <footer class="main-footer bg-primary elevation-2">
+    <strong>Copyright &copy; 2018-2024 <a href="{{route('home')}}"> &nbsp;&nbsp;A&S ASESORIAS SAS</a>.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
       <b>Version</b> 3.0.0-alpha

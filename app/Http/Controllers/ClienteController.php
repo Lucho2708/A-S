@@ -7,6 +7,7 @@ use Session;
 use App\Departamentos;
 use App\Ciudad;
 
+
 class ClienteController extends Controller
 {
     /**
@@ -93,4 +94,38 @@ class ClienteController extends Controller
     {
         //
     }
+
+public function cliente()
+    {
+        return view('cliente.crear', array('Cliente_contratistas'=>Auth::Cliente_contratistas()));
+    }
+    public function update_avatar(Request $request){
+        
+        /*
+        if($request->hasFile('avatar')){
+            $avatar=$request->file('avatar');
+            $filename=time().'.'.$avatar->getClientOriginalExtension();
+            Image::make($avatar)->resize(300,300)->save(public_path('images/'.$filename));
+            $user= Auth::user();
+            $user->fill($request->all());
+            $user ->avatar=$filename;
+            $user ->save();   
+        }else{
+        */
+            $Cliente_contratistas= Auth::Cliente_contratistas();
+            $Cliente_contratistas->fill($request->all());
+            $Cliente_contratistas->save();
+        
+        alert()->success('Su perfil fue actualizado exitosamente')->autoclose(2000);
+        
+        return view('cliente.crear',array ('Cliente_contratistas'=>Auth::Cliente_contratistas()));
+    
+}
+
+
+
+
+
+
+
 }

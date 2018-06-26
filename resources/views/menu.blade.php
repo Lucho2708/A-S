@@ -1,34 +1,35 @@
 <!-- Sidebar user panel (optional) -->
 
-      <div class="">
-    
-        <div class="info"><br>
-            <li class="dropdown user user-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span style="color: white;" class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ Auth::user()->nombres}} {{ Auth::user()->apellidos}}</span>
-            </a>
-            <ul class="dropdown-menu" style="background: white;color: black;"class="dropdown-menu" role="menu" x-placement="bottom-start">
-              <!-- User image -->
-              <li class="user-header" >
-                <!-- para la imagen Menu --
-                <img src="../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-                 Sidebar Menu -->
+ <link href="dist/css/adminlte.css" rel="stylesheet">
+  
 
-                <p>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{ Auth::user()->nombres}} {{ Auth::user()->apellidos}}<br>
-                  <small>{{ Auth::user()->email}}</small>
-                </p>
-              </li>
+        <div class="info"><br>
+            <div>
+              <center>
+            <img src="../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+          </center>
+            </div>
+
+           
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <span style="color: white;" ><font size="3">{{ Auth::user()->nombres}} {{ Auth::user()->apellidos}}</font></span>
+            </a>
+          </li>
+         
+
+            <ul class="dropdown-menu" style="background: black;color: black;">
+              <!-- User image -->
+             
               <!-- Menu Body -->
              
               <!-- Menu Footer-->
-              <li class="user-footer">
-                <div class="pull-left">
-                  <a  style="background: black;color: white;"href="{{ route('perfil.create') }}" class="btn btn-default btn-flat">Perfil</a>
+
+             <li class="user-footer ">
+              <div class="pull-left ">
+                  <a style="background: green;color: white;border-radius: 8px;"href="{{ route('perfil.create') }}" class="btn btn-default btn-flat">Perfil</a>
                 </div>
                 <div  class="pull-right">
-                  <a style="background: black;color: white;"href="{{ route('logout') }}" class="btn btn-default btn-flat">Salir</a>
+                  <a style="background: green;color: white;border-radius: 8px;"href="{{ route('logout') }}" class="btn btn-default btn-flat">Salir</a>
                 </div>
               </li>
             </ul>
@@ -52,6 +53,8 @@
             </a>
           </li>
 
+          <!-- Sidebar Menu --
+
     
 
           <li class="nav-item has-treeview menu-open">
@@ -63,7 +66,7 @@
               </p>
             </a>
             <ul class="nav nav-treeview">
-              <li class="nav-item">
+              <li class="nav-item ">
                 <a href="{{route('perfil.index')}}" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Ver mi perfil</p>
@@ -77,19 +80,22 @@
               </li>
             </ul>
           </li>
+          Sidebar Menu -->
 
 
           <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
+            <a href="#" class="nav-link active bg-primary elevation-2">
               <i class="fa fa-safari"></i>
               <p>
                 Contratos
                 <i class="right fa fa-angle-left"></i>
               </p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{{route('contratos.index')}}" class="nav-link">
+            
+            
+            <ul class="nav nav-treeview "id="main-nav">
+              <li class="nav-item ">
+                <a  href="{{route('contratos.index')}}" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Ver contratos</p>
                 </a>
@@ -97,15 +103,13 @@
               <li class="nav-item">
                 <a href="{{route('contratos.create')}}" class="nav-link">
                   <i class="fa fa-wpforms"></i>
-                  <p>Crear Contratos</p>
+                  <p> &nbsp;Crear Contratos</p>
                 </a>
               </li>
             </ul>
           </li>
-
-
           <li class="nav-item has-treeview">
-            <a href="#" class="nav-link active">
+            <a href="#" class="nav-link active bg-primary elevation-2">
               <i class="fa fa-safari"></i>
               <p>
                 Clientes
@@ -114,7 +118,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{route('cliente.index')}}" class="nav-link">
+                <a  href="{{route('cliente.index')}}" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>ver clientes</p>
                 </a>
@@ -130,7 +134,7 @@
           </li>
 
           <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
+            <a href="#" class="nav-link active bg-primary elevation-2">
               <i class="fa fa-safari"></i>
               <p>
                 Proveedores
@@ -154,7 +158,7 @@
           </li>
 
            <li class="nav-item has-treeview">
-            <a href="#" class="nav-link active">
+            <a href="#" class="nav-link active bg-primary elevation-2">
               <i class="fa fa-safari"></i>
               <p>
                 Garantias
@@ -174,9 +178,12 @@
                   <p>crear garantias</p>
                 </a>
               </li>
-
+       
             </ul>
           </li>
         </ul>
+
+
+
       </nav>
       <!-- /.sidebar-menu -->

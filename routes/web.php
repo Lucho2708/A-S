@@ -29,6 +29,11 @@ Route::get('perfil', 'PerfilusuarioController@perfil')->name('perfil')->middlewa
 Route::post('perfil', 'PerfilusuarioController@update_avatar')->name('perfil')->middleware('auth');
 
 
+Route::get('cliente', 'ClienteController@cliente')->name('cliente')->middleware('auth');
+Route::post('cliente', 'ClienteController@update_avatar')->name('cliente')->middleware('auth');
+
+
+
 
 Route::group([],function(){
 	Route::resource('contratos','ContratosController')->middleware('auth');
