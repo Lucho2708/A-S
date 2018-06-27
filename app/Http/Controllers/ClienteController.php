@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Session;
 use App\Departamentos;
 use App\Ciudad;
-use Illuminate\Auth\SessionGuardCliente_contratistas;
+
 
 
 class ClienteController extends Controller
@@ -18,8 +18,8 @@ class ClienteController extends Controller
      */
     public function index()
     {
-        
-        return view('cliente.listar');
+        $Cliente_contratistas=Cliente_contratistas::orderby('id','nombres');
+        return view('cliente.listar',compact('Cliente_contratistas'));
 
     }
 

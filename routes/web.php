@@ -24,6 +24,7 @@ Route::post('/home', 'HomeController@index')->name('home');
 
 
 
+
 Route::get('perfil', 'UserController@perfil')->name('perfil')->middleware('auth');
 Route::post('perfil', 'UserController@update_avatar')->name('perfil')->middleware('auth');
 
