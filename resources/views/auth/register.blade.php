@@ -43,6 +43,19 @@
                 </a>
             @endif
         </div>
+        <div class="form-group has-feedback">
+            <div class="input-group ">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa fa-user"></i></span>
+                </div>
+                <input type="text" class="form-control{{ $errors->has('lastname') ? ' is-invalid' : '' }}" placeholder="Apellidos" id="lastname" name="lastname" required autofocus>
+            </div>
+            @if ($errors->has('name'))
+                <a class="text-danger">
+                    {{ $errors->first('lastname') }}
+                </a>
+            @endif
+        </div>
 
         <div class="form-group has-feedback">
             <div class="input-group ">

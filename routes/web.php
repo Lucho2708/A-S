@@ -17,22 +17,15 @@ Route::get('/', function () {
 
 
 Route::post('/enviar','ContatoController@enviaContato');
-Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/home', 'HomeController@index')->name('home');
 
 
 
-Route::get('perfil', 'PerfilusuarioController@perfil')->name('perfil')->middleware('auth');
-Route::post('perfil', 'PerfilusuarioController@update_avatar')->name('perfil')->middleware('auth');
-
-
-Route::get('cliente', 'ClienteController@cliente')->name('cliente')->middleware('auth');
-Route::post('cliente', 'ClienteController@update_avatar')->name('cliente')->middleware('auth');
-
-
+Route::get('perfil', 'UserController@perfil')->name('perfil')->middleware('auth');
+Route::post('perfil', 'UserController@update_avatar')->name('perfil')->middleware('auth');
 
 
 Route::group([],function(){
@@ -42,11 +35,6 @@ Route::group([],function(){
 Route::group([],function(){
 	Route::resource('cliente','ClienteController')->middleware('auth');
 });
-
-Route::group([],function(){
-  Route::resource('perfil','PerfilusuarioController')->middleware('auth');
-});
-
 
 Route::group([],function(){
 	Route::resource('proveedor','ProveedorController')->middleware('auth');

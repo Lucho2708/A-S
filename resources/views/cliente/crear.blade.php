@@ -92,10 +92,10 @@
                   <div class="col-6">
                     <label for="ciudad">Ciudad</label>
                     <select class="form-control" name="ciudad" id="ciudad" required>
+
                       <option value="">Selecciona Ubicación</option>
                       @foreach ($ciudad as $ciudad)
                       <option>{{$ciudad->ciudad}}</option>
-
                       @endforeach
                     </select><br>
                   </div>

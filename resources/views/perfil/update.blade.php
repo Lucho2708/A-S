@@ -5,14 +5,6 @@
 @endsection
 
 @section('contenido')
-
-@extends('layouts.app')
-
-@section('menu')
-  @include('menu')
-@endsection
-
-@section('contenido')
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
@@ -40,7 +32,7 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              {!! Form::open(['route' => 'perfil.store', 'method' => 'POST']) !!}
+              {!! Form::open(['route' => 'perfil', 'method' => 'POST']) !!}
                 {{csrf_field()}}
                 <div class="card-body">
                 <div class="row">
@@ -48,12 +40,12 @@
                    <div class="col-8">
                     <label>foto</label>
 
-                  <input type="file" name="avatar" required>
+                  <input type="file" name="avatar"  >
                   </div><br><br>
                   
                   <div class="col-6">
                     <label >Nombres</label>
-                     <input type="text" class="form-control" name="apellidos" value="{{ Auth::user()->nombres}}" placeholder="Apellidos" required>
+                     <input type="text" class="form-control" name="nombres" value="{{ Auth::user()->nombres}}" placeholder="Nombres" required>
                   </div>
                   <div class="col-6">
                     <label >Apellidos</label>
@@ -67,12 +59,13 @@
                 
                   <div class="col-6">
                     <label>Password</label>
-                    <input type="Password" class="form-control" name="email"  value="{{ Auth::user()->password}}" placeholder="email" required>
+                    <input type="text" class="form-control" name="password"  value="{{ Auth::user()->password}}" placeholder="Contraseña" required>
                   </div>
                    
                   </div>
                   <br>
-                   </form>
+                   
+                  {!! Form::submit('Actualizar', ['class' =>'btn btn-primary']) !!}
 
                 </div>
               </div>
@@ -81,6 +74,4 @@
                 <!-- /.card-body --><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-@endsection
-
 @endsection

@@ -66,7 +66,7 @@
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-    
+    @include('sweet::alert')
     @yield('contenido')
 
   </div>

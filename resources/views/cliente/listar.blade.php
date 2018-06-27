@@ -21,6 +21,7 @@
         </div>
       </div><!-- /.container-fluid -->
     </section>
+    @csrf
 
     <!-- Main content -->
     <section class="content">
@@ -32,47 +33,8 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              {!! Form::open(['route' => 'perfil.store', 'method' => 'POST']) !!}
-                {{csrf_field()}}
-                <div class="card-body">
-                <div class="row">
-
-                   <div class="col-8">
-                    <label>foto</label>
-
-                  <input type="file" name="avatar" required>
-                  </div><br><br>
-                  
-                  <div class="col-6">
-                    <label >Nombres</label>
-                     <input type="text" class="form-control" name="nombres" value="{{ Auth::Cliente_contratistas()->nombres}}" placeholder="Apellidos" required>
-                  </div>
-                  <div class="col-6">
-                    <label >Apellidos</label>
-                     <input type="text" class="form-control" name="apellidos" value="{{ Auth::Cliente_contratistas()->apellidos}}" placeholder="Apellidos" required>
-
-                  </div>
-                  <div class="col-6">
-                    <label>Email address</label>
-                    <input type="text" class="form-control" name="tip_identidad" pattern="[a-zA-Z0-9.+_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z0-9.-]+" value="{{ Auth::Cliente_contratistas()->tip_identidad}}" placeholder="" required> 
-                  </div>
-                
-                  <div class="col-6">
-                    <label>Password</label>
-                    <input type="Password" class="form-control" name="email"  value="{{ Auth::Cliente_contratistas()->num_identidad}}" placeholder="" required>
-                  </div>
-                   
-                  </div>
-                  <br>
-                   </form>
-
-                </div>
-              </div>
-
-              {!! Form::close() !!}
+              
                 <!-- /.card-body --><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-@endsection
-
 @endsection

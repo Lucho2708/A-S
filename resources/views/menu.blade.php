@@ -1,6 +1,6 @@
 <!-- Sidebar user panel (optional) -->
 
- <link href="dist/css/adminlte.css" rel="stylesheet">
+ 
   
 
         <div class="info"><br>
@@ -26,7 +26,7 @@
 
              <li class="user-footer ">
               <div class="pull-left ">
-                  <a style="background: green;color: white;border-radius: 8px;"href="{{ route('perfil.create') }}" class="btn btn-default btn-flat">Perfil</a>
+                  <a style="background: green;color: white;border-radius: 8px;"href="{{ route('perfil') }}" class="btn btn-default btn-flat">Perfil</a>
                 </div>
                 <div  class="pull-right">
                   <a style="background: green;color: white;border-radius: 8px;"href="{{ route('logout') }}" class="btn btn-default btn-flat">Salir</a>
@@ -53,34 +53,7 @@
             </a>
           </li>
 
-          <!-- Sidebar Menu --
-
-    
-
-          <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
-              <i class="fa fa-safari"></i>
-              <p>
-                Mi Perfil
-                <i class="right fa fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item ">
-                <a href="{{route('perfil.index')}}" class="nav-link">
-                  <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Ver mi perfil</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{{route('perfil.create')}}" class="nav-link">
-                  <i class="fa fa-wpforms"></i>
-                  <p>Actualizar Perfil</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          Sidebar Menu -->
+          
 
 
           <li class="nav-item has-treeview menu-open">
