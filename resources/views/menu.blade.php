@@ -6,7 +6,7 @@
         <div class="info"><br>
             <div>
               <center>
-            <img src="../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+            <img src="../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
           </center>
             </div>
 
