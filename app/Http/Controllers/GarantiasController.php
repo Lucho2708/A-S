@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Garantia;
+use Session;
 
 class GarantiasController extends Controller
 {
@@ -35,7 +37,9 @@ class GarantiasController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Garantia::create($request->all());
+        alert()->success('El registro fue creado exitosamente.','En hora buena')->autoclose(6000);
+        return view('garantias.listar');
     }
 
     /**
@@ -46,7 +50,7 @@ class GarantiasController extends Controller
      */
     public function show($id)
     {
-        //
+       //
     }
 
     /**

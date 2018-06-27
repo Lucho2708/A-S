@@ -6,13 +6,13 @@
         <div class="info"><br>
             <div>
               <center>
-            <img src="../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+            <img src="../dist/img/user2-160x160.jpg" class="brand-image img-circle elevation-3"alt="User Image">
           </center>
             </div>
 
            
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <span style="color: white;" ><font size="3">{{ Auth::user()->nombres}} {{ Auth::user()->apellidos}}</font></span>
+              <span style="color: white;" ><font size="4">{{ Auth::user()->nombres}} {{ Auth::user()->apellidos}}</font></span>
             </a>
           </li>
          
@@ -26,10 +26,10 @@
 
              <li class="user-footer ">
               <div class="pull-left ">
-                  <a style="background: green;color: white;border-radius: 8px;"href="{{ route('perfil') }}" class="btn btn-default btn-flat">Perfil</a>
+                  <a style="background: gray;color: white;border-radius: 8px;"href="{{ route('perfil') }}" class="btn btn-default btn-flat">Perfil</a>
                 </div>
                 <div  class="pull-right">
-                  <a style="background: green;color: white;border-radius: 8px;"href="{{ route('logout') }}" class="btn btn-default btn-flat">Salir</a>
+                  <a style="background: gray;color: white;border-radius: 8px;"href="{{ route('logout') }}" class="btn btn-default btn-flat">Salir</a>
                 </div>
               </li>
             </ul>

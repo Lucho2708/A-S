@@ -46,9 +46,10 @@ class ContratosController extends Controller
     public function store (Request $request)
     {
 
+
         Contrato::create($request->all());
         alert()->success('El registro fue creado exitosamente.','En hora buena')->autoclose(6000);
-        return view('contrato.crear');
+        return view('contratos.listar');
 
 
     }
@@ -97,4 +98,6 @@ class ContratosController extends Controller
     {
         //
     }
+
+
 }

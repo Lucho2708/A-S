@@ -32,7 +32,7 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              {!! Form::open(['route' => 'cliente.store', 'method' => 'POST']) !!}
+              {!! Form::open(['route' => 'garantias.store', 'method' => 'POST']) !!}
                 <div class="card-body">
                 <div class="row">
                 
@@ -59,70 +59,7 @@
                   </div>
                 </div>
               </div>
-                      <script type="text/javascript">
-                        
-                      function concatenar(input){
-                        inputNum = input.value;
-                        input.value = '$' + inputNum;
-                       
-                      }
-                     function format(input)
-                        {
-                        var num = input.value.replace(/\./g,'');
-                        if(!isNaN(num)){
-                        num = num.toString().split('').reverse().join('').replace(/(?=\d*\.?)(\d{3})/g,'$1.');
-                        num = num.split('').reverse().join('').replace(/^[\.]/,'');
-                        input.value = num;
-                        }
-                          
-                        else{ alert('Solo se permiten numeros');
-                        input.value = input.value.replace(/[^\d\.]*/g,'');
-                        }
-                        }
-                      </script>
-
-
-
-                 <!-- /.Para colocar lo de numero de cuenta-->
-
-                               
-                <script language="javascript" type="text/javascript">
                     
-                    function Solo_Numerico(variable){
-                        Numero=parseInt(variable);
-                        if (isNaN(Numero)){
-                            return "";
-                        }
-                        return Numero;
-                    }
-                    function ValNumero(Control){
-                        Control.value=Solo_Numerico(Control.value);
-                    }
-                </script>
-
-                <script>
-                String.prototype.reverse=function(){return this.split('').reverse().join('');};
-                 
-                function numberblog(e){
-                function f(){
-                this.value=this.value.reverse().replace('^(([0-9]{1})*[- .(]*([0-9]{3})[- .)]*[0-9]{3}[- .]*[0-9]{4})+$').replace('^(([0-9]{1})*[- .(]*([0-9]{3})[- .)]*[0-9]{3}[- .]*[0-9]{4})+$').reverse();
-                 
-                }
-                e.onkeyup=f
-                e.onkeydown=f
-                e.onkeypress=f
-                e.onmousedown=f
-                e.onmouseup=f
-                e.onclick=f
-                e.onchange=f
-                e.onblur=f
-                }
-            
-                </script>
-
-                <script type="text/javascript"> 
-                numberblog(document.getElementById("c"))
-                </script>
               {!! Form::close() !!}
                 <!-- /.card-body --><!-- /.container-fluid -->
     </section>

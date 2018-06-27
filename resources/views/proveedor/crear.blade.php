@@ -32,7 +32,7 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              {!! Form::open(['route' => 'proveedor.store', 'method' => 'POST']) !!}
+              {!! Form::open(['route' => 'proveedor.store', 'method' => 'POST',$departamentos,$ciudad])!!} 
                 <div class="card-body">
                 <div class="row">
                   
@@ -62,14 +62,14 @@
                   </div>
 
 
-                  <div class="col-6 form-line">
-                    <label >Teléfono 1 con indicativo</label>
-                    <input type="text" name="telefono" class="form-control" pattern="^\+?\d{1,3}?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d\d\d\d$" placeholder="Ex: xxx-xxx-xxxx o +57(xxx)-xxx-xxxx"  required="" data-error="Completa este campo" "><br>
+                 <div class="col-6 form-line">
+                    <label >Teléfono celular o fijo </label>
+                    <input type="text" name="telefono" class="form-control" pattern="^\+?\d{1,3}?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d$" placeholder="Ex: xxxxxxx o xxxxxxxxxx"  required="" data-error="Completa este campo" "><br>
                   </div>
 
                   <div class="col-6 form-line">
-                    <label >Teléfono 2 sin indicativo</label>
-                    <input type="text" name="telefono1" class="form-control" pattern="[(]?\d{3}[)]?\s?-?\s?\d{3}\s?-?\s?\d{4}" placeholder="Ex: xxx-xxx-xxxx o (xxx)-xxx-xxxx"  required="" data-error="Completa este campo" "><br>
+                    <label >Teléfono celular </label>
+                    <input type="text" name="telefono1" class="form-control" pattern="^\+?\d{1,3}?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d$" placeholder="Ex: +57(xxx)-xxx-xxxx"  required="" data-error="Completa este campo" "><br>
                   </div>
 
                   <div class="col-6">
@@ -78,19 +78,24 @@
                   </div>
 
 
-                  <div class="col-6">
-                    <label>Departamento</label>
-                    <select class="form-control" name="departamento" id="departamento" required="">
+                  
+                    <div class="col-6">
+                    <label for="departamento">Departamento</label>
+                    <select class="form-control" name="departamento" id="departamento" required>
                       <option value="">Selecciona Ubicación</option>
-                      <option>Bogota prueba</option>
-                      
+                      @foreach ($departamentos as $departamentos)
+                      <option>{{$departamentos->departamento}}</option>
+                      @endforeach
                     </select>
                   </div>
                   <div class="col-6">
-                    <label>Ciudad</label>
-                    <select class="form-control" name="ciudad" required="">
+                    <label for="ciudad">Ciudad</label>
+                    <select class="form-control" name="ciudad" id="ciudad" required>
+
                       <option value="">Selecciona Ubicación</option>
-                      <option>bogota</option>
+                      @foreach ($ciudad as $ciudad)
+                      <option>{{$ciudad->ciudad}}</option>
+                      @endforeach
                     </select><br>
                   </div>
                  
@@ -102,7 +107,7 @@
                   
                     <div class="col-6">
                     <label>Tipo de Persona</label>
-                    <select class="form-control" name="tip_contrato" required>
+                    <select class="form-control" name="tip_persona" required>
                       <option value="">Seleccione</option>
                       <option value="contratista">Contratista</option>
                       <option value="proveedor">Proveedor</option>

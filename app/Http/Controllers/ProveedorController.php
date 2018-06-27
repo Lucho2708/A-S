@@ -2,7 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Cliente_contratistas;
 use Illuminate\Http\Request;
+use Session;
+use App\Departamentos;
+use App\Ciudad;
+
 
 class ProveedorController extends Controller
 {
@@ -23,7 +28,10 @@ class ProveedorController extends Controller
      */
     public function create()
     {
-        return view('proveedor.crear');
+        $departamentos =Departamentos::all();
+        $ciudad= Ciudad::all();
+        return view('proveedor.crear',compact('departamentos','ciudad'));
+        
     }
 
     /**
@@ -34,7 +42,9 @@ class ProveedorController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Cliente_contratistas::create($request->all());
+        alert()->success('El registro fue creado exitosamente.','En hora buena')->autoclose(6000);
+        return view('proveedor.listar');
     }
 
     /**

@@ -5,7 +5,7 @@
 @endsection
 
 @section('contenido')
-
-Ver clientes
-
+    <!-- Content Header (Page header) -->
+  
+    <!-- /.content -->
 @endsection

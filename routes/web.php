@@ -28,6 +28,8 @@ Route::get('perfil', 'UserController@perfil')->name('perfil')->middleware('auth'
 Route::post('perfil', 'UserController@update_avatar')->name('perfil')->middleware('auth');
 
 
+
+
 Route::group([],function(){
 	Route::resource('contratos','ContratosController')->middleware('auth');
 });
