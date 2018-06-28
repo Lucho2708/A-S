@@ -33,18 +33,33 @@
                                
                                 </tfoot>
                                 <tbody>
-                                @foreach($cliente1 as $cliente1)
+                               
                                     <tr>
-                                        <td>{{$cliente1->id}}</td>
 
-                                        <td>{{$cliente1->fecha_inicio}}</td>
-                                        <td>{{$cliente1->fecha_final}}</td> 
-                                        <td>{{$cliente1->descripcion}}</td>
-                                        <td>{{$cliente1->daños}}</td>
+                                        <td> <div class="col-6">
+                                        <label>Fecha Inicio</label>
+                                        <input type="text" class="form-control" name="fecha_inicio"  value="{{ Auth::Garantia()->fecha_inicio}}" placeholder="Fecha inicio"required="" data-error="Completa este campo">
+                                         </div></td>
+
+
+                                        <td><div class="col-6">
+                                        <div class="col-6">
+                                        <label>Fecha Final</label>
+                                      <input type="text" class="form-control" name="fecha_final" value="{{ Auth::Garantia()->fecha_final}}" placeholder="Fecha final"required="" data-error="Completa este campo"><br>
+                                        </div></td>
+
+                                        <td><div class="col-6">
+                                        <label >Descripcion</label>
+                                        <input type="text" name="descripcion" class="form-control" value="{{ Auth::Garantia()->descripcion}}" placeholder="Descripcion" required="" data-error="Completa este campo">
+                                      </div></td> 
+                                       
+                                        <td><div class="col-6">
+                                        <label >Daños</label>
+                                        <input type="text" name="daños" class="form-control" placeholder="Daños empresa"  value="{{ Auth::Garantia()->daños}}"required="" data-error="Completa este campo"><br>
+                                      </div></td>
                                       
-
                                     </tr>
-                                @endforeach
+                              
                                 </tbody>
                             </table>
                         </div>

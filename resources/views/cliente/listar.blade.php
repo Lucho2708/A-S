@@ -43,26 +43,29 @@
                                
                                 </tfoot>
                                 <tbody>
-                                @foreach($cliente1 as $Cliente1)
+                                
                                     <tr>
-                                        <td>{{$Cliente1->id}}</td>
 
-                                        <td>{{$Cliente1->nombres}}</td>
-                                        <td>{{$Cliente1->apellidos}}</td> 
-                                        <td>{{$Cliente1->tip_identidad}}</td>
-                                        <td>{{$Cliente1->num_identidad}}</td>
-                                        <td>{{$Cliente1->telefono}}</td>
-                                        <td>{{$Cliente1->telefono1}}</td>
-                                        <td>{{$Cliente1->email}}</td>
-                                        <td>{{$Cliente1->departamento}}</td>
-                                        <td>{{$Cliente1->ciudad}}</td>
-                                        <td>{{$Cliente1->direccion}}</td>
-                                        <td>{{$Cliente1->tip_persona}}</td>
-                                        <td>{{$Cliente1->profesion}}</td>
+                                        @foreach($cliente as $cliente)
+
+                                        <td>{{$cliente->id}}</td>
+                                        <td>{{$cliente->nombres}}</td>
+                                        <td>{{$cliente->apellidos}}</td> 
+                                        <td>{{$cliente->tip_identidad}}</td>
+                                        <td>{{$cliente->num_identidad}}</td>
+                                        <td>{{$cliente->telefono}}</td>
+                                        <td>{{$cliente->telefono1}}</td>
+                                        <td>{{$cliente->email}}</td>
+                                        <td>{{$cliente->departamento}}</td>
+                                        <td>{{$cliente->ciudad}}</td>
+                                        <td>{{$cliente->direccion}}</td>
+                                        <td>{{$cliente->tip_persona}}</td>
+                                        <td>{{$cliente->profesion}}</td>
+                                     
                                       
 
                                     </tr>
-                                @endforeach
+                                   @endforeach
                                 </tbody>
                             </table>
                         </div>

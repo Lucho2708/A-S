@@ -1,11 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Garantia;
+use Illuminate\Foundation\Auth\RegistersUsers;
+use App\Garantias;
 use Illuminate\Http\Request;
 use Session;
-
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Validator;
 
 
 class GarantiasController extends Controller
@@ -15,13 +16,53 @@ class GarantiasController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+   
+
+    /**
+     * este es el metodo  del perfil 
+     */
+
     public function index()
     {
-        $cliente1= Garantia::all();
-        return view('garantias.listar',compact('cliente1'));
+
+        
+        return view('garantias.listar');
          
 
     }
+
+     public function garantias()
+    {
+        return view('garantias.listar', array('garantias'=>Auth::Garantia()));
+
+    }
+
+    public function update_avatar(Request $request){
+        
+
+        
+        $garantias= Auth::Garantia();
+        $garantias->fill($request->all());
+        $garantias->save();
+        
+        alert()->success('Su perfil fue actualizado exitosamente')->autoclose(2000);
+        
+        return view('garantias.listar',array ('garantias'=>Auth::Garantia()));
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /**
      * Show the form for creating a new resource.

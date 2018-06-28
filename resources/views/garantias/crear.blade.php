@@ -38,11 +38,11 @@
                 
                     <div class="col-6">
                     <label>Fecha Inicio</label>
-                    <input type="date" class="form-control" name="fecha_inicio" placeholder="Fecha inicio" required="" data-error="Completa este campo">
+                    <input type="date" class="form-control" name="fecha_inicio" placeholder="Fecha inicio"required="" data-error="Completa este campo">
                   </div>
                     <div class="col-6">
                     <label>Fecha Final</label>
-                    <input type="date" class="form-control" name="fecha_final" placeholder="Fecha final" required="" data-error="Completa este campo"><br>
+                    <input type="date" class="form-control" name="fecha_final" placeholder="Fecha final"required="" data-error="Completa este campo"><br>
                   </div>
                   <div class="col-6">
                     <label >Descripcion</label>
