@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Garantia;
+use Illuminate\Http\Request;
 use Session;
+
+
 
 class GarantiasController extends Controller
 {
@@ -15,7 +17,9 @@ class GarantiasController extends Controller
      */
     public function index()
     {
-         return view('garantias.listar');
+        $cliente1= Garantia::all();
+        return view('garantias.listar',compact('cliente1'));
+         
 
     }
 

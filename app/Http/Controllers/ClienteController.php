@@ -18,8 +18,10 @@ class ClienteController extends Controller
      */
     public function index()
     {
-        $Cliente_contratistas=Cliente_contratistas::orderby('id','nombres');
-        return view('cliente.listar',compact('Cliente_contratistas'));
+       $cliente1= Cliente_contratistas::all();
+        return view('cliente.listar',compact('cliente1'));
+
+       
 
     }
 

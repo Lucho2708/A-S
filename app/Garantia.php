@@ -10,7 +10,7 @@ class Garantia extends Model
     protected $table='garantia';
     public $timestamps= false;
 
-    protected $fillable = [
+    protected $fillable = [   
     	'fecha_inicio',
     	'fecha_final',
     	'descripcion',
