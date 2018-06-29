@@ -31,6 +31,10 @@ Route::post('perfil', 'UserController@update_avatar')->name('perfil')->middlewar
 
 
 
+Route::get('garantia', 'GarantiasController@garantia')->name('garantia')->middleware('auth');
+Route::post('garantia', 'GarantiasController@update_avatar')->name('garantia')->middleware('auth');
+
+
 
 Route::group([],function(){
 	Route::resource('contratos','ContratosController')->middleware('auth');

@@ -53,7 +53,7 @@ class ClienteController extends Controller
 
         Cliente_contratistas::create($request->all());
         alert()->success('El registro fue creado exitosamente.','En hora buena')->autoclose(6000);
-        return view('cliente.listar');
+        return redirect('cliente');
         
     }
 
