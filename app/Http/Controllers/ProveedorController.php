@@ -18,8 +18,8 @@ class ProveedorController extends Controller
      */
     public function index()
     {
-       $cliente1= Cliente_contratistas::all();
-        return view('proveedor.listar',compact('cliente1'));
+       $cliente= Cliente_contratistas::all();
+        return view('proveedor.listar',compact('cliente'));
     }
 
     /**
