@@ -3,7 +3,7 @@
  
   
 
-        <div class="info"><br>
+        <div class="info main-sidebar sidebar-dark-primary elevation-4"><br>
             <div>
               <center>
             <img src="../dist/img/user2-160x160.jpg" class="brand-image img-circle elevation-3"alt="User Image">
@@ -17,7 +17,7 @@
           </li>
          
 
-            <ul class="dropdown-menu" style="background: black;color: black;">
+            <ul class="dropdown-menu " style="background: white;color: black; border-radius: 8px;">
               <!-- User image -->
              
               <!-- Menu Body -->
@@ -33,14 +33,14 @@
                 </div>
               </li>
             </ul>
-        <br> <br> <br>
+        <br> <br> <br><br>
 
 
 
       
 <!-- Sidebar Menu -->
-      <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+      <nav class="mt-2" >
+        <ul class=" main-sidebar sidebar-dark-primary elevation-4 nav nav-pills nav-sidebar flex-column " data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
@@ -96,6 +96,7 @@
                   <p>ver clientes</p>
                 </a>
               </li>
+              
               <li class="nav-item">
                 <a href="{{route('cliente.create')}}" class="nav-link">
                   <i class="fa fa-wpforms"></i>

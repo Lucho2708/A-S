@@ -1,5 +1,4 @@
 
-
 @extends('layouts.app')
 
 @section('menu')
@@ -7,12 +6,27 @@
 @endsection
 
 @section('contenido')
+
 <link rel="stylesheet" href="dist/css/adminlte.min.css">
   <link rel="stylesheet" href="plugins/datatables/dataTables.bootstrap4.css">
   <link rel="stylesheet" href="dist/css/adminlte.min.css">
   <link rel="stylesheet" href="css/tabla.css">
 
 
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables -->
+<script src="plugins/datatables/jquery.dataTables.js"></script>
+<script src="plugins/datatables/dataTables.bootstrap4.js"></script>
+<!-- SlimScroll -->
+<script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
 
     <style>
     
@@ -43,7 +57,7 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active ">VER CLIENTES</li>
+              <li class="breadcrumb-item active ">Ver Cliente </li>
             </ol>
           </div>
         </div>
@@ -116,19 +130,19 @@
             <tr>
                 @foreach($cliente as $cliente)
 
-         <td class="header2">{{$cliente->id}}</td>
-         <td class="header2">{{$cliente->nombres}}</td>
-         <td class="header2">{{$cliente->apellidos}}</td> 
-         <td class="header2">{{$cliente->tip_identidad}}</td>
-         <td class="header2">{{$cliente->num_identidad}}</td>
-         <td class="header2">{{$cliente->telefono}}</td>
-         <td class="header2">{{$cliente->telefono1}}</td>
-         <td class="header2">{{$cliente->email}}</td>
-         <td class="header2">{{$cliente->departamento}}</td>
-         <td class="header2">{{$cliente->ciudad}}</td>
-         <td class="header2">{{$cliente->direccion}}</td>
-         <td class="header2">{{$cliente->tip_persona}}</td>
-         <td class="header2">{{$cliente->profesion}}</td>
+         <td class="header">{{$cliente->id}}</td>
+         <td class="header">{{$cliente->nombres}}</td>
+         <td class="header">{{$cliente->apellidos}}</td> 
+         <td class="header">{{$cliente->tip_identidad}}</td>
+         <td class="header">{{$cliente->num_identidad}}</td>
+         <td class="header">{{$cliente->telefono}}</td>
+         <td class="header">{{$cliente->telefono1}}</td>
+         <td class="header">{{$cliente->email}}</td>
+         <td class="header">{{$cliente->departamento}}</td>
+         <td class="header">{{$cliente->ciudad}}</td>
+         <td class="header">{{$cliente->direccion}}</td>
+         <td class="header">{{$cliente->tip_persona}}</td>
+         <td class="header">{{$cliente->profesion}}</td>
             </tr>
                @endforeach
             
