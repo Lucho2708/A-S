@@ -40,7 +40,7 @@
                   
                 
                   <div class="col-6">
-                    <label for="nom_empresa" >Nombre Empresa</label>
+                    <label for="nom_empresa">Nombre Empresa</label>
                     <input type="text" name="nom_empresa" class="form-control" placeholder="Nombre empresa" required="" data-error="Completa este campo">
                   </div>
                   <div class="col-6">
@@ -93,7 +93,7 @@
                     <input type="date" class="form-control" name="fecha_final" placeholder="Fecha final"required="" data-error="Completa este campo"><br>
                   </div>
                   <div class="col-6">
-                    <label for="estado_contrato" >Estado Contratato</label>
+                    <label for="estado_contrato">Estado Contratato</label>
                     <select class="form-control" name="estado_contrato" required>
                       <option value>Seleccione</option>
                       <option value="inicio">Inicio</option>

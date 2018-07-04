@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="{{asset("plugins/font-awesome/css/font-awesome.min.css")}}">
   <!-- Ionicons -->
   <link rel="stylesheet" href="{{asset("https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")}}">
+  @yield('styles')
   <!-- Theme style -->
   <link rel="stylesheet" href="{{asset("dist/css/adminlte.min.css")}}">
   <!-- iCheck -->
@@ -97,6 +98,7 @@
 </script>
 <!-- Bootstrap 4 -->
 <script src="{{asset("plugins/bootstrap/js/bootstrap.bundle.min.js")}}"></script>
+@yield('js')
 <!-- Morris.js charts -->
 <script src="{{asset("https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js")}}"></script>
 <script src="{{asset("plugins/morris/morris.min.js")}}"></script>
@@ -124,5 +126,6 @@
 <script src="{{asset("dist/js/pages/dashboard.js")}}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{asset("dist/js/demo.js")}}"></script>
+@yield('js-table')
 </body>
 </html>

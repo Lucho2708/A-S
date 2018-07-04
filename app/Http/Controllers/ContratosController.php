@@ -21,8 +21,8 @@ class ContratosController extends Controller
      */
     public function index()
     {
-        $contrato1= Contrato::all();
-        return view('contratos.listar',compact('contrato1'));
+       $contrato=Contrato::all();
+        return view('contratos.listar',compact('contrato'));
       
     }
 
