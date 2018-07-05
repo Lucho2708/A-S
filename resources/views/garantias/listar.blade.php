@@ -7,12 +7,13 @@
 <!-- Tables style -->
   <link rel="stylesheet" href="{{asset("plugins/datatables/dataTables.bootstrap4.css")}}">
    <!-- iCheck for checkboxes and radio inputs -->
-
-  
  
 @endsection
 
 @section('contenido')
+
+
+<!-- nuevo estilo de checkbox -->
 
 <style> 
 input:checked {
@@ -34,7 +35,7 @@ input {
   <input type="checkbox" name="descripcion" checked="checked" > Descripción
  <input type="checkbox" name="daños" checked="checked"> Daños </p>
 
-     
+ <!-- nuevo estilo de checkbox -->    
 
 
 
@@ -42,8 +43,7 @@ input {
 
 
 
-
-
+<!-- nuevo estilo de checkbox -->
 
 
 
@@ -102,11 +102,11 @@ input {
       });
     </script>
 
+<!-- segundo estilo de checkbox -->
 
 
 
-
-<style> /* eso es  del otro boton  3 */
+<style> /* tercer estilo  checkbox on */
 
 *,*:after,*:before {
   -webkit-box-sizing: border-box;
@@ -295,10 +295,132 @@ input {
 </td>
 </tr>
 </table> 
-<!-- hasta aca van lo de boton on -->
+<!-- nuevo estilo de checkbox ---->
 
 
 
+
+
+
+<!-- nuevo estilo de checkbox --
+<input type="checkbox" id="c1" name="cc" />
+    <label for="c1"><span></span>Check Box 1</label>
+    <p>
+    <input type="checkbox" id="c2" name="cc" />
+    <label for="c2"><span></span>Check Box 2</label>
+    <p><br/>
+    
+
+
+
+<style>
+
+
+input[type="checkbox"] {
+    display:none;
+}
+
+input[type="checkbox"] + label {
+    color:red;
+    
+}
+
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-2px 10px 0 0;
+    vertical-align:middle;
+    background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) left top no-repeat;
+    cursor:pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+    background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) -19px top no-repeat;
+}
+
+</style>
+
+ nuevo estilo de checkbox --
+
+
+
+
+
+< nuevo estilo de checkbox --
+<style type="text/css">
+  
+
+/* Hidding the radiobuttons &amp; checkboxes */
+input[type="radio"], input[type="checkbox"] {
+display: none;
+}
+/* Styling background */
+label i:first-child {
+color: gray;
+}
+/* Hidding the "check" status of inputs */
+input[type="radio"] + label .fa-circle,
+input[type="checkbox"] + label .fa-check  {
+display: none;
+}
+/* Styling the "check" status */
+input[type="radio"]:checked + label .fa-circle,
+input[type="checkbox"]:checked + label .fa-check {
+display: block;
+color: DarkTurquoise;
+}
+/* Styling checkboxes */
+input[type="checkbox"]:checked + label .fa-check {
+position: relative;
+left: .125em;
+bottom: .125em;
+}
+/* Styling radiobuttons */
+input[type="radio"]:checked + label .fa-circle-o {
+display: none;
+}
+
+</style>
+
+
+<input type="radio" name="option" id="radio1" checked/>    
+<label for="radio1">
+<span class="fa-stack">
+<i class="fa fa-circle-o fa-stack-1x"></i>
+<i class="fa fa-circle fa-stack-1x"></i>
+</span>
+Hombre
+</label><br />
+<input type="radio" name="option" 
+id="radio2" />   
+<label for="radio2">
+<span class="fa-stack">
+<i class="fa fa-circle-o fa-stack-1x"></i>
+<i class="fa fa-circle fa-stack-1x"></i>
+</span>
+Mujer
+</label><br />
+<input type="checkbox" name="option2" id="check1" checked/>
+<label for="check1">
+<span class="fa-stack">
+<i class="fa fa-square-o fa-stack-1x"></i>
+<i class="fa fa-check fa-stack-1x"></i>
+</span>
+DVD
+</label><br />
+<input type="checkbox" name="option" id="check2" />
+<label for="check2">
+<span class="fa-stack">
+<i class="fa fa-square-o fa-stack-1x"></i>
+<i class="fa fa-check fa-stack-1x"></i>
+</span>
+CD
+</label><br />
+hasta aca van otro de boton -->
+
+
+ <!-- Main content -->
  <link rel="stylesheet" href="css/styles.css">
     <!-- Main content -->
     <section class="content">
