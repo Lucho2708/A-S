@@ -98,7 +98,6 @@
 </script>
 <!-- Bootstrap 4 -->
 <script src="{{asset("plugins/bootstrap/js/bootstrap.bundle.min.js")}}"></script>
-@yield('js')
 <!-- Morris.js charts -->
 <script src="{{asset("https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js")}}"></script>
 <script src="{{asset("plugins/morris/morris.min.js")}}"></script>
@@ -120,6 +119,7 @@
 <script src="{{asset("plugins/slimScroll/jquery.slimscroll.min.js")}}"></script>
 <!-- FastClick -->
 <script src="{{asset("plugins/fastclick/fastclick.js")}}"></script>
+@yield('js')
 <!-- AdminLTE App -->
 <script src="{{asset("dist/js/adminlte.js")}}"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
