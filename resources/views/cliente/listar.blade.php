@@ -72,14 +72,7 @@
                   <div class="control__indicator"></div>
                 </label>
               </div>
-            </div>
-             
-            
-
-
-
-
-
+  
             <div class="card-body">
               <div class="table-responsive">
               <table id="example1" class="table table-bordered table-striped">
@@ -101,27 +94,27 @@
                 </tr>
                 </thead>
                
-               <tr align="center">
+               <tr>
                @foreach($cliente as $cliente)
 
             
-         <td class="nombres" style="display: table-cell;">{{$cliente->nombres}}</td>
-         <td class="apellidos" style="display: table-cell;">{{$cliente->apellidos}}</td> 
-         <td class="tip_identidad" style="display: table-cell;">{{$cliente->tip_identidad}}</td>
-         <td class="num_identidad" style="display: table-cell;">{{$cliente->num_identidad}}</td>
-         <td class="telefono" style="display: table-cell;">{{$cliente->telefono}}</td>
-         <td class="telefono1" style="display: table-cell;">{{$cliente->telefono1}}</td>
-         <td class="email" style="display: table-cell;">{{$cliente->email}}</td>
-         <td class="departamento" style="display: table-cell;">{{$cliente->departamento}}</td>
-         <td class="ciudad" style="display: table-cell;">{{$cliente->ciudad}}</td>
-         <td class="direccion" style="display: table-cell;">{{$cliente->direccion}}</td>
-         <td class="tip_persona" style="display: table-cell;">{{$cliente->tip_persona}}</td>
-         <td class="profesion" style="display: table-cell;">{{$cliente->profesion}}</td>
+         <td align="center"class="nombres" style="display: table-cell;">{{$cliente->nombres}}</td>
+         <td align="center"class="apellidos" style="display: table-cell;">{{$cliente->apellidos}}</td> 
+         <td align="center"class="tip_identidad" style="display: table-cell;">{{$cliente->tip_identidad}}</td>
+         <td align="center"class="num_identidad" style="display: table-cell;">{{$cliente->num_identidad}}</td>
+         <td align="center"class="telefono" style="display: table-cell;">{{$cliente->telefono}}</td>
+         <td align="center"class="telefono1" style="display: table-cell;">{{$cliente->telefono1}}</td>
+         <td align="center"class="email" style="display: table-cell;">{{$cliente->email}}</td>
+         <td align="center"class="departamento" style="display: table-cell;">{{$cliente->departamento}}</td>
+         <td align="center"class="ciudad" style="display: table-cell;">{{$cliente->ciudad}}</td>
+         <td align="center"class="direccion" style="display: table-cell;">{{$cliente->direccion}}</td>
+         <td align="center"class="tip_persona" style="display: table-cell;">{{$cliente->tip_persona}}</td>
+         <td align="center"class="profesion" style="display: table-cell;">{{$cliente->profesion}}</td>
             </tr>
                @endforeach
                
                 
-                </script>
+                
               <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
               <script>$("input:checkbox:not(:checked)").each(function() {
                   var column = "table ." + $(this).attr("name");

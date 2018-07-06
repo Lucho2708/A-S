@@ -10,7 +10,7 @@
   
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-  
+
 @endsection
 
 @section('contenido')
@@ -22,34 +22,51 @@
             <div class="card-header">
               <h3 class="card-title"> LISTA GARANTIAS</h3>
             </div>
-         
 
-              <div class="container">
- 
-               
-                <label class="control control--checkbox">Fecha Inicio
-                  <input type="checkbox" name="fecha_inicio" checked="checked"/>
+             <br>
+        
+
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="../dist/img/herrmamienta-160x160.png" class="brand-image img-circle elevation-3"alt="User Image">
+              </a>
+
+            <div id="header">
+            
+         
+            
+            <ul class="dropdown-menu" style="background: white;color: black; border-radius: 10px;">
+            
+             <li class="footer">
+
+              <div class="pull-left btn" >
+               <label class="control control--checkbox">Fecha Inicio
+                  <input  type="checkbox" name="fecha_inicio" checked="checked"/>
                   <div class="control__indicator"></div>&nbsp;
                 </label>
+              </div>
+               <div class="pull-right btn">
                 <label class="control control--checkbox">Fecha Final
                   <input type="checkbox" name="fecha_final" checked="checked" />
                   <div class="control__indicator"></div>&nbsp;
                 </label>
+              </div><br>
+                 <div class="pull-left btn">
                 <label class="control control--checkbox">Descripción
                   <input type="checkbox" name="descripcion" checked="checked" />
                   <div class="control__indicator"></div>&nbsp;
                 </label>
+              </div>
+                <div class="pull-right btn">
                 <label class="control control--checkbox">Daños Final
                   <input type="checkbox" name="daños" checked="checked" />
-                  <div class="control__indicator"></div>
+                  <div class="control__indicator"></div>&nbsp;
                 </label>
-              </div>
-             
-            </div>
+                  
+                </div>
+              </li>
+            </ul>
 
-                
-  
-              
+              </div><br><br>    
               
             <div class="card-body">
 

@@ -10380,6 +10380,7 @@ body,
 .open:not(.dropup) > .animated-dropdown-menu {
   backface-visibility: visible !important;
   animation: flipInX 0.7s both;
+
 }
 
 @keyframes flipInX {
@@ -10433,7 +10434,8 @@ body,
 
 .navbar-custom-menu > .navbar-nav > li > .dropdown-menu {
   position: absolute;
-  right: 0;
+  right: 15px;
+
   left: auto;
 }
 
