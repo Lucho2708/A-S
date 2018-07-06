@@ -4,7 +4,7 @@
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: center;
   align-items: left;
 }
 h1 {
@@ -26,8 +26,8 @@ h1 {
 .control {
   display: block;
   position: relative;
-  padding-left: 30px;
-  margin-bottom: 15px;
+  padding-left: 25px;
+  margin-bottom: 20px;
   cursor: pointer;
   font-size: 18px;
 }
@@ -73,13 +73,13 @@ h1 {
 }
 .control--checkbox .control__indicator:after {
   left: 8px;
-  top: 4px;
-  width: 3px;
-  height: 8px;
-  border: solid #fff;
+  top: 3px;
+  width: 7px;
+  height: 12px;
+  border: solid white;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
 .control--checkbox input:disabled ~ .control__indicator:after {
-  border-color: #7b7b7b;
+  border-color: red;
 }

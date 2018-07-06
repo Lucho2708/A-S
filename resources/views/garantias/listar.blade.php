@@ -14,36 +14,30 @@
 @endsection
 
 @section('contenido')
-  <!-- iCheck -->
-
-
   
-  
-              <!-- /.card-body -->
              
           
             <!-- /.card -->
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Data Table With Full Features</h3>
+              <h3 class="card-title"> LISTA GARANTIAS</h3>
             </div>
-            <!-- /.card-header -->
-            <div class="card-body">
+         
 
               <div class="container">
  
                
                 <label class="control control--checkbox">Fecha Inicio
                   <input type="checkbox" name="fecha_inicio" checked="checked"/>
-                  <div class="control__indicator"></div>
+                  <div class="control__indicator"></div>&nbsp;
                 </label>
                 <label class="control control--checkbox">Fecha Final
-                  <input type="checkbox" name="fecha_inicio" checked="checked" />
-                  <div class="control__indicator"></div>
+                  <input type="checkbox" name="fecha_final" checked="checked" />
+                  <div class="control__indicator"></div>&nbsp;
                 </label>
                 <label class="control control--checkbox">Descripción
                   <input type="checkbox" name="descripcion" checked="checked" />
-                  <div class="control__indicator"></div>
+                  <div class="control__indicator"></div>&nbsp;
                 </label>
                 <label class="control control--checkbox">Daños Final
                   <input type="checkbox" name="daños" checked="checked" />
@@ -57,8 +51,8 @@
   
               
               
-              
-              <br>
+            <div class="card-body">
+
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr align="center">
@@ -77,8 +71,7 @@
                    <td  align="center"  class="daños" style="display: table-cell;">{{$cliente1->daños}}</td>
                 </tr>
                   @endforeach
-                </tbody>
-              
+                
               <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
               <script>$("input:checkbox:not(:checked)").each(function() {
                   var column = "table ." + $(this).attr("name");
@@ -91,7 +84,7 @@
               });
               //# sourceURL=pen.js
               </script>
-           </table>
+        </table>
 
 
 
@@ -111,6 +104,8 @@
 <script src="{{asset("plugins/datatables/jquery.dataTables.js")}}"></script>
 <script src="{{asset("plugins/datatables/dataTables.bootstrap4.js")}}"></script>
 
+
+
 @endsection
 @section('js-table')
 <script>
@@ -126,16 +121,7 @@
     });
   });
 </script>
-<!--
-<script>
-$(document).ready(function(){
-  $('input').iCheck({
-    checkboxClass: 'icheckbox_square-blue',
-    radioClass: 'iradio_square-blue',
-    increaseArea: '20%' // optional
-  });
-});
-</script>
+
 
 @endsection
 
