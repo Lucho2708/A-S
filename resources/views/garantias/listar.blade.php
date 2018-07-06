@@ -7,6 +7,7 @@
 <!-- Tables style -->
   <link rel="stylesheet" href="{{asset("plugins/datatables/dataTables.bootstrap4.css")}}">
     <link rel="stylesheet" href="{{asset("css/estilo.css")}}">
+    <link rel="stylesheet" href="{{asset("dist/css/adminlte.css")}}">
   
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
@@ -15,7 +16,50 @@
 
 @section('contenido')
   
-             
+
+<div class="btn-group dropright">
+  <button type="button" class="btn btn-secondary">
+      <img src="../dist/img/herrmamienta-160x160.png" class="brand-image img-circle elevation-3"alt="User Image">
+  </button>
+  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sr-only">Toggle Dropright</span>
+  </button>
+  
+  <div class="dropdown-menu">
+    
+                      <div class="dropdown-item">
+               <label class="control control--checkbox">Fecha Inicio
+                  <input  type="checkbox" name="fecha_inicio" checked="checked"/>
+                  <div class="control__indicator"></div>
+                </label>
+              </div>
+               <div class="dropdown-item">
+                <label class="control control--checkbox">Fecha Final
+                  <input type="checkbox" name="fecha_final" checked="checked" />
+                  <div class="control__indicator"></div>
+                </label>
+              </div>
+                 <div class="dropdown-item">
+                <label class="control control--checkbox">Descripción
+                  <input type="checkbox" name="descripcion" checked="checked" />
+                  <div class="control__indicator"></div>
+                </label>
+              </div>
+                <div class="dropdown-item">
+                <label class="control control--checkbox">Daños Final
+                  <input type="checkbox" name="daños" checked="checked" />
+                  <div class="control__indicator"></div>
+                </label>
+                  
+                </div>
+       </div>  </div>
+
+
+
+
+
+
+
           
             <!-- /.card -->
           <div class="card">
@@ -26,7 +70,7 @@
              <br>
         
 
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" >
               <img src="../dist/img/herrmamienta-160x160.png" class="brand-image img-circle elevation-3"alt="User Image">
               </a>
 
@@ -34,7 +78,7 @@
             
          
             
-            <ul class="dropdown-menu" style="background: white;color: black; border-radius: 10px;">
+            <ul class="dropdown-menu" style="background: white;color: black; border-radius: 10px; ">
             
              <li class="footer">
 

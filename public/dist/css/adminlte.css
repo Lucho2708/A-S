@@ -2898,16 +2898,7 @@ input[type="button"].btn-block {
 }
 
 .dropright .dropdown-toggle::after {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: 0.255em;
-  vertical-align: 0.255em;
-  content: "";
-  border-top: 0.3em solid transparent;
-  border-right: 0;
-  border-bottom: 0.3em solid transparent;
-  border-left: 0.3em solid;
+  
 }
 
 .dropright .dropdown-toggle:empty::after {
@@ -10380,7 +10371,8 @@ body,
 .open:not(.dropup) > .animated-dropdown-menu {
   backface-visibility: visible !important;
   animation: flipInX 0.7s both;
-
+  transform: rotateY(0deg) scale(1);
+  
 }
 
 @keyframes flipInX {
@@ -10434,8 +10426,7 @@ body,
 
 .navbar-custom-menu > .navbar-nav > li > .dropdown-menu {
   position: absolute;
-  right: 15px;
-
+  right: 0;
   left: auto;
 }
 
@@ -10459,6 +10450,8 @@ body,
  * Component: Form
  * ---------------
  */
+
+
 .form-group.has-icon {
   position: relative;
 }
@@ -10760,6 +10753,7 @@ label:not(.form-check-label):not(.custom-file-label) {
 
 .btn-group.show .btn-tool, .btn-tool:hover {
   color: #495057;
+
 }
 
 .show .btn-tool, .btn-tool:focus {
@@ -11555,6 +11549,7 @@ label:not(.form-check-label):not(.custom-file-label) {
 
 .nav-pills .nav-link:not(.active):hover {
   color: #007bff;
+
 }
 
 /*
@@ -12456,6 +12451,7 @@ label:not(.form-check-label):not(.custom-file-label) {
 
 .select2-dropdown {
   border: 1px solid #d2d6de;
+
 }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {

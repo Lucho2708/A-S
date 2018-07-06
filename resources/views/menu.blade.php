@@ -66,7 +66,7 @@
             </a>
             
             
-            <ul class="nav nav-treeview "id="main-nav">
+            <ul class="nav nav-treeview  "id="main-nav">
               <li class="nav-item ">
                 <a  href="{{route('contratos.index')}}" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
