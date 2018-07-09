@@ -15,50 +15,6 @@
 @endsection
 
 @section('contenido')
-  
-
-<div class="btn-group dropright">
-  <button type="button" class="btn btn-secondary">
-      <img src="../dist/img/herrmamienta-160x160.png" class="brand-image img-circle elevation-3"alt="User Image">
-  </button>
-  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="sr-only">Toggle Dropright</span>
-  </button>
-  
-  <div class="dropdown-menu">
-    
-                      <div class="dropdown-item">
-               <label class="control control--checkbox">Fecha Inicio
-                  <input  type="checkbox" name="fecha_inicio" checked="checked"/>
-                  <div class="control__indicator"></div>
-                </label>
-              </div>
-               <div class="dropdown-item">
-                <label class="control control--checkbox">Fecha Final
-                  <input type="checkbox" name="fecha_final" checked="checked" />
-                  <div class="control__indicator"></div>
-                </label>
-              </div>
-                 <div class="dropdown-item">
-                <label class="control control--checkbox">Descripción
-                  <input type="checkbox" name="descripcion" checked="checked" />
-                  <div class="control__indicator"></div>
-                </label>
-              </div>
-                <div class="dropdown-item">
-                <label class="control control--checkbox">Daños Final
-                  <input type="checkbox" name="daños" checked="checked" />
-                  <div class="control__indicator"></div>
-                </label>
-                  
-                </div>
-       </div>  </div>
-
-
-
-
-
-
 
           
             <!-- /.card -->
@@ -70,9 +26,14 @@
              <br>
         
 
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" >
-              <img src="../dist/img/herrmamienta-160x160.png" class="brand-image img-circle elevation-3"alt="User Image">
-              </a>
+            <div class="btn-group dropright">
+              <button type="button" class="btn btn-secondary">
+                  <img src="../dist/img/herrmamienta-160x160.png" class="brand-image img-circle elevation-3"alt="User Image">
+              </button>
+              <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropright</span>
+              </button>
+                
 
             <div id="header">
             
@@ -110,7 +71,7 @@
               </li>
             </ul>
 
-              </div><br><br>    
+              </div></div><br><br>    
               
             <div class="card-body">
 

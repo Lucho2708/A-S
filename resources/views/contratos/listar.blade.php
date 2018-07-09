@@ -16,65 +16,97 @@
           <div class="card">
             <div class="card-header">
               <h3 class="card-title">VER CONTRATOS</h3>
-            </div>
+            </div><br><br>
 
+               <div class="btn-group dropright">
+              <button type="button" class="btn btn-secondary">
+                  <img src="../dist/img/herrmamienta-160x160.png" class="brand-image img-circle elevation-3"alt="User Image">
+              </button>
+              <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropright</span>
+              </button>
+                
+                
 
+            <div id="header">
+            
+         
+            
+            <ul class="dropdown-menu" style="background: white;color: black; border-radius: 10px; ">
+            
+             <li class="footer">
 
-             <div class="container">
-
-                <label class="control control--checkbox">Nombre Empresa
+              <div class="pull-left btn" >
+               <label class="control control--checkbox">Nombre Empresa
                   <input type="checkbox" name="nom_empresa" checked="checked"/>
                   <div class="control__indicator"></div>&nbsp;
                 </label>
+                
                 <label class="control control--checkbox">Nit Empresa 
                   <input type="checkbox" name="nit_empresa" checked="checked" />
                   <div class="control__indicator"></div>&nbsp;
                 </label>
+                
+                
                 <label class="control control--checkbox">Departamento
                   <input type="checkbox" name="departamento" checked="checked" />
                   <div class="control__indicator"></div>&nbsp;
-                </label>
+                </label></div>
+
+                <div class="pull-right btn">
                 <label class="control control--checkbox">Ciudad
                   <input type="checkbox" name="ciudad" checked="checked" />
-                  <div class="control__indicator"></div>
+                  <div class="control__indicator"></div>&nbsp;
                 </label>
-                <label class="control control--checkbox">Direccion 
+               
+                <label class="control control--checkbox">Dirección 
                   <input type="checkbox" name="direccion" checked="checked" />
-                  <div class="control__indicator"></div>
+                  <div class="control__indicator"></div>&nbsp;
                 </label>
                 <label class="control control--checkbox">Email 
                   <input type="checkbox" name="email" checked="checked" />
-                  <div class="control__indicator"></div>
-                </label>
+                  <div class="control__indicator"></div>&nbsp;
+                </label></div>
+
+                <div class="pull-left btn">
                 <label class="control control--checkbox">Tipo Contrato 
                   <input type="checkbox" name="tip_contrato" checked="checked" />
-                  <div class="control__indicator"></div>
+                  <div class="control__indicator"></div>&nbsp;
+
                 </label>
-                <label class="control control--checkbox">Fecha Inicio 
+                <label class="control control--checkbox">Fecha_Inio 
                   <input type="checkbox" name="fecha_inicio" checked="checked" />
-                  <div class="control__indicator"></div>
+                  <div class="control__indicator"></div>&nbsp;
                 </label>
+                
                 <label class="control control--checkbox">Fecha Final 
                   <input type="checkbox" name="fecha_final" checked="checked" />
-                  <div class="control__indicator"></div>
-                </label>
+                  <div class="control__indicator"></div>&nbsp;
+                </label></div>
+                <div class="pull-right btn">
                 <label class="control control--checkbox">Estado Contrato 
                   <input type="checkbox" name="estado_contrato" checked="checked" />
-                  <div class="control__indicator"></div>
+                  <div class="control__indicator"></div>&nbsp;
                 </label>
+                
                 <label class="control control--checkbox">Numero Cuenta 
                   <input type="checkbox" name="num_cuenta" checked="checked" />
-                  <div class="control__indicator"></div>
+                  <div class="control__indicator"></div>&nbsp;
                 </label>
                 <label class="control control--checkbox">Valor Contrato 
                   <input type="checkbox" name="valor_contrato" checked="checked" />
-                  <div class="control__indicator"></div>
-                </label>
-                <label class="control control--checkbox">Notas 
+                  <div class="control__indicator"></div>&nbsp;
+                </label></div>
+                <div class="pull-left btn">
+                <label class="control control--checkbox">Notas
                   <input type="checkbox" name="notas" checked="checked" />
-                  <div class="control__indicator"></div>
-                </label>
-              </div>
+                  <div class="control__indicator"></div>&nbsp;
+                </label></div>        
+                </li>
+                </ul>
+                </div></div><br><br><br><br>
+
+
 
             <!-- /.card-header -->
             <div class="card-body">

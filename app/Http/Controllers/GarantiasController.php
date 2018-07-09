@@ -70,9 +70,16 @@ class GarantiasController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Request $request, $id)
     {
-        //
+
+        $cliente1= Garantia::all();
+        return view('garantias.editar',compact('cliente1'));
+       /*
+        $garantias=Garantia::all();
+        $cliente1=Garantia::findorFail($id);
+        return view('garantias.editar',['garantias'=>$garantias,'cliente1'=>$cliente1]);
+        */
     }
 
     /**
@@ -84,7 +91,12 @@ class GarantiasController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+  
+        $cliente1->fill($request->all());
+        $cliente1->save();
+          return view('garantias.editar');
+
+
     }
 
     /**
