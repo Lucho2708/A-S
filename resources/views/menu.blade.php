@@ -146,12 +146,8 @@
                   <p>ver Garantias</p>
                 </a>
               </li>
-               <li class="nav-item">
-                <a href="{{route('garantias.edit')}}" class="nav-link">
-                  <i class="fa fa-wpforms"></i>
-                  <p>editar garantias</p>
-                </a>
-              </li>
+          
+                
               <li class="nav-item">
                 <a href="{{route('garantias.create')}}" class="nav-link">
                   <i class="fa fa-wpforms"></i>

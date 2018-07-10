@@ -112,6 +112,8 @@
                 <thead>
 
                 <tr align="center">
+                    <th align="center">Editar</th>
+
                     <th class="nombres" style="display: table-cell;">Nombres Completos</th>
                     <th class="apellidos" style="display: table-cell;">Apellidos Completos</th>
                     <th class="tip_identidad" style="display: table-cell;">Tipo de Identidad</th>
@@ -124,6 +126,7 @@
                     <th class="direccion" style="display: table-cell;">Dirección</th>
                     <th class="tip_persona" style="display: table-cell;">Tipo de Persona</th>
                     <th class="profesion" style="display: table-cell;">Profesión</th>
+                     <th>Eliminar</th>
                 </tr>
                 </thead>
                
@@ -131,6 +134,8 @@
                @foreach($cliente as $cliente)
 
             
+          <td align="center"><a href="{{ route('cliente.edit',$cliente->id)}}" class="btn btn-info">editar</a>
+                  </td>
          <td align="center"class="nombres" style="display: table-cell;">{{$cliente->nombres}}</td>
          <td align="center"class="apellidos" style="display: table-cell;">{{$cliente->apellidos}}</td> 
          <td align="center"class="tip_identidad" style="display: table-cell;">{{$cliente->tip_identidad}}</td>
@@ -143,6 +148,13 @@
          <td align="center"class="direccion" style="display: table-cell;">{{$cliente->direccion}}</td>
          <td align="center"class="tip_persona" style="display: table-cell;">{{$cliente->tip_persona}}</td>
          <td align="center"class="profesion" style="display: table-cell;">{{$cliente->profesion}}</td>
+         <td align="center">
+                     
+                    <form action="{{ route('cliente.destroy',$cliente->id)}}" method="POST">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <input type="hidden" name="_token" value="{{csrf_token()}}">
+                    <button type="submit" class="btn btn-danger">Eliminar</button>
+                  </form></td>
             </tr>
                @endforeach
                

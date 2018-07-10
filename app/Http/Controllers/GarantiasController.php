@@ -46,13 +46,7 @@ class GarantiasController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        Garantia::create($request->all());
-        alert()->success('El registro fue creado exitosamente.','En hora buena')->autoclose(6000);
-        return redirect('garantias');
-    }
-
+    
     /**
      * Display the specified resource.
      *
@@ -64,6 +58,14 @@ class GarantiasController extends Controller
        //
     }
 
+
+     public function store(Request $request)
+    {
+        Garantia::create($request->all());
+        alert()->success('El registro fue creado exitosamente.','En hora buena')->autoclose(6000);
+        return redirect('garantias');
+    }
+
     /**
      * Show the form for editing the specified resource.
      *
@@ -73,13 +75,11 @@ class GarantiasController extends Controller
     public function edit(Request $request, $id)
     {
 
-        $cliente1= Garantia::all();
-        return view('garantias.editar',compact('cliente1'));
-       /*
-        $garantias=Garantia::all();
-        $cliente1=Garantia::findorFail($id);
-        return view('garantias.editar',['garantias'=>$garantias,'cliente1'=>$cliente1]);
-        */
+      
+        $garantia1=Garantia::all();
+        $garantia1=Garantia::findorFail($id);
+        return view('garantias.editar',['garantia1'=>$garantia1,'garantia1'=>$garantia1]);
+        
     }
 
     /**
@@ -91,10 +91,13 @@ class GarantiasController extends Controller
      */
     public function update(Request $request, $id)
     {
-  
-        $cliente1->fill($request->all());
-        $cliente1->save();
-          return view('garantias.editar');
+        $garantia1=Garantia::findorFail($id);
+        $garantia1->fecha_inicio=$request->fecha_inicio;
+        $garantia1->fecha_final=$request->fecha_final;
+        $garantia1->descripcion=$request->descripcion;
+        $garantia1->daños=$request->daños;
+        $garantia1->save();
+          return redirect()->route('garantias.listar');
 
 
     }
@@ -107,6 +110,13 @@ class GarantiasController extends Controller
      */
     public function destroy($id)
     {
-        //
-    }
+        try{
+       $garantia1=Garantia::findorFail($id);
+       $garantia1->delete();
+       return redirect()->route('garantias.index');
+   }catch(Exception $e){
+   return"fatal error -".$e->getMessage();
+
+   }
 }
+    }

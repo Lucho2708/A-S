@@ -74,32 +74,51 @@
               </div></div><br><br>    
               
             <div class="card-body">
+              <div class="table-responsive">
 
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr align="center">
+                  <td align="center">Editar</td>
                   <th class="fecha_inicio" style="display: table-cell;">Fecha Inicio</th>
                   <th class="fecha_final" style="display: table-cell;">Fecha Final</th>
                   <th class="descripcion" style="display: table-cell;">Descripción</th>
                   <th class="daños" style="display: table-cell;">Daños</th>
+                  <th>Eliminar</th>
+
                 </tr>
+
                 </thead>
                
                 <tr>
                   @foreach($cliente1 as $cliente1)
+                  <td align="center"><a href="{{ route('garantias.edit',$cliente1->id)}}" class="btn btn-info">editar</a>
+                  </td>
                     <td  align="center" class="fecha_inicio" style="display: table-cell;">{{$cliente1->fecha_inicio}}</td>
                    <td  align="center"  class="fecha_final" style="display: table-cell;">{{$cliente1->fecha_final}}</td> 
                    <td  align="center"  class="descripcion" style="display: table-cell;">{{$cliente1->descripcion}}</td>
                    <td  align="center"  class="daños" style="display: table-cell;">{{$cliente1->daños}}</td>
+                   <td align="center">
+                     
+                       <form action="{{ route('garantias.destroy',$cliente1->id)}}" method="POST">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <input type="hidden" name="_token" value="{{csrf_token()}}">
+                    <button type="submit" class="btn btn-danger">Eliminar</button>
+                
+
+                  </form>
+                   </td>
+
                 </tr>
+                 
                   @endforeach
+                
                 
               <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
               <script>$("input:checkbox:not(:checked)").each(function() {
                   var column = "table ." + $(this).attr("name");
                   $(column).hide();
               });
-
               $("input:checkbox").click(function(){
                   var column = "table ." + $(this).attr("name");
                   $(column).toggle();
@@ -117,6 +136,7 @@
         </div>
         <!-- /.col -->
       </div>
+      
       <!-- /.row -->
     </section>    
     
@@ -146,7 +166,6 @@
 
 
 @endsection
-
 
 
 

@@ -65,9 +65,15 @@ class ProveedorController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Request $request, $id)
     {
-        //
+        
+        $proveedor2=Cliente_contratistas::all();
+        $proveedor2=Cliente_contratistas::findorFail($id);
+        return view('proveedor.editar',['proveedor2'=>$proveedor2,'proveedor2'=>$proveedor2]);
+        
+
+   
     }
 
     /**
@@ -79,9 +85,16 @@ class ProveedorController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
-    }
+        $proveedor2=Cliente_contratistas::findorFail($id);
+        $proveedor2->fecha_inicio=$request->fecha_inicio;
+        $proveedor2->fecha_final=$request->fecha_final;
+        $proveedor2->descripcion=$request->descripcion;
+        $proveedor2->daños=$request->daños;
+        $proveedor2->save();
+          return redirect()->route('proveedor.listar');
 
+    }
+  
     /**
      * Remove the specified resource from storage.
      *
@@ -90,6 +103,14 @@ class ProveedorController extends Controller
      */
     public function destroy($id)
     {
-        //
-    }
+        try{
+       $cliente2=Cliente_contratistas::findorFail($id);
+       $cliente2->delete();
+       return redirect()->route('cliente.index');
+   }catch(Exception $e){
+   return"fatal error -".$e->getMessage();
+
+   }
+}
+
 }

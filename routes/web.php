@@ -25,6 +25,13 @@ Route::post('/home', 'HomeController@index')->name('home');
 Route::get('perfil', 'UserController@perfil')->name('perfil')->middleware('auth');
 Route::post('perfil', 'UserController@update_avatar')->name('perfil')->middleware('auth');
 
+Route::get('edit', 'GarantiasController@edit')->name('edit')->middleware('auth');
+Route::post('edit', 'GarantiasController@update')->name('edit')->middleware('auth');
+
+Route::get('edit', 'ClienteController@edit')->name('edit')->middleware('auth');
+Route::post('edit', 'ClienteController@update')->name('edit')->middleware('auth');
+
+
 
 Route::group([],function(){
 	Route::resource('contratos','ContratosController')->middleware('auth');

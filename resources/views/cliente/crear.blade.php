@@ -49,12 +49,12 @@
                   </div>
                   <div class="col-6">
                     <label>Tipo de Identidad</label>
-                    <select class="form-control" name="tip_identidad" id="identidad" required>
-                      <option value="">Selecciona Identidad</option>
-                        <option value="C.C">Cedula Ciudadania</option>
-                        <option value="T.I">Tarjeta Identidad</option>
-                        <option value="C.E.">Cedula Extranjera</option>
-                        <option value="Pasaporte">Pasaporte</option>
+                    <select class="form-control" name="tip_identidad" required>
+                      <option>Selecciona Identidad</option>
+                        <option name="CC" value="CC">CC</option>
+                        <option name="TI" value="TI">TI</option>
+                        <option name="CE" value="CE">CE</option>
+                        <option name="PP" value="PP">PP</option>
                       </select>
                   </div>
 
@@ -85,7 +85,7 @@
                     <select class="form-control" name="departamento" id="departamento" required>
                       <option value="">Selecciona Ubicación</option>
                       @foreach ($departamentos as $departamentos)
-                      <option>{{$departamentos->departamento}}</option>
+                      <option name="dp" value="dp">{{$departamentos->departamento}}</option>
                       @endforeach
                     </select>
                   </div>
@@ -109,9 +109,9 @@
                     <label>Tipo de Persona</label>
                     <select class="form-control" name="tip_persona" required>
                       <option value="">Seleccione</option>
-                      <option value="contratista">Contratista</option>
-                      <option value="proveedor">Proveedor</option>
-                      <option value="clientes">Cliente</option>
+                      <option name="contratista"value="contratista">Contratista</option>
+                      <option name="proveedor"value="proveedor">Proveedores</option>
+                      <option name="clientes"value="clientes">Cliente</option>
                     </select><br>
                   </div>
 
