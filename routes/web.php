@@ -15,6 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// E-mail verification
+Route::get('/register/verify/{code}', 'Auth\RegisterController@verify');
+
 
 Route::post('/enviar','ContatoController@enviaContato');
 
