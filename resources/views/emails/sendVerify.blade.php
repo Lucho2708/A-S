@@ -1,0 +1,1 @@
+Para verificar tu email <a href="{{ route('sendEmailDone',["email"=> $user->email, "confirmation_code" => $user->confirmation_code]) }}">Clik Aqui</a>

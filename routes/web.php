@@ -16,7 +16,9 @@ Route::get('/', function () {
 });
 
 // E-mail verification
-Route::get('/register/verify/{code}', 'Auth\RegisterController@verify');
+Route::get('verifyEmailFirst','Auth\RegisterController@verifyEmailFirst')->name('verifyEmailFirst');
+
+Route::get('verify/{email}/{confirmation_code}','Auth\RegisterController@sendEmailDone')->name('sendEmailDone');
 
 
 Route::post('/enviar','ContatoController@enviaContato');

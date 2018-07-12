@@ -2,12 +2,18 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\User;
+use Illuminate\Support\Str;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
-use App\Http\Controllers\Auth\Mail; 
+use Illuminate\Http\Response;
+use Illuminate\Http\Request;
+use Illuminate\Auth\Events\Registered;
+use App\User;
+use Mail;
+use App\Mail\VerifyEmail;
+ 
 
 
 class RegisterController extends Controller
@@ -53,11 +59,10 @@ class RegisterController extends Controller
         $messages=array('email.regex'=>'you email id is not valid.');
 
         return Validator::make($data, [
-            'name' => 'required|string|max:255',
-            'lastname'=>'required|string|max:255',
-            'email' => ['required', 'max:255', 'email', 'regex:/(.*)@(aysasesoriassasd|aysasesoriassas)\.com/i', 'unique:users'],
-          
-            'password' => 'required|string|min:6|confirmed',
+            'name'      =>  'required|string|max:255',
+            'lastname'  =>  'required|string|max:255',
+            'email'     =>  ['required','email','string','max:255','regex:/(.*)@(aysasesoriassasd|aysasesoriassas)\.com/i','unique:users'],
+            'password'  =>  'required|string|min:6|confirmed',
             /*'usertype'=>'required',*/
         ]);
     }
@@ -70,37 +75,56 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-    
-    $data['confirmation_code'] = str_random(25);
 
         $user = User::create([
             'nombres' => $data['name'],
             'apellidos'=>$data['lastname'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'confirmation_code' => $data['confirmation_code']
+            'confirmation_code' => Str::random(25),
         ]);
-        // Send confirmation code
-      Mail::send('emails.confirmation_code', $data, function($message) use ($data) {
-        $message->to($data['email'], $data['name'])->subject('Por favor confirma tu correo');
-         });
 
-    return $user;
+        $thisUser = User::findOrFail($user->id);
+        $this->sendEmail($thisUser);
     }
 
+    public function sendEmail($thisUser){
 
-    public function verify($code)
+        Mail::to($thisUser['email'])->send(new VerifyEmail($thisUser));
+    }
+
+    /**
+     * Handle a registration request for the application.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function register(Request $request)
     {
-    $user=User::where('confirmation_code', $code)->first();
+        $this->validator($request->all())->validate();
 
-    if (! $user)
-        return redirect('/');
+        event(new Registered($user = $this->create($request->all())));
 
-    $user->confirmed =true;
-    $user->confirmation_code = null;
-    $user->save();
+        // $this->guard()->login($user);
+        return redirect(route('verifyEmailFirst'));
 
-    return redirect('/login')->with('Has confirmado correctamente tu correo!');
-}
+        return $this->registered($request, $user)
+                        ?: redirect($this->redirectPath());
+    }
+
+    public function verifyEmailFirst(){
+        return view('emails.verifyEmailFirst');
+    }
+
+    public function sendEmailDone($email, $verifyToken) {
+
+        $user = User::where(['email'=>$email,'confirmation_code'=>$verifyToken])->first();
+
+        if ($user){
+            User::where(['email'=>$email,'confirmation_code'=>$verifyToken])->update(['confirmed'=>'1','confirmation_code'=>'']);
+        }else{
+            return 'Usuario no encontrado';
+        }
+    }
 
 }
