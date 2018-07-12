@@ -3,7 +3,7 @@
  
   
 
-        <div class="info main-sidebar sidebar-dark-primary elevation-4"><br>
+         <div class="info main-sidebar sidebar-dark-primary elevation-4"><br>
             <div>
               <center>
             <img src="../dist/img/user2-160x160.jpg" class="brand-image img-circle elevation-3"alt="User Image">
@@ -40,11 +40,11 @@
       
 <!-- Sidebar Menu -->
       <nav class="mt-2" >
-        <ul class=" main-sidebar sidebar-dark-primary elevation-4 nav nav-pills nav-sidebar flex-column " data-widget="treeview" role="menu" data-accordion="false">
+        <ul class=" nav nav-pills nav-sidebar flex-column " data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="{{route('home')}}" class="nav-link">
+            <a href="{{route('home')}}" class="nav-link {{Route::is('home')?'active':null}}">
               <i class="nav-icon fa fa-th"></i>
               <p>
                 Inicio
@@ -52,37 +52,33 @@
               </p>
             </a>
           </li>
-
-          
-
-
-          <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active bg-primary elevation-2">
+          <li class="nav-item has-treeview {{Route::is('contratos.index')?'menu-open':null || Route::is('contratos.create')?'menu-open':null }}">
+            <a href="#" class="nav-link {{Route::is('contratos.index')?'active':null || Route::is('contratos.create')?'active':null }}">
               <i class="fa fa-safari"></i>
               <p>
                 Contratos
                 <i class="right fa fa-angle-left"></i>
               </p>
             </a>
-            
-            
-            <ul class="nav nav-treeview  "id="main-nav">
-              <li class="nav-item ">
-                <a  href="{{route('contratos.index')}}" class="nav-link">
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a  href="{{route('contratos.index')}}" class="nav-link {{Route::is('contratos.index')?'active':null }} ">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Ver contratos</p>
                 </a>
               </li>
+              
               <li class="nav-item">
-                <a href="{{route('contratos.create')}}" class="nav-link">
+                <a href="{{route('contratos.create')}}" class="nav-link {{Route::is('contratos.create')?'active':null }}">
                   <i class="fa fa-wpforms"></i>
-                  <p> &nbsp;Crear Contratos</p>
+                  <p>crear contratos</p>
                 </a>
               </li>
+
             </ul>
           </li>
           <li class="nav-item has-treeview">
-            <a href="#" class="nav-link active bg-primary elevation-2">
+            <a href="#" class="nav-link">
               <i class="fa fa-safari"></i>
               <p>
                 Clientes
@@ -107,8 +103,8 @@
             </ul>
           </li>
 
-          <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active bg-primary elevation-2">
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
               <i class="fa fa-safari"></i>
               <p>
                 Proveedores
@@ -117,22 +113,25 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{route('proveedor.index')}}" class="nav-link">
+                <a  href="{{route('proveedor.index')}}" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Ver Proveedor</p>
                 </a>
               </li>
+              
               <li class="nav-item">
                 <a href="{{route('proveedor.create')}}" class="nav-link">
                   <i class="fa fa-wpforms"></i>
                   <p>crear Proveedor</p>
                 </a>
               </li>
+
             </ul>
           </li>
 
+
            <li class="nav-item has-treeview">
-            <a href="#" class="nav-link active bg-primary elevation-2">
+            <a href="#" class="nav-link">
               <i class="fa fa-safari"></i>
               <p>
                 Garantias

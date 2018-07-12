@@ -5,6 +5,7 @@
 @endsection
 
 @section('contenido')
+
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
@@ -48,6 +49,7 @@
                     <input type="text" class="form-control" pattern="\s*[\d\-]*" name="nit_empresa" placeholder="xxxxx-xxxx-xx--xx-" required="" data-error="Completa este campo"><br>
                   </div>
                   <div class="col-6">
+
                     <label for="departamento">Departamento</label>
                     <select class="form-control" name="departamento" id="departamento" required>
                       <option value="">Selecciona Ubicación</option>
@@ -156,10 +158,12 @@
                         }
                       </script>
 
-             
-         
-              {!! Form::close() !!}
+ 
+          {!! Form::close() !!}
                 <!-- /.card-body --><!-- /.container-fluid -->
     </section>
+
+
+       
     <!-- /.content -->
 @endsection

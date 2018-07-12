@@ -94,15 +94,23 @@
         </div>
         <div class="row">
           <!-- /.col -->
-          <div class="col-4">
+          <div class="col-12">
             <button type="submit" class="btn btn-primary btn-block btn-flat">{{ __('Registrar') }}</button>
-          </div>
+         </div>
+
           <!-- /.col -->
         </div>
       </form>
+      <br>
+
+    <div class="pull-left btn col-12" >
+       <a href="{{ route('login') }}"><button  class="btn btn-primary ">{{ __('Login') }}</button></a>
+     </div>
     <!-- /.form-box -->
   </div><!-- /.card -->
+
 </div>
+
 <!-- /.register-box -->
 
 <!-- jQuery -->

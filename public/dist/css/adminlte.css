@@ -1,7 +1,7 @@
 /*!
  *   AdminLTE v3.0.0-alpha
  *   Author: Abdullah Almsaeed
- *	 Website: AdminLTE.io <http://adminlte.io>
+ *   Website: AdminLTE.io <http://adminlte.io>
  *   License: Open source - MIT <http://opensource.org/licenses/MIT>
  */
 /*!
@@ -1620,7 +1620,7 @@ pre code {
   }
 }
 
-@media (max-width: 200.98px) {
+@media (max-width: 767.98px) {
   .table-responsive-md {
     display: block;
     width: 100%;
@@ -2123,8 +2123,6 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
     margin-bottom: 0;
   }
 }
-
-
 
 .btn {
   display: inline-block;
@@ -2898,7 +2896,16 @@ input[type="button"].btn-block {
 }
 
 .dropright .dropdown-toggle::after {
-  
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid transparent;
+  border-right: 0;
+  border-bottom: 0.3em solid transparent;
+  border-left: 0.3em solid;
 }
 
 .dropright .dropdown-toggle:empty::after {
@@ -2960,19 +2967,6 @@ input[type="button"].btn-block {
   margin: 0.5rem 0;
   overflow: hidden;
   border-top: 1px solid #e9ecef;
-}
-
-.dropdown-item {
-  display: block;
-  width: 100%;
-  padding: 0.25rem 1rem;
-  clear: both;
-  font-weight: 400;
-  color: #212529;
-  text-align: inherit;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 0;
 }
 
 .dropdown-item {
@@ -5969,7 +5963,6 @@ button.bg-dark:focus {
 
 .d-block {
   display: block !important;
-  text-align: left;
 }
 
 .d-table {
@@ -6034,7 +6027,6 @@ button.bg-dark:focus {
   }
   .d-md-block {
     display: block !important;
-
   }
   .d-md-table {
     display: table !important;
@@ -10371,8 +10363,6 @@ body,
 .open:not(.dropup) > .animated-dropdown-menu {
   backface-visibility: visible !important;
   animation: flipInX 0.7s both;
-  transform: rotateY(0deg) scale(1);
-  
 }
 
 @keyframes flipInX {
@@ -10450,8 +10440,6 @@ body,
  * Component: Form
  * ---------------
  */
-
-
 .form-group.has-icon {
   position: relative;
 }
@@ -10753,7 +10741,6 @@ label:not(.form-check-label):not(.custom-file-label) {
 
 .btn-group.show .btn-tool, .btn-tool:hover {
   color: #495057;
-
 }
 
 .show .btn-tool, .btn-tool:focus {
@@ -11549,7 +11536,6 @@ label:not(.form-check-label):not(.custom-file-label) {
 
 .nav-pills .nav-link:not(.active):hover {
   color: #007bff;
-
 }
 
 /*
@@ -11561,11 +11547,6 @@ label:not(.form-check-label):not(.custom-file-label) {
   margin: 0;
   padding: 0;
 }
-
-.active a {
-    background-color:yellow;
-}
-
 
 .products-list > .item {
   border-radius: 0.25rem;
@@ -11584,8 +11565,8 @@ label:not(.form-check-label):not(.custom-file-label) {
 }
 
 .products-list .product-img img {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 
 .products-list .product-info {
@@ -12451,7 +12432,6 @@ label:not(.form-check-label):not(.custom-file-label) {
 
 .select2-dropdown {
   border: 1px solid #d2d6de;
-
 }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {

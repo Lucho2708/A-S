@@ -36,6 +36,7 @@
     <!-- Left navbar links -->
     <ul  class="navbar-nav">
       <li  class="nav-item">
+
         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
       </li>
       <li style="border-radius: 8px;" class="nav-item d-none d-sm-inline-block">
@@ -48,12 +49,14 @@
   </nav>
   <!-- /.navbar -->
 
+
   <!-- Main Sidebar Container para cambiar el color a la barra nav delm menu -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4 bg-black elevation-2 ">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link bg-primary elevation-2">
       <img src="{{asset("dist/img/AdminLTELogo.png")}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3">
     <font color="white">A&S</font></a>
+    
     
 
     <!-- Sidebar -->
@@ -126,6 +129,10 @@
 <script src="{{asset("dist/js/pages/dashboard.js")}}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{asset("dist/js/demo.js")}}"></script>
+
+
+<!-- AdminLTE for demo purposes -->
+
 @yield('js-table')
 </body>
 </html>

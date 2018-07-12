@@ -55,13 +55,16 @@
           <!-- /.col -->
           <div class="col-4">
             <button type="submit" class="btn btn-primary btn-block btn-flat">{{ __('Iniciar') }}</button>
+
+            
           </div>
           <!-- /.col -->
         </div>
       </form>
 
       <p class="mb-1">
-        <a href="#">{{ __('Olvidaste tu contraseña?') }}</a>
+        <a href="#">{{ __('Olvidaste tu contraseña?') }}</a><br>
+        <a href="{{ route('register') }}"><button  class="btn btn-primary btn-block btn-flat">{{ __('Registrarse') }}</button></a>
       </p>
     </div>
     <!-- /.login-card-body -->
