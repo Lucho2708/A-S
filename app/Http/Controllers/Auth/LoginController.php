@@ -1,13 +1,9 @@
 <?php
-
 namespace App\Http\Controllers\Auth;
-
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-
-
 class LoginController extends Controller
 {
     /*
@@ -20,9 +16,7 @@ class LoginController extends Controller
     | to conveniently provide its functionality to your applications.
     |
     */
-
     use AuthenticatesUsers;
-
     
     /**
      * Send the response after the user was authenticated.
@@ -32,27 +26,21 @@ class LoginController extends Controller
      */
     protected function sendLoginResponse(Request $request)
     {
-
         if($this->guard()->user()->confirmed==0){
             $this->guard()->logout();
             return redirect()->back() ->withInput($request->only($this->username(), 'remember')) ->withErrors(['active' => 'User in not activated.']);
         }
-
         $request->session()->regenerate();
-
         $this->clearLoginAttempts($request);
-
         return $this->authenticated($request, $this->guard()->user())
                 ?: redirect()->intended($this->redirectPath());
     }
-
     /**
      * Where to redirect users after login.
      *
      * @var string
      */
     protected $redirectTo = '/home';
-
     /**
      * Create a new controller instance.
      *
@@ -63,3 +51,4 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 }
+

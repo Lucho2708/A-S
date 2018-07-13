@@ -114,6 +114,8 @@
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr align="center">
+
+                    <th align="center">Editar</th>
                     <th class="nom_empresa" style="display: table-cell;">Nombre Empresa</th>
                     <th class="nit_empresa" style="display: table-cell;">Nit Empresa </th>
                     <th class="departamento" style="display: table-cell;">Departamento</th>
@@ -127,6 +129,8 @@
                     <th class="num_cuenta" style="display: table-cell;">Numero de Cuenta</th>
                     <th class="valor_contrato" style="display: table-cell;">Valor Contrato</th>
                     <th class="notas" style="display: table-cell;">Notas </th>
+                    <th align="center">Eliminar</th>
+
                     
 
                 </tr>
@@ -134,7 +138,7 @@
 
                <tr>
            @foreach($contrato as $contrato)
-       
+         <td align="center"><a href="{{ route('contratos.edit',$contrato->id)}}" class="btn btn-info">editar</a></td>              
          <td align="center"class="nom_empresa" style="display: table-cell;">{{$contrato->nom_empresa}}</td>
          <td align="center"class="nit_empresa" style="display: table-cell;">{{$contrato->nit_empresa}}</td> 
          <td align="center"class="departamento" style="display: table-cell;">{{$contrato->departamento}}</td>
@@ -147,8 +151,14 @@
          <td align="center"class="estado_contrato" style="display: table-cell;">{{$contrato->estado_contrato}}</td>
          <td align="center"class="num_cuenta" style="display: table-cell;">{{$contrato->num_cuenta}}</td>
          <td class="valor_contrato" style="display: table-cell;">{{$contrato->valor_contrato}}</td>
-         <td align="center"class="notas" style="display: table-cell;">{{$contrato->notas}}</td>
-            </tr>
+         <td align="center"class="notas" style="display: table-cell;">{{$contrato->notas}}</td
+         <td align="center">
+                     
+                    <form action="{{ route('contratos.destroy',$contrato->id)}}" method="POST">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <input type="hidden" name="_token" value="{{csrf_token()}}">
+                    <button type="submit" class="btn btn-danger">Eliminar</button>
+                  </form></td>            </tr>
                @endforeach
           
           <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

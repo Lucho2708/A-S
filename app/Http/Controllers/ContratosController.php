@@ -75,7 +75,11 @@ class ContratosController extends Controller
      */
     public function edit($id)
     {
-        //
+       
+        $contrato2=Contrato::all();
+        $contrato2=Contrato::findorFail($id);
+        return view('contratos.editar',['contrato2'=>$contrato2,'contrato2'=>$contrato2]);
+        
     }
 
     /**
@@ -87,7 +91,24 @@ class ContratosController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $contrato2=Contrato::findorFail($id);
+        $contrato2->nom_empresa=$request->nom_empresa;
+        $contrato2->nit_empresa=$request->nit_empresa;
+        $contrato2->departamento=$request->departamento;
+        $contrato2->ciudad=$request->ciudad;
+        $contrato2->direccion=$request->direccion;
+        $contrato2->email=$request->email;
+        $contrato2->tip_contrato=$request->tip_contrato;
+        $contrato2->fecha_inicio=$request->fecha_inicio;
+        $contrato2->fecha_final=$request->fecha_final;
+        $contrato2->estado_contrato=$request->estado_contrato;
+        $contrato2->acuerdo_pago=$request->acuerdo_pago;
+        $contrato2->num_cuenta=$request->num_cuenta;
+        $contrato2->valor_contrato=$request->valor_contrato;
+        $contrato2->notas=$request->notas;
+
+        $contrato2->save();
+          return redirect()->route('contratos.listar');
     }
 
     /**
@@ -98,7 +119,13 @@ class ContratosController extends Controller
      */
     public function destroy($id)
     {
-        //
+       try{
+       $contrato2=Contrato::findorFail($id);
+       $contrato2->delete();
+       return redirect()->route('contratos.index');
+      } catch(Exception $e){
+     return"fatal error -".$e->getMessage();
+    }
     }
 
 

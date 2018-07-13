@@ -56,8 +56,7 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
-        $messages=array('email.regex'=>'you email id is not valid.');
-
+      
         return Validator::make($data, [
             'name'      =>  'required|string|max:255',
             'lastname'  =>  'required|string|max:255',
@@ -75,6 +74,7 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        alert()->success('El registro fue creado exitosamente.','Verificar en el correo electronico')->autoclose(3000);
 
         $user = User::create([
             'nombres' => $data['name'],
@@ -106,10 +106,13 @@ class RegisterController extends Controller
         event(new Registered($user = $this->create($request->all())));
 
         // $this->guard()->login($user);
-        return redirect(route('verifyEmailFirst'));
+        return redirect (route('verifyEmailFirst'));
+        
 
         return $this->registered($request, $user)
                         ?: redirect($this->redirectPath());
+                        
+
     }
 
     public function verifyEmailFirst(){
@@ -124,6 +127,8 @@ class RegisterController extends Controller
             User::where(['email'=>$email,'confirmation_code'=>$verifyToken])->update(['confirmed'=>'1','confirmation_code'=>'']);
         }else{
             return 'Usuario no encontrado';
+
+
         }
     }
 

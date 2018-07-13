@@ -17,6 +17,17 @@
   <link rel="stylesheet" href="../../plugins/iCheck/square/blue.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+  <!-- Google sweealert --
+      <script src="sweetalert/dist/sweetalert.js"></script>
+
+
+    <link rel="stylesheet" href="dist/sweetalert.css">
+        <script src="sweetalert/dist/sweetalert.min.js"></script>
+
+   Google sweealert -->
+
+
 </head>
 <body class="hold-transition register-page">
 <div class="register-box">
@@ -103,7 +114,7 @@
       </form>
       <br>
 
-    <div class="pull-left btn col-12" >
+    <div class="pull-left btn col-12 " >
        <a href="{{ route('login') }}"><button  class="btn btn-primary ">{{ __('Login') }}</button></a>
      </div>
     <!-- /.form-box -->
