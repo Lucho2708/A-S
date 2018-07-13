@@ -43,20 +43,20 @@
                 <div class="row">
                 
                     <div class="col-6">
-                    <label>Fecha Inicio</label>
+                    <label><font color="black">Fecha Inicio</font></label>
                     <input type="date" class="form-control" name="fecha_inicio" value="{{$garantia1->fecha_inicio}}" placeholder="Fecha inicio"required="" data-error="Completa este campo">
                   </div>
                     <div class="col-6">
-                    <label>Fecha Final</label>
+                    <label><font color="black">Fecha Final</font></label>
                     <input type="date" class="form-control" name="fecha_final" value="{{$garantia1->fecha_final}}" placeholder="Fecha final"required="" data-error="Completa este campo"><br>
                   </div>
                   <div class="col-6">
-                    <label >Descripcion</label>
+                    <label><font color="black">Descripción</font></label>
                     <input type="text" name="descripcion" class="form-control" value="{{$garantia1->descripcion}}" placeholder="Descripcion" required="" data-error="Completa este campo">
                   </div>
 
                   <div class="col-6">
-                    <label >Daños</label>
+                    <label><font color="black">Daños</font></label>
                     <input type="text" name="daños" class="form-control" value="{{$garantia1->daños}}"  placeholder="Daños empresa" required="" data-error="Completa este campo"><br>
                   </div>
 

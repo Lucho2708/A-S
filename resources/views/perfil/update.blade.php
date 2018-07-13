@@ -59,7 +59,7 @@
                 
                   <div class="col-6">
                     <label>Password</label>
-                    <input type="text" class="form-control" name="password"  value="{{ Auth::user()->password}}" placeholder="Contraseña" required>
+                    <input type="password" class="form-control" name="password"  value="{{ Auth::user()->password}}" placeholder="Contraseña" required>
                   </div>
                    
                   </div>
