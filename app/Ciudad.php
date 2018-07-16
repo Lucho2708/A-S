@@ -10,10 +10,15 @@ class Ciudad extends Model
     protected $table='ciudad';
     public $timestamps= false;
 
-    protected $fillable = [
-    	'ciudad' 
-    	
-    	
+   protected $fillable=[
+   	'ciudad',
+   	'departamentos_id'
 
-    ];
+
+   ];
+
+   public static function towns($id){
+   		return Town::where('departamentos_id',"=",$id)
+   		->get();
+   }
 }

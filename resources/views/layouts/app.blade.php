@@ -72,6 +72,7 @@
   <div class="content-wrapper">
     @include('sweet::alert')
     @yield('contenido')
+   
 
   </div>
   <!-- /.content-wrapper -->
@@ -99,6 +100,8 @@
 <script>
   $.widget.bridge('uibutton', $.ui.button)
 </script>
+<script src="{{asset("js/jquery-2.1.0.min.js")}}"></script>
+<script src="{{asset("js/dropdown.js")}}"></script>
 <!-- Bootstrap 4 -->
 <script src="{{asset("plugins/bootstrap/js/bootstrap.bundle.min.js")}}"></script>
 <!-- Morris.js charts -->

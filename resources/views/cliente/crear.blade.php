@@ -5,6 +5,11 @@
 @endsection
 
 @section('contenido')
+
+<script src="js/dropdown.js"></script>
+<script src="js/jquery-2.1.0.min.js"></script>
+
+
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
@@ -80,15 +85,18 @@
                     <input type="email" class="form-control" name="email" pattern="[a-zA-Z0-9.+_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z0-9.-]+" placeholder="Enter email" required="" data-error="Completa este campo"><br>
                   </div>
 
-                    <div class="col-6">
-                    <label for="departamento">Departamento</label>
-                    <select class="form-control" name="departamento" id="departamento" required>
+                
+
+                   <div class="col-6">
+                    <label for="state">Departamento</label>
+                    <select class="form-control" name="departamento" id="state" required="">
                       <option value="">Selecciona Ubicación</option>
-                      @foreach ($departamentos as $departamentos)
-                      <option name="dp" value="dp">{{$departamentos->departamento}}</option>
+                       @foreach ($states as $States)
+                      <option>{{$States}}</option>
                       @endforeach
-                    </select>
-                  </div>
+                   </select></div>
+
+
                   <div class="col-6">
                     <label for="ciudad">Ciudad</label>
                     <select class="form-control" name="ciudad" id="ciudad" required>
@@ -99,7 +107,7 @@
                       @endforeach
                     </select><br>
                   </div>
-           
+
                   <div class="col-6">
                     <label>Dirección</label>
                     <input type="text" class="form-control" name="direccion" placeholder="Direccion" required="" data-error="Completa este campo">
@@ -118,7 +126,21 @@
                   <div class="col-6">
                     <label >Profesion</label>
                     <input type="text" class="form-control" name="profesion" placeholder="Escriba su profesion" required="" data-error="Completa este campo"> <br>
-                  </div>          
+                  </div>    
+
+                    <div class="col-12">
+                <label for="ciudad">Departamento</label>
+    
+                {!!Form::select('states',$states, null,['id'=>'state'])!!}
+               </div>
+
+
+                <div class="col-6">
+
+                  <label for="ciudad">Ciudad</label>
+
+                  {!!Form::select('town',['placeholder'=>'selecciona'],null,['id'=>'town'])!!}
+                </div>      
                   </div>
                    {!! Form::submit('Crear', ['class' =>'btn btn-primary']) !!}
 

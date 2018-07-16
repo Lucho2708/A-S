@@ -20,7 +20,11 @@ class ClienteController extends Controller
     public function index()
     {
        $cliente=Cliente_contratistas::all();
+        
+
+  
         return view('cliente.listar',compact('cliente'));
+
    
 
     }
@@ -34,9 +38,21 @@ class ClienteController extends Controller
     {
 
         $departamentos =Departamentos::all();
+        $states=Departamentos::pluck('departamento','id');
+
         $ciudad= Ciudad::all();
-        return view('cliente.crear',compact('departamentos','ciudad'));
+        return view('cliente.crear',compact('departamentos','ciudad','states'));
       
+    }
+
+
+    public function getTowns(Request $request, $id){
+
+        if($request->ajax()){
+            $towns=Ciudad::towns($id);
+            return response()->json($towns);
+        }
+
     }
 
     /**
