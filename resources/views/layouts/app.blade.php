@@ -93,6 +93,8 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
+
+
 <script src="{{asset("plugins/jquery/jquery.min.js")}}"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="{{asset("https://code.jquery.com/ui/1.12.1/jquery-ui.min.js")}}"></script>
@@ -100,8 +102,7 @@
 <script>
   $.widget.bridge('uibutton', $.ui.button)
 </script>
-<script src="{{asset("js/jquery-2.1.0.min.js")}}"></script>
-<script src="{{asset("js/dropdown.js")}}"></script>
+
 <!-- Bootstrap 4 -->
 <script src="{{asset("plugins/bootstrap/js/bootstrap.bundle.min.js")}}"></script>
 <!-- Morris.js charts -->

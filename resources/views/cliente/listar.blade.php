@@ -7,39 +7,14 @@
 <!-- Tables style -->
   <link rel="stylesheet" href="{{asset("plugins/datatables/dataTables.bootstrap4.css")}}">
    <link rel="stylesheet" href="{{asset("css/estilo.css")}}">
-    <!-- This is what you need --
-      
-    <script src="sweetalert/dist/sweetalert.js"></script>
-
-
-    <link rel="stylesheet" href="dist/sweetalert.css">
-        <script src="sweetalert/dist/sweetalert.min.js"></script>
-    .......................-->
-     
 
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  
-     
-     <script>
-  
-
-      </script>
-
 @endsection
 
 @section('contenido')
- 
-
     <!-- Main content -->
-
-    <!-- Main content --
-
-<input type="button"value="Alerta Basica" onclick="swal('por favor confirme su ingreso por medio de su correo electronico');">
-
-
-    <- Main content -->
-
-    
+   
+          
     <!-- Main content -->
             <div class="card">
             <div class="card-header">

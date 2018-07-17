@@ -40,8 +40,8 @@ class ClienteController extends Controller
         $departamentos =Departamentos::all();
         $states=Departamentos::pluck('departamento','id');
 
-        $ciudad= Ciudad::all();
-        return view('cliente.crear',compact('departamentos','ciudad','states'));
+        
+        return view('cliente.crear',compact('departamentos','states'));
       
     }
 
