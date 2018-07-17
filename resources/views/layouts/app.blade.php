@@ -72,7 +72,7 @@
   <div class="content-wrapper">
     @include('sweet::alert')
     @yield('contenido')
-   
+   {!! Html::script('js/dropdown.js')!!}
 
   </div>
   <!-- /.content-wrapper -->

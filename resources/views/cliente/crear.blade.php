@@ -6,8 +6,6 @@
 
 @section('contenido')
 
-<script src="js/dropdown.js"></script>
-<script src="js/jquery-2.1.0.min.js"></script>
 
 
     <!-- Content Header (Page header) -->
@@ -38,7 +36,7 @@
               <!-- /.card-header -->
               <!-- form start -->
             
-              {!! Form::open(['route' =>  'cliente.store', 'method' => 'POST',$departamentos,$ciudad])!!} 
+              {!! Form::open(['route' =>  'cliente.store', 'method' => 'POST',$departamentos,$ciudad])!!}
 
               {{csrf_field()}}
                 <div class="card-body">
@@ -87,16 +85,15 @@
 
                 
 
-                   <div class="col-6">
-                    <label for="state">Departamento</label>
-                    <select class="form-control" name="departamento" id="state" required="">
+                    <div class="col-6">
+                    <label for="departamento">Departamento</label>
+                    <select class="form-control" name="departamento" id="departamento" required>
                       <option value="">Selecciona Ubicación</option>
-                       @foreach ($states as $States)
-                      <option>{{$States}}</option>
+                      @foreach ($departamentos as $departamentos)
+                      <option>{{$departamentos->departamento}}</option>
                       @endforeach
-                   </select></div>
-
-
+                    </select>
+                  </div>
                   <div class="col-6">
                     <label for="ciudad">Ciudad</label>
                     <select class="form-control" name="ciudad" id="ciudad" required>
@@ -107,6 +104,7 @@
                       @endforeach
                     </select><br>
                   </div>
+                 
 
                   <div class="col-6">
                     <label>Dirección</label>
@@ -128,19 +126,7 @@
                     <input type="text" class="form-control" name="profesion" placeholder="Escriba su profesion" required="" data-error="Completa este campo"> <br>
                   </div>    
 
-                    <div class="col-12">
-                <label for="ciudad">Departamento</label>
-    
-                {!!Form::select('states',$states, null,['id'=>'state'])!!}
-               </div>
-
-
-                <div class="col-6">
-
-                  <label for="ciudad">Ciudad</label>
-
-                  {!!Form::select('town',['placeholder'=>'selecciona'],null,['id'=>'town'])!!}
-                </div>      
+                   
                   </div>
                    {!! Form::submit('Crear', ['class' =>'btn btn-primary']) !!}
 

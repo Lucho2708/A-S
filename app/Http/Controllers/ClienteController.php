@@ -38,22 +38,15 @@ class ClienteController extends Controller
     {
 
         $departamentos =Departamentos::all();
+         $ciudad= Ciudad::all();
+
         $states=Departamentos::pluck('departamento','id');
 
         
-        return view('cliente.crear',compact('departamentos','states'));
+        return view('cliente.crear',compact('departamentos','ciudad','states'));
       
     }
 
-
-    public function getTowns(Request $request, $id){
-
-        if($request->ajax()){
-            $towns=Ciudad::towns($id);
-            return response()->json($towns);
-        }
-
-    }
 
     /**
      * Store a newly created resource in storage.
