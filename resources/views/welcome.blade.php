@@ -136,25 +136,29 @@
         </div>
       </div>
     </div>
+    <center>
     <div class="container wow fadeInUp ">
       <div class="row">
- <div class=" col-md-6">
-    <a href='img/equipo2.jpg'
+ <center>
+    <a href='img/1.jpg'
          class='fresco'
          data-fresco-group='example'
          data-fresco-caption="Equipo de trabajo">
-        <img src='img/fachadaexterior.jpg' alt='' width="110%"></a>
-</div>
- 
-    <div><div class=" col-md-6">
+       
+        <img src='img/1.jpg' alt='' width="100%"></a>
+</center></div>
+ <br>
 
-        
+
+    <div>
+      <div class=" col-md-6">      
 
         
           <h2 class="about-title">Misión</h2>
           <p class="about-text">
             La empresa A&S ASESORIAS Y SOLUCIONES CONSTRUCTIVAS S.A.S., se traza como objetivo, el ofrecer a la empresa pública y privada el apoyo que sea requerido dentro del cumplimiento de su gestión, en el área de diseño y construcción de obras civiles y de arquitectura, complementado con la consultoría, realización de avalúos y asesorías
-          </p>
+          </p></div>
+            <div class=" col-md-6">
           <h2 class="about-title">Visión</h2>
           <p class="about-text">
             En el año 2020, la organización, contando con un gran equipo de trabajo, será una empresa líder en la región, ofreciendo a nuestros clientes unos excelentes productos y servicios en el campo de la asesoría sobre la legalización de títulos de propiedad, realización de avalúos urbanos y rurales, gestión ante entidades públicas y privadas y labores de arquitectura e ingeniería, en las áreas de elaboración de presupuestos, programaciones, diseños, interventoría - construcción y administración de obras civiles y arquitectónicas. 
@@ -213,7 +217,7 @@
           <div class="service-icon"><i class="fa fa-photo"></i></div>
           <h4 class="service-title"><a href="">Realización Avalúos</a></h4>
           
-          <p class="service-description">Con el apoyo de FEDELONJAS, la Lonja de Propiedad Raíz del Tolima y la Lonja de la Sociedad Colombiana de Arquitectos – Regional Tolima, contamos con la capacidad para ofrecer nuestros servicios en la ejecución Integral de Avalúos, en los campos Urbano y Rural.   Igualmente se cuenta con el Registro Nacional de Avaluadores otorgado por la Superintendencia de Industria y Comercio y el R.N.A. Nacional, otorgado por el Registro Nacional de Avaluadores certificado por la ONAC, siendo miembros de ANA, la primera ERA a nivel Nacional y que tendrá a su cargo el primer REGISTRO ABIERTO DE AVALUADORES - RAA.
+          <p class="service-description">Hacemos parte de la Entidad Autorreguladora ANA y contamos con nuestra inscripción dentro del REGISTRO ABIERTO DE AVALUADORES R.A.A. AVAL-52010099, de acuerdo con los términos de la Ley 1673 de 2013. Igualmente, somos miembros de FEDELONJAS, de la Lonja de Propiedad Raíz del Tolima y de la Sociedad Colombiana de Arquitectos – Regional Tolima, contando con la capacidad para ofrecer nuestros servicios en el desarrollo Integral de Avalúos, en las Especialidades: Inmuebles Urbanos, Inmuebles Rurales e Inmuebles Especiales. Adicionalmente contamos con el RNA, otorgado por el REGISTRO NACIONAL DE AVALUADORES, bajo el Registro R.N.A. 3082, en las tres especialidades antes mencionadas.
 
       </p>
         </div>
@@ -459,6 +463,17 @@
             </div>
           </a>
         </div>
+
+            <div class="md-3">
+          <a class="portfolio-item fresco" style="background-image: url(img/portfolio-23.png);" href="img/portfolio-23.jpg"
+          data-fresco-caption="Grupo Empresarial Inmobiliaria Tinsa">
+            <div class="details">
+              <h4 align="center">Inmobiliaria Tinsa  </h4>
+              <span>A&SASESORIAS S.A.S</span>
+            </div>
+          </a>
+        </div>
+
 
 
 
@@ -845,24 +860,44 @@
           
         </div>
       </div>
-      <center>
-           
+
+
+<br><br>
+
+
+<div class=" col-md-6">
+
+        
+
+        
+          
             <div class='demonstrations pic'>
-        <a href='img/client-7.jpg'
+        <a href='img/2.jpg'
          class='fresco'
          data-fresco-group='example'
          data-fresco-caption="Equipo de trabajo">
-        <img src='img/client-7.jpg' alt='' width="100%">
+        <img src='img/2.jpg' alt='' width="100%">
       </a></div>
+          </p></div>
 
-  </center>
 
-    
+        <div class=" col-md-6">
+         
+         <div class='demonstrations pic'>
+        <a href='img/3.jpg'
+         class='fresco'
+         data-fresco-group='example'
+         data-fresco-caption="Equipo de trabajo">
+        <img src='img/3.jpg' alt='' width="100%">
+      </a></div>
         </div>
       </div>
     </div>
   </div>
+  </section>
 
+     
+    
 
 
   </section>

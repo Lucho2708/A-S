@@ -23,9 +23,16 @@
   <div class="login-logo">
     <a><b>A&S</b> Asesorias</a>
   </div>
+      @if(Session::has('sucessfull'))
+      <div class="alert alert-success" role="alert">
+        {{Session::get('sucessfull')}}
+      </div>
+      @endif
   <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">
+      
+      
       <p class="login-box-msg"><b>Inicia sesión</b></p>
 
       <form action="{{ route('login') }}" method="POST">
@@ -36,6 +43,7 @@
             @if ($errors->has('email'))
                 <a class="text-danger">{{ $errors->first('email') }}</a>
             @endif
+
         </div>
         <div class="form-group has-feedback">
           <input type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" id="password" name="password"  placeholder="Password" required>
@@ -64,7 +72,7 @@
 
       <p class="mb-1">
         <a href="#">{{ __('Olvidaste tu contraseña?') }}</a><br>
-        <a href="{{ route('register') }}"><button  class="btn btn-primary btn-block btn-flat">{{ __('Registrarse') }}</button></a>
+        <a href="{{ route('register') }}">{{ __('Registro') }}</a>
       </p>
     </div>
     <!-- /.login-card-body -->

@@ -34,7 +34,16 @@
   <div class="register-logo">
     <a href="../../index2.html"><b>A&S</b> Asesorias</a>
   </div>
-
+  @if(Session::has('sucessfull'))
+  <div class="alert alert-success" role="alert">
+    {{Session::get('sucessfull')}}
+  </div>
+  @endif
+  @if(Session::has('message'))
+  <div class="alert alert-danger" role="alert">
+    {{Session::get('message')}}
+  </div>
+  @endif
   <div class="card">
     <div class="card-body register-card-body">
       <p class="login-box-msg">Registrarme</p>
@@ -113,10 +122,6 @@
         </div>
       </form>
       <br>
-
-    <div class="pull-left btn col-12 " >
-       <a href="{{ route('login') }}"><button  class="btn btn-primary ">{{ __('Login') }}</button></a>
-     </div>
     <!-- /.form-box -->
   </div><!-- /.card -->
 
@@ -127,6 +132,8 @@
 <!-- jQuery -->
 
 </body>
+<script type="text/javascript">$(".alert").alert('close')</script>
+
 </html>
 
 

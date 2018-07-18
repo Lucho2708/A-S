@@ -12,6 +12,7 @@ use Illuminate\Http\Request;
 use Illuminate\Auth\Events\Registered;
 use App\User;
 use Mail;
+use Session;
 use App\Mail\VerifyEmail;
  
 
@@ -74,7 +75,6 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        alert()->success('El registro fue creado exitosamente.','Verificar en el correo electronico')->autoclose(3000);
 
         $user = User::create([
             'nombres' => $data['name'],
@@ -111,12 +111,11 @@ class RegisterController extends Controller
 
         return $this->registered($request, $user)
                         ?: redirect($this->redirectPath());
-                        
-
     }
 
     public function verifyEmailFirst(){
-        return view('emails.verifyEmailFirst');
+        Session::flash('sucessfull','Usuario registrado, por favor confirme su cuenta. Se le ha enviado un correo a la cuenta el link de confirmación');
+        return redirect('/login');
     }
 
     public function sendEmailDone($email, $verifyToken) {
@@ -125,10 +124,11 @@ class RegisterController extends Controller
 
         if ($user){
             User::where(['email'=>$email,'confirmation_code'=>$verifyToken])->update(['confirmed'=>'1','confirmation_code'=>'']);
+            Session::flash('sucessfull','Usuario confirmado, ya puedes iniciar sesión');
+            return redirect('/login');
         }else{
-            return 'Usuario no encontrado';
-
-
+            Session::flash('message','Usuario no registrado');
+            return redirect('/register');
         }
     }
 
