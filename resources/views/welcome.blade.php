@@ -21,31 +21,30 @@
   <meta name="twitter:title" content="">
   <meta name="twitter:description" content="">
   <meta name="twitter:image" content="">
-<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1, maximun-scale=1, minimun-scale=1">
   <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
   <link href="img/favicon6-96x96.png" rel="shortcut icon">
   
     
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+  <link href="{{ asset('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800') }} " rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ asset('lib/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate-css/animate.min.css" rel="stylesheet">
+  <link href="{{ asset('lib/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('lib/animate-css/animate.min.css') }}" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="{{ asset('css/style.css') }}" rel="stylesheet">
   
 
   <!--slider de proyecto-->
-  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}">
 
-  <script src="js/jquery-3.1.0.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="{{ asset('js/jquery-3.1.0.min.js') }}"></script>
+  <script src="{{ asset('js/main.js') }}"></script>
 
 
 
@@ -53,9 +52,9 @@
   <!-- para hacer el efecto imagen -->
 
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="../js/fresco/fresco.js"></script>
-<link rel="stylesheet" type="text/css" href="../css/fresco/fresco.css" />
+<script type="text/javascript" src="{{ asset('http://code.jquery.com/jquery-3.2.1.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/fresco/fresco.js') }}"></script>
+<link rel="stylesheet" type="text/css" href="{{ asset('css/fresco/fresco.css') }}" />
 
  <!-- Otro efecto -->
 
@@ -464,9 +463,9 @@
           </a>
         </div>
 
-            <div class="md-3">
+        <div class="col-md-3">
           <a class="portfolio-item fresco" style="background-image: url(img/portfolio-23.png);" href="img/portfolio-23.jpg"
-          data-fresco-caption="Grupo Empresarial Inmobiliaria Tinsa">
+            data-fresco-caption="Grupo Empresarial Inmobiliaria Tinsa">
             <div class="details">
               <h4 align="center">Inmobiliaria Tinsa  </h4>
               <span>A&SASESORIAS S.A.S</span>
@@ -925,8 +924,6 @@
               <br>Colombia, Cundinamarca,</p>
               <p>Barrio Centro-Girardot </p>
               <p>Dirección<br>Calle 18 Nº 9 – 86 Oficina D – 301 Edificio El Sol </p>
-            
-
             </div>
 
             <div>
@@ -1008,19 +1005,19 @@
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
   <!-- Required JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="lib/superfish/hoverIntent.js"></script>
-  <script src="lib/superfish/superfish.min.js"></script>
-  <script src="lib/morphext/morphext.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/stickyjs/sticky.js"></script>
-  <script src="lib/easing/easing.js"></script>
+  <script src="{{ asset('lib/jquery/jquery.min.js') }}"></script>
+  <script src="{{ asset('lib/bootstrap/js/bootstrap.min.js') }}"></script>
+  <script src="{{ asset('lib/superfish/hoverIntent.js') }}"></script>
+  <script src="{{ asset('lib/superfish/superfish.min.js') }}"></script>
+  <script src="{{ asset('lib/morphext/morphext.min.js') }}"></script>
+  <script src="{{ asset('lib/wow/wow.min.js') }}"></script>
+  <script src="{{ asset('lib/stickyjs/sticky.js') }}"></script>
+  <script src="{{ asset('lib/easing/easing.js') }}"></script>
 
   <!-- Template Specisifc Custom Javascript File -->
-  <script src="js/custom.js"></script>
+  <script src="{{ asset('js/custom.js') }}"></script>
 
-  <script src="contactform/contactform.js"></script>
+  <script src="{{ asset('contactform/contactform.js') }}"></script>
 
 
 </body>
